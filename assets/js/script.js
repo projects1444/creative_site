@@ -49,6 +49,8 @@ languageSelector.addEventListener("change", (event) => {
 
 });
 document.addEventListener("DOMContentLoaded", () => {
+
+
   const languageSelector = document.querySelector("select");
   var selectElement = document.getElementById("language-select");
   const language = localStorage.getItem("lang") || "en"; // اذا لم تكن اللغة متوفرة استخدم الانجليزية
@@ -73,6 +75,11 @@ const setLanguage = (language) => {
   });
   document.dir = language === "ar" ? "rtl" : "ltr";
 };
+
+
+
+
+
 
 
 
@@ -292,12 +299,16 @@ const translations = {
     Desgin:"Desgin",
     Codica_Way:"Codica Way",
     Management:"Management",
-
-
-
-
+    Saudi_Arabia:"Saudi Arabia",
+    Email_Us:"Email Us",
+    Call_Us:"Call Us",
+    Send_Message:"Send Message",
   },
   ar: {
+    Send_Message:"إرسال",
+    Call_Us:"اتصل بنا",
+    Email_Us:"راسلنا",
+    Saudi_Arabia:"المملكة السعودية العربية",
     home: "الصفحة الرئيسية",
     about: "من نحن",
     Codica_Way:"كوديكا",
