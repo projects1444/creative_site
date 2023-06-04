@@ -1,7 +1,9 @@
 const languageSelector = document.querySelector("select");
 var selectElement = document.getElementById("language-select");
+
+/* mobile */
 selectElement.addEventListener("change", (event) => {
-  
+  window.location.reload()
   console.log(event);
   setLanguage(event.target.value);
   localStorage.setItem("lang", event.target.value);
@@ -24,8 +26,10 @@ selectElement.addEventListener("change", (event) => {
 
 
 });
+
+/* desktop */
 languageSelector.addEventListener("change", (event) => {
-  
+ window.location.reload()
   console.log(event);
   setLanguage(event.target.value);
   localStorage.setItem("lang", event.target.value);
@@ -46,11 +50,10 @@ languageSelector.addEventListener("change", (event) => {
     stylesheet.setAttribute("href", "assets/css/style.css");
   }
 
-
 });
+
+/* window */
 document.addEventListener("DOMContentLoaded", () => {
-
-
   const languageSelector = document.querySelector("select");
   var selectElement = document.getElementById("language-select");
   const language = localStorage.getItem("lang") || "en"; // اذا لم تكن اللغة متوفرة استخدم الانجليزية
@@ -59,10 +62,8 @@ document.addEventListener("DOMContentLoaded", () => {
   setLanguage(language);
   const stylesheet = document.getElementById("language-stylesheet");
   if (language === "ar") {
- 
     stylesheet.setAttribute("href", "assets/css/ar.css");
   } else {
-  
     stylesheet.setAttribute("href", "assets/css/style.css");
   }
 });
@@ -74,11 +75,11 @@ const setLanguage = (language) => {
     element.textContent = translations[language][translationKey];
   });
   document.dir = language === "ar" ? "rtl" : "ltr";
+ 
 };
 
 
-
-
+//placeholder="ادخل إسمك الثلاثي"
 
 
 
@@ -145,7 +146,9 @@ const translations = {
     Saudi_Arabia:"Saudi Arabia",
     Phone:"Phone :",
     contact_phone:"Phone *",
+    contact_phone2:"Phone",
     Email:"Email ",
+    Email2:"Email ",
     desc:"A comany spepcialized in the field of technology, employing many experts in various fields.",
     rghits:"All Rights Reserved ",
     Clouds:"Creative Clouds IT",
@@ -290,6 +293,7 @@ const translations = {
     attach:"Attach files",
     send:"Send Message",
     contact_name:"Your Name *",
+    contact2_name:"Your Name",
     Email:"E-mail *",
     contact_message:"Message *",
     Portfolio:"Portfolio",
@@ -303,8 +307,49 @@ const translations = {
     Email_Us:"Email Us",
     Call_Us:"Call Us",
     Send_Message:"Send Message",
+    Our_Team:"Our Team",
+    Our_Portfolio:"Our Portfolio",
+    All:"All",
+    App:"App",
+    Card:"Card",
+    Web:"Web",
+    choose_service :"Choose Service",
+    choose_service2:"Choose Service",
+    write_message:"Write description",
+    website:"Website",
+    Clutch:"Clutch",
+    Linedin:"Linedin",
+    Quora:"Quora",
+    Google_Search:"Google Search",
+    Facebook:"Facebook",
+    Dev_To:"Dev.To",
+    Medium:"Medium",
+    From_A_Friend:"From A Friend",
+    Other:"Other",
+
+
+
   },
   ar: {
+    Other:"أخري",
+    From_A_Friend:"من صديق",
+    Medium:"وسيط",
+    Dev_To:"أدوات التطوير",
+    Facebook:"فيسبوك",
+    Google_Search:"البحث علي جوجل",
+    Quora:"كورا",
+    Linedin:"لينكدان",
+    Clutch:"كلاتش",
+    website:"الموقع الإلكتروني",
+    write_message:"كتابة الوصف",
+    choose_service:"إختر الخدمة",
+    choose_service2:"إختار خدمة",
+    All:"الجميع",
+    App:"تطبيقات",
+    Card:"بطاقات",
+    Web:"مواقع",
+    Our_Portfolio:"معرض الاعمال",
+    Our_Team:"فريق العمل ",
     Send_Message:"إرسال",
     Call_Us:"اتصل بنا",
     Email_Us:"راسلنا",
@@ -354,11 +399,12 @@ const translations = {
     Saudi_Arabia:"المملكة العربية السعودية",
     Phone:"رقم الهاتف :",
     contact_phone:"رقم الهاتف *",
-    Email:"البريد الالكتروني ",
+    contact_phone2:"رقم جوالك",
+    Email2:"بريدك الإلكتروني",
     desc:"شركة متخصصة في مجال التكنولوجيا يعمل بها العديد من الخبراء في مختلف المجالات.",
     rghits:"جميع الحقوق محفوظة ",
     Clouds:"سحب الإبداع ",
-    defintion:" سحب الإبداع شركة تعمل في مجال تقنية المعلومات وتقدم العديد من الخدمات المرتبطةبالتكنولوجيا يقع مقرها الرئيسي في المدينة المنورة وتسعى إلى الوصول لمعايير عالية وجودة مميزة لخدمة عملائها بالشكل المطلوب .",
+    defintion:" سحب الإبداع شركة تعمل في مجال تقنية المعلومات وتقدم العديد من الخدمات المرتبطة بالتكنولوجيا يقع مقرها الرئيسي في المدينة المنورة وتسعى إلى الوصول لمعايير عالية وجودة مميزة لخدمة عملائها بالشكل المطلوب .",
     defintion2:"الخدمات المقدمة تتنوع من حيث طبيعنها حيث نقدم الخدمات المرتبطة مباشرة بالبرمجة والتطوير ، التصميم ، التسويق الرقمي . جميع هذه الخدمات تراعي أبرز المعايير والممارسات في قطاع الأعمال والمجالات ذات الصلة بهذا محليا وعالميا.",
     li1:"نهتم بالتفاصيل نحسن باستمرار و نبتكر الحلول",
     li2:"نفذ أعمالك من خلال فريق محترف وأفضل الممارسات العالمية",
@@ -454,6 +500,7 @@ const translations = {
     recomnd:"أوصي بشدة بفريق سحب الابداع كشركة تطوير برمجيات مثبتة ، ويمكنني أن أقول بصراحة أنه لولا سحب الابداع لا أعرف ما إذا كان بإمكاني أن نجعل منتجنا حيًا للميزانية التي كانت لدينا.",
     name:"الاسم",
     contact_name:"الاسم *",
+    contact2_name:"الإسم الثلاثي",
     Director:"المدير",
     Success_stories:"القصص الناجحة",
     online:"سوق على الإنترنت لبيع المقتنيات",

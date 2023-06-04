@@ -12,7 +12,7 @@ body {
     font-family: "Open Sans", sans-serif;
     color: #444;
   }
-  ul, ol {
+  ul {
     list-style-type: none;
   }
   a {
@@ -2215,8 +2215,14 @@ border: 0;
     top: 0;
     right: 0;
   }
+  .proven .card-body{
+    height: 0;
+  }
 }
 @media (max-width:575px) {
+  .proven .card-body{
+    height: 32px;
+  }
   .five{
     position: relative;
     top: 0;
@@ -2252,7 +2258,12 @@ border: 0;
     right: 0;
   }
 }
+@media (max-width:415px) {
+  .proven .card-body{
+    height: 35px;
+  }
 
+}
 
 /* end proven */
 .stack {
@@ -2670,6 +2681,7 @@ ol li{
     gap: 15px;
   }
 }
+
 .form-label{
   width: 100%;
   text-align: start;
@@ -2677,7 +2689,9 @@ ol li{
 
 }
 
-
+.contact-name::placeholder{
+  font-size: 17px;
+}
 
 /* end contact form */
   /*--------------------------------------------------------------
@@ -2979,14 +2993,16 @@ ol li{
     list-style: none;
     text-align: center;
   }
-  
+  ol li {
+    font-weight: bold;
+  }
   .portfolio #portfolio-flters li {
     cursor: pointer;
     margin: 0 12px 5px 12px;
     display: inline-block;
     padding: 0 4px 6px 4px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 20px;
     color: #444;
     background: white;
@@ -3168,9 +3184,10 @@ ol li{
   .contact .php-email-form .validate {
     display: none;
     color: red;
-    margin: 0 0 15px 0;
+    margin: 5px 0 15px 0;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 15px;
+    text-align: start;
   }
   
   .contact .php-email-form .error-message {
