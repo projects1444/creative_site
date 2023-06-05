@@ -68,14 +68,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
 const setLanguage = (language) => {
+  
   const elements = document.querySelectorAll("[data-i18n]");
   elements.forEach((element) => {
     const translationKey = element.getAttribute("data-i18n");
     element.textContent = translations[language][translationKey];
+   // element.style.visibility = 'visible';
   });
   document.dir = language === "ar" ? "rtl" : "ltr";
- 
+  document.body.style.visibility = 'visible';
 };
 
 
@@ -326,11 +329,17 @@ const translations = {
     Medium:"Medium",
     From_A_Friend:"From A Friend",
     Other:"Other",
+    CEO:"CEO at CCIT",
+    CEOName:"Ahmed",
+    phpDev:"PHP Developer at CCIT",
 
 
 
   },
   ar: {
+    phpDev:"مطور PHP",
+    CEOName:"أحمد",
+    CEO:"المدير التنفيذي",
     Other:"أخري",
     From_A_Friend:"من صديق",
     Medium:"وسيط",

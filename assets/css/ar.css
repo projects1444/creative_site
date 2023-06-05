@@ -8,24 +8,32 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Almarai-Bold';
+  src: url('../webfonts/Almarai-Bold.ttf') format('truetype');
+
+}
 body {
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: 'Almarai-Bold', sans-serif;
     color: #444;
+    visibility: hidden;
   }
   ul {
     list-style-type: none;
   }
-  a {
-    color: #4fa6d5;
-  }
-  
+ 
+  /* [data-i18n] {
+    visibility: hidden;
+  } */
   a:hover {
     color: #45beff;
     text-decoration: none;
   }
   
   h1, h2, h3, h4, h5, h6, .font-primary {
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: 'Almarai-Bold', sans-serif;
   }
   
   /*--------------------------------------------------------------
@@ -528,7 +536,7 @@ body {
   color: #68A4C4;
 }
 .mobile-menu .megamenu{
-  height: 320px;
+  height: 280px;
   overflow-x: hidden;
 }
 .mobile-menu li ul li {
@@ -597,7 +605,7 @@ body {
 position: relative;
 }
 .mobile-hire2{
-  font-size: 10px;
+  font-size: 9px;
     background: #F7CDC6;
     color: red;
     padding:0 5px !important;
@@ -605,7 +613,7 @@ position: relative;
     position: absolute;
     top: 0;
     right: 35px;
-    left: 163px;
+    left: 157px;
     text-align: center;
 }
 .megamenu .text h4{
@@ -695,7 +703,7 @@ position: relative;
 }
 @media (max-width:345px) {
   .off-canvas-wrapper .off-canvas-inner-content {
-    width: 283px;
+    width: 280px;
   }
 }
 .off-canvas-wrapper .btn-close-off-canvas {
@@ -2161,6 +2169,9 @@ border: 0;
   position: relative;
   top: -42px;
 }
+.goglecolud{
+  text-align: start;
+}
 .special-heading{
   color: #ebeced;
     font-size: 100px;
@@ -2220,6 +2231,9 @@ border: 0;
   }
 }
 @media (max-width:575px) {
+  .goglecolud{
+    text-align: center;
+  }
   .proven .card-body{
     height: 32px;
   }
@@ -2409,7 +2423,7 @@ background: linear-gradient(90deg, rgba(238,210,205,1) 37%, rgba(247,243,237,1) 
 .featured {
   padding: 60px 0;
 }
-.featured p ,.featured h2{
+.featured p ,.featured h4{
   text-align: start;
 }
 .feature .card{
@@ -2685,7 +2699,7 @@ ol li{
 .form-label{
   width: 100%;
   text-align: start;
-  font-size: 20px;
+
 
 }
 

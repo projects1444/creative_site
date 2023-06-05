@@ -8,24 +8,31 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Almarai-Bold';
+  src: url('../webfonts/Almarai-Bold.ttf') format('truetype');
+
+}
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Almarai-Bold', sans-serif;
   color: #444;
+  visibility: hidden;
 }
 ul {
   list-style-type: none;
 }
-/* a {
-  color: #4fa6d5;
-}
 
-*/
+/* [data-i18n] {
+  visibility: hidden;
+} */
 a:hover {
 
   text-decoration: none;
 } 
 h1, h2, h3, h4, h5, h6, .font-primary {
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: 'Almarai-Bold', sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -488,7 +495,7 @@ color: #68A4C4;
 color: #68A4C4;
 }
 .mobile-menu .megamenu{
-  height: 320px;
+  height: 280px;
   overflow-x: hidden;
 }
 .mobile-menu li ul li {
@@ -630,7 +637,7 @@ color: #68A4C4;
 }
 @media (max-width:360px) {
   .off-canvas-wrapper .off-canvas-inner-content {
-    width: 280px;
+    width: 265px;
   }
 }
 .off-canvas-wrapper .btn-close-off-canvas {
@@ -2089,6 +2096,9 @@ section {
   width: 80%;
   text-align: center !important;
 }
+.goglecolud{
+  text-align: start;
+}
 .proven-title{
   display: flex;
   flex-direction: column;
@@ -2174,6 +2184,9 @@ border: 0;
 
 }
 @media (max-width:575px) {
+  .goglecolud{
+    text-align: center;
+  }
   .proven .card-body{
     height: 32px;
   }
@@ -2383,7 +2396,7 @@ background: linear-gradient(90deg, rgba(238,210,205,1) 37%, rgba(247,243,237,1) 
 .featured {
   padding: 60px 0;
 }
-.featured p ,.featured h2{
+.featured p ,.featured h4{
   text-align: start;
 }
 .feature .card{
