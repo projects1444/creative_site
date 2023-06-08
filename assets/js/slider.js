@@ -24,10 +24,13 @@ var swiper = new Swiper(".slider-content", {
       520: {
         slidesPerView: 1,
       },
-      650: {
+      768: {
         slidesPerView: 2,
       },
       950: {
+        slidesPerView: 2,
+      },
+      1116: {
         slidesPerView: 3,
       },
     },

@@ -58,12 +58,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 var intlTelInput = {
 
-    preferredCountries: [ "us", "gb" ],
+    preferredCountries: [ "sa", "us" ],
 
     /**
      Array of country objects.
     */
-    countries: [ {
+    countries: [
+        {
+            name: "Saudi Arabia",
+            cca2: "sa",
+            dialCode: "966"
+        }, {
         name: "Afghanistan",
         cca2: "af",
         dialCode: "93"
@@ -909,10 +914,6 @@ var intlTelInput = {
         name: "São Tomé and Príncipe",
         cca2: "st",
         dialCode: "239"
-    }, {
-        name: "Saudi Arabia",
-        cca2: "sa",
-        dialCode: "966"
     }, {
         name: "Senegal",
         cca2: "sn",
