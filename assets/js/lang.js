@@ -3,9 +3,9 @@ var namear = document.getElementsByClassName('name-ar')[0];
  var Emailar = document.getElementsByClassName('email-ar')[0];
  var Phonear = document.getElementsByClassName('phone-ar')[0];
  var Messagear = document.getElementsByClassName('message-ar')[0];
-console.log(lang);
+// console.log(lang);
 if(lang === 'ar'){
-console.log(namear);
+// console.log(namear);
 namear.setAttribute('placeholder', 'ادخل الإسم الثلاثي');
 namear.setAttribute('data-msg', 'ادخل علي الاقل 4 حروف');
 

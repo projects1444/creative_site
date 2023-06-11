@@ -66,6 +66,12 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     stylesheet.setAttribute("href", "assets/css/style.css");
   }
+
+
+
+
+
+
 });
 
 
@@ -375,8 +381,14 @@ const translations = {
     online17:"Online Travel Marketplace",
     online18:"Online Collaboration Marketplace",
     online19:"Dental Imaging Management System",
+    Features:"Features",
+
+
+
+
   },
   ar: {
+    Features:"المميزات",
     online16:"تطبيق ويب للتوظيف",
     online17:"سوق السفر عبر الإنترنت",
     online18:"سوق التعاون عبر الإنترنت",
@@ -499,7 +511,7 @@ const translations = {
     Clients:"العملاء",
     project:"المشاريع",
     Hours_Of_Support:"ساعات الدعم",
-    Hard_Workers:"المجنهدون",
+    Hard_Workers:"المجتهدون",
     Our_Skills:"مهاراتنا",
     skill_desc:"خبرتنا الأساسية هي المطابقة الدقيقة لتكنولوجيا شركتك مع احتياجات عملك. لقد قمنا بتصميم مجموعة من الخدمات لتكون مرنة وسريعة الاستجابة. ينصب تركيزنا على توفير نتائج عالية الجودة ومؤثرة لمؤشراتك الرقمية",
     Tetstimonials:"آراء العملاء",

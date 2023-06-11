@@ -8,8 +8,7 @@
   <title>Contact - Creative Clouds IT</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
   <link rel="stylesheet" href="./assets/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
@@ -330,8 +329,8 @@
                                                                         <div class="icon"><i class='bx bx-briefcase-alt'></i></div>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <a href="" style="padding: 0;height: auto;"data-i18n="Tetstimonials">
-                                                                            Tetstimonials
+                                                                        <a href="team.html" style="padding: 0;height: auto;"   data-i18n="Our_Team">
+                                                                           Tetstimonials
                                                                         </a>
                                                                         <div class="div">
                                                                             <p data-i18n="Tetstimonials_desc">sdasdasafdff</p>
@@ -345,9 +344,9 @@
                                                                         <div class="icon"><i class='bx bx-copy-alt'></i></div>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <a href="" style="padding: 0;height: auto;" data-i18n="Press">
-                                                                          Press
-                                                                        </a>
+                                                                        <a href="services.html" style="padding: 0;height: auto;" data-i18n="services">
+                                                                            Press
+                                                                          </a>
                                                                         <div class="div">
                                                                             <p data-i18n="Press_desc">sdasdasafdff</p>
                                                                         </div>
@@ -783,8 +782,8 @@
                                                 <div class="icon"><i class='bx bx-briefcase-alt'></i></div>
                                             </div>
                                             <div class="text">
-                                                <a href="" style="padding: 0;height: auto;"data-i18n="Tetstimonials">
-                                                    <h4 >Tetstimonials</h4>
+                                                <a href="team.html" style="padding: 0;height: auto;"   data-i18n="Our_Team">
+                                                    <h4>Tetstimonials</h4>
                                                 </a>
                                                 <div class="div">
                                                     <p data-i18n="Tetstimonials_desc">sdasdasafdff</p>
@@ -798,7 +797,7 @@
                                                 <div class="icon"><i class='bx bx-copy-alt'></i></div>
                                             </div>
                                             <div class="text">
-                                                <a href="" style="padding: 0;height: auto;"data-i18n="Press">
+                                                <a href="services.html" style="padding: 0;height: auto;" data-i18n="services">
                                                     <h4 >Press</h4>
                                                 </a>
                                                 <div class="div">
@@ -1067,8 +1066,9 @@
             <p  data-i18n="follow" style="text-align: start;">You can follow our newsletter from here</p>
           </div>
           <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><button type="button" value="Subscribe" data-i18n="Subscribe"></button>></button>
+            <form action="" method="post" id="subscibe-form">
+              <input type="email" name="email" class="form-control" id="subscribe-input"  placeholder="emailadress@mail.com">
+              <button type="submit" id="submit-btn" value="Subscribe" class="subscribe" data-i18n="Subscribe"></button>></button>
             </form>
           </div>
         </div>
@@ -1166,7 +1166,7 @@
       <script src="assets/js/main.js"></script>
  
   
-  
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   
           <!--Jquery js-->
           <script src="assets/js/jquery-3.0.0.min.js"></script>
@@ -1177,6 +1177,7 @@
           <!--Main js-->
           <script src="assets/js/lang.js"></script>
           <script src="assets/js/main2.js"></script>
+          <script  src="assets/js/api.js"></script>
 </body>
 
 </html>

@@ -327,7 +327,7 @@
                                                                         <div class="icon"><i class='bx bx-briefcase-alt'></i></div>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <a href="" style="padding: 0;height: auto;"data-i18n="Tetstimonials">
+                                                                        <a href="team.html" style="padding: 0;height: auto;"  data-i18n="Our_Team">
                                                                             Tetstimonials
                                                                         </a>
                                                                         <div class="div">
@@ -342,9 +342,9 @@
                                                                         <div class="icon"><i class='bx bx-copy-alt'></i></div>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <a href="" style="padding: 0;height: auto;" data-i18n="Press">
-                                                                          Press
-                                                                        </a>
+                                                                        <a href="services.html" style="padding: 0;height: auto;" data-i18n="services">
+                                                                            Press
+                                                                          </a>
                                                                         <div class="div">
                                                                             <p data-i18n="Press_desc">sdasdasafdff</p>
                                                                         </div>
@@ -780,8 +780,8 @@
                                                 <div class="icon"><i class='bx bx-briefcase-alt'></i></div>
                                             </div>
                                             <div class="text">
-                                                <a href="" style="padding: 0;height: auto;"data-i18n="Tetstimonials">
-                                                    <h4 >Tetstimonials</h4>
+                                                <a href="team.html" style="padding: 0;height: auto;"  data-i18n="Our_Team">
+                                                    <h4>Tetstimonials</h4>
                                                 </a>
                                                 <div class="div">
                                                     <p data-i18n="Tetstimonials_desc">sdasdasafdff</p>
@@ -795,7 +795,8 @@
                                                 <div class="icon"><i class='bx bx-copy-alt'></i></div>
                                             </div>
                                             <div class="text">
-                                                <a href="" style="padding: 0;height: auto;"data-i18n="Press">
+                                                
+                                                <a href="services.html" style="padding: 0;height: auto;" data-i18n="services">
                                                     <h4 >Press</h4>
                                                 </a>
                                                 <div class="div">
@@ -932,44 +933,7 @@
     </div>
 </aside>
   <!-- ======= Header ======= -->
-  <!-- <header id="header" class="fixed-top ">
-    <div class="container">
 
-      <div class="logo float-left">
-        <h1 class="text-light"><a href="index.html"><span>Moderna</span></a></h1>
-      </div>
-
-      <nav class="nav-menu float-right d-none d-lg-block">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li class="active"><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-
-    </div>
-  </header> -->
   <!-- End Header -->
 
   <main id="main">
@@ -1114,9 +1078,10 @@
             <p  data-i18n="follow" style="text-align: start;">You can follow our newsletter from here</p>
           </div>
           <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><button type="button" value="Subscribe" data-i18n="Subscribe"></button>></button>
-            </form>
+            <form action="" method="post" id="subscibe-form">
+                <input type="email" name="email" class="form-control" id="subscribe-input"  placeholder="emailadress@mail.com">
+                <button type="submit" id="submit-btn" value="Subscribe" class="subscribe" data-i18n="Subscribe"></button>></button>
+              </form>
           </div>
         </div>
       </div>
@@ -1219,6 +1184,8 @@
       <script src="assets/js/smooth-scroll.js"></script>
       <!--Main js-->
       <script src="assets/js/main2.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script  src="assets/js/api.js"></script>
 
 </body>
 

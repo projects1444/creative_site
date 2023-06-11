@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
    font-weight: bold;
 }
 .text p{
-  font-size: 13px;
+  font-size: 12px;
 }
 .text h4 ,.text p{
   text-align: start;
@@ -278,7 +278,7 @@ color: #68A4C4;
 }
 .main-menu ul li ul.dropdown li a {
     color: #666666;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     padding: 10px 15px;
     text-transform: capitalize;
@@ -631,7 +631,7 @@ color: #68A4C4;
 .off-canvas-wrapper .off-canvas-overlay {
     background-color: rgba(0, 0, 0, 0.4);
     content: '';
-    cursor: url("../img/icon/cancel.png"), auto;
+    /* cursor: url("../img/icon/cancel.png"), auto; */
     position: absolute;
     left: 0;
     top: 0;
@@ -1394,7 +1394,7 @@ float: left !important;
 
 @media (max-width: 768px) {
   #hero h2 {
-    font-size: 28px;
+    font-size: 23px;
   }
   #hero::after {
     width: 180%;
@@ -1479,7 +1479,10 @@ section {
 .section-title p {
   margin-bottom: 0;
 }
-
+.test_desc{
+  font-size: 18px;
+  width: 80%;
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -1825,7 +1828,9 @@ section {
   font-weight: 400;
   font-size: 26px;
 }
-
+.spa{
+  font-size: 14px;
+}
 .about ul {
   list-style: none;
   padding: 0;
@@ -1836,7 +1841,7 @@ section {
 }
 
 .about ul i {
-  font-size: 20px;
+  font-size: 17px;
   padding-right: 4px;
   color: #68A4C4;
 }
@@ -1866,6 +1871,10 @@ section {
 --------------------------------------------------------------*/
 .skills {
   padding: 60px 0;
+}
+.skill_desc{
+  font-size: 18px;
+  width: 80%;
 }
 
 .skills .progress {
@@ -3105,7 +3114,16 @@ ol li{
   }
 }
 
+.ol-desc{
+  padding-inline-start: 15px;
+   width: 80%;
+}
+@media (max-width:992px) {
+  .ol-desc{
 
+     width: 100%;
+  }
+}
 
 
 /* end contact form */
@@ -3536,6 +3554,7 @@ ol li {
   font-size: 14px;
   line-height: 26px;
   color: #666;
+  margin: 0 5px;
 }
 
 .team .member:hover .social {
@@ -3543,7 +3562,9 @@ ol li {
   opacity: 1;
   transition: bottom ease-in-out 0.4s;
 }
-
+.social a {
+  cursor: pointer;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -4250,6 +4271,7 @@ ol li {
   padding: 6px 10px;
   position: relative;
   border-radius: 50px;
+  display: flex;
 }
 
 #footer .footer-newsletter form input[type="email"] {
@@ -4257,8 +4279,14 @@ ol li {
   padding: 4px;
   width: calc(100% - 100px);
 }
+#footer .footer-newsletter form input[type="email"]:focus{
+  box-shadow: none;
+}
+#footer .footer-newsletter form input[type="email"]::placeholder{
+  font-size: 12px;
+}
 
-#footer .footer-newsletter form button[type="button"] {
+#footer .footer-newsletter form button[type="submit"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -4273,8 +4301,13 @@ ol li {
   transition: 0.3s;
   border-radius: 50px;
 }
-
-#footer .footer-newsletter form input[type="button"]:hover {
+#footer .footer-newsletter form button[type="submit"]:focus{
+  outline: 0;
+}
+.subscribe:hover{
+  background: #2d3ae9 !important;
+}
+#footer .footer-newsletter form input[type="submit"]:hover {
   background: #468db3;
 }
 

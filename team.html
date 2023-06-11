@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="./assets/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="images/tab-icon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -330,7 +330,7 @@
                                                                         <div class="icon"><i class='bx bx-briefcase-alt'></i></div>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <a href="" style="padding: 0;height: auto;"data-i18n="Tetstimonials">
+                                                                        <a href="team.html" style="padding: 0;height: auto;"  class="active" data-i18n="Our_Team">
                                                                             Tetstimonials
                                                                         </a>
                                                                         <div class="div">
@@ -345,9 +345,9 @@
                                                                         <div class="icon"><i class='bx bx-copy-alt'></i></div>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <a href="" style="padding: 0;height: auto;" data-i18n="Press">
-                                                                          Press
-                                                                        </a>
+                                                                        <a href="services.html" style="padding: 0;height: auto;" data-i18n="services">
+                                                                            Press
+                                                                          </a>
                                                                         <div class="div">
                                                                             <p data-i18n="Press_desc">sdasdasafdff</p>
                                                                         </div>
@@ -783,8 +783,8 @@
                                                 <div class="icon"><i class='bx bx-briefcase-alt'></i></div>
                                             </div>
                                             <div class="text">
-                                                <a href="" style="padding: 0;height: auto;"data-i18n="Tetstimonials">
-                                                    <h4 >Tetstimonials</h4>
+                                                <a href="team.html" style="padding: 0;height: auto;"  class="active" data-i18n="Our_Team">
+                                                    <h4>Tetstimonials</h4>
                                                 </a>
                                                 <div class="div">
                                                     <p data-i18n="Tetstimonials_desc">sdasdasafdff</p>
@@ -798,7 +798,7 @@
                                                 <div class="icon"><i class='bx bx-copy-alt'></i></div>
                                             </div>
                                             <div class="text">
-                                                <a href="" style="padding: 0;height: auto;"data-i18n="Press">
+                                                <a href="services.html" style="padding: 0;height: auto;" data-i18n="services">
                                                     <h4 >Press</h4>
                                                 </a>
                                                 <div class="div">
@@ -957,9 +957,9 @@
     <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
       <div class="container">
 
-        <div class="row">
+        <div class="row" id="members-container" >
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="member">
               <div class="member-img">
                 <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
@@ -971,10 +971,10 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Animi est delectus alias quam repellendus nihil nobis dolor. Est sapiente occaecati et dolore. Omnis aut ut nesciunt explicabo qui. Eius nam deleniti ut omnis repudiandae perferendis qui. Neque non quidem sit sed pariatur quia modi ea occaecati. Incidunt ea non est corporis in.</p>
-              </div>
+                <h4 style="text-align: start;">Walter White</h4>
+                <span style="text-align: start;">Chief Executive Officer</span>
+                <p style="text-align: start;">Animi est delectus alias quam repellendus nihil nobis dolor. Est sapiente occaecati et dolore. Omnis aut ut nesciunt explicabo qui. Eius nam deleniti ut omnis repudiandae perferendis qui. Neque non quidem sit sed pariatur quia modi ea occaecati. Incidunt ea non est corporis in.</p>
+              </div >
             </div>
           </div>
 
@@ -1071,7 +1071,7 @@
                 <p>Amet labore numquam corrupti est. Nostrum amet voluptas consectetur dolor voluptatem architecto distinctio consequuntur eligendi. Quam impedit enim aut nesciunt aut dicta quam exercitationem. Reprehenderit exercitationem magnam. Ullam similique ut voluptas totam nobis porro accusamus nulla omnis.</p>
               </div>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -1091,9 +1091,10 @@
             <p  data-i18n="follow" style="text-align: start;">You can follow our newsletter from here</p>
           </div>
           <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><button type="button" value="Subscribe" data-i18n="Subscribe"></button>></button>
-            </form>
+            <form action="" method="post" id="subscibe-form">
+                <input type="email" name="email" class="form-control" id="subscribe-input"  placeholder="emailadress@mail.com">
+                <button type="submit" id="submit-btn" value="Subscribe" class="subscribe" data-i18n="Subscribe"></button>></button>
+              </form>
           </div>
         </div>
       </div>
@@ -1195,6 +1196,8 @@
       <script src="assets/js/smooth-scroll.js"></script>
       <!--Main js-->
       <script src="assets/js/main2.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script  src="assets/js/api.js"></script>
 
 </body>
 

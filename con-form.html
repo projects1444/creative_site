@@ -367,7 +367,7 @@
                                                                             <div class="icon"><i class='bx bx-briefcase-alt'></i></div>
                                                                         </div>
                                                                         <div class="text">
-                                                                            <a href="" style="padding: 0;height: auto;"data-i18n="Tetstimonials">
+                                                                            <a href="team.html" style="padding: 0;height: auto;"  data-i18n="Our_Team">
                                                                                 Tetstimonials
                                                                             </a>
                                                                             <div class="div">
@@ -382,9 +382,9 @@
                                                                             <div class="icon"><i class='bx bx-copy-alt'></i></div>
                                                                         </div>
                                                                         <div class="text">
-                                                                            <a href="" style="padding: 0;height: auto;" data-i18n="Press">
-                                                                              Press
-                                                                            </a>
+                                                                            <a href="services.html" style="padding: 0;height: auto;" data-i18n="services">
+                                                                                Press
+                                                                              </a>
                                                                             <div class="div">
                                                                                 <p data-i18n="Press_desc">sdasdasafdff</p>
                                                                             </div>
@@ -820,8 +820,8 @@
                                                     <div class="icon"><i class='bx bx-briefcase-alt'></i></div>
                                                 </div>
                                                 <div class="text">
-                                                    <a href="" style="padding: 0;height: auto;"data-i18n="Tetstimonials">
-                                                        <h4 >Tetstimonials</h4>
+                                                    <a href="team.html" style="padding: 0;height: auto;"   data-i18n="Our_Team">
+                                                        <h4>Tetstimonials</h4>
                                                     </a>
                                                     <div class="div">
                                                         <p data-i18n="Tetstimonials_desc">sdasdasafdff</p>
@@ -835,7 +835,7 @@
                                                     <div class="icon"><i class='bx bx-copy-alt'></i></div>
                                                 </div>
                                                 <div class="text">
-                                                    <a href="" style="padding: 0;height: auto;"data-i18n="Press">
+                                                    <a href="services.html" style="padding: 0;height: auto;" data-i18n="services">
                                                         <h4 >Press</h4>
                                                     </a>
                                                     <div class="div">
@@ -993,7 +993,7 @@
                             </div>
                             <div>
                                 <h3 data-i18n="whats" style="text-align: start;">what's next?</h3>
-                                <ol style="padding-inline-start: 15px; width: 80%;">
+                                <ol  class="ol-desc">
                                     <li  data-i18n="taya">Coffee</li>
                                     <li  data-i18n="NDA"></li>
                                     <li  data-i18n="custom_soft">Milk</li>
@@ -1027,7 +1027,7 @@
                                 <div class="validate"></div>
                               </div>
                               <div class="col-md-6 form-group">
-                              <select class="form-control" aria-label="Default select example">
+                              <select class="form-control" aria-label="Default select example" style="font-size: 12px;">
                                 <option selected data-i18n="hear"></option>
                                 <option value="1" data-i18n="Clutch">Clutch</option>
                                 <option value="2" data-i18n="Linedin">Linedin</option>
@@ -1041,7 +1041,7 @@
                               </select>
                               </div>
                               <div class="col-md-6 form-group">
-                                <select class="form-control" aria-label="Default select example">
+                                <select class="form-control" aria-label="Default select example"style="font-size: 12px;">
                                   <option selected data-i18n="budget">Open this select menu</option>
                                   <option value="1">$25000 - $50000</option>
                                   <option value="2">$50000 - $100000</option>
@@ -1095,9 +1095,10 @@
                 <p  data-i18n="follow" style="text-align: start;">You can follow our newsletter from here</p>
               </div>
               <div class="col-lg-6">
-                <form action="" method="post">
-                  <input type="email" name="email"><button type="button" value="Subscribe" data-i18n="Subscribe"></button>></button>
-                </form>
+                <form action="" method="post" id="subscibe-form">
+                    <input type="email" name="email" class="form-control" id="subscribe-input"  placeholder="emailadress@mail.com">
+                    <button type="submit" id="submit-btn" value="Subscribe" class="subscribe" data-i18n="Subscribe"></button>></button>
+                  </form>
               </div>
             </div>
           </div>
@@ -1213,6 +1214,8 @@
               <script src="assets/js/smooth-scroll.js"></script>
               <!--Main js-->
               <script src="assets/js/main2.js"></script>
+              <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+              <script  src="assets/js/api.js"></script>
 
 </body>
 
