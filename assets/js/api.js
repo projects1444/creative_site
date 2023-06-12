@@ -95,8 +95,8 @@ headers.append('lang', `${lang}`);
     /* contact form */
     const contactfrom = document.getElementById("contactfrom");
     const submitbtn = document.getElementById("submitbtnt");
-
-    contactfrom.addEventListener('submit',function(e){
+    if(contactfrom){
+      contactfrom.addEventListener('submit',function(e){
         e.preventDefault();
         const formdata = new FormData(this);
         console.log(formdata);
@@ -158,6 +158,8 @@ headers.append('lang', `${lang}`);
     });
 
     })
+    }
+   
 
 /* end contact form */
 
