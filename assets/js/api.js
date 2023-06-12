@@ -23,6 +23,8 @@ headers.append('lang', `${lang}`);
 //       console.error('Error:', error);
 //     });
 
+
+
     /* footer subscribe form */
         const myfrom = document.getElementById("subscibe-form");
         const subscibeInput = document.getElementById("subscribe-input");
@@ -81,6 +83,105 @@ headers.append('lang', `${lang}`);
         })
 
     /* end footer subscribe form */
+
+
+
+
+
+
+
+
+
+    /* contact form */
+    const contactfrom = document.getElementById("contactfrom");
+    const submitbtn = document.getElementById("submitbtnt");
+
+    contactfrom.addEventListener('submit',function(e){
+        e.preventDefault();
+        const formdata = new FormData(this);
+        console.log(formdata);
+        console.log(formdata.get('service_id'));
+        
+        fetch("https://testam.info/creativecloudsit/api/contact_us", {
+        method: 'POST',
+        headers: headers,
+        body:formdata
+    }).then(response => response.json())
+    .then(res => {
+    console.log(res);
+        if(res.status == 201){
+            if(lang == "ar"){
+            
+                swal({
+                    title: "أحسنت !",
+                    text: "تم الارسال بنجاح",
+                    icon: "success",
+                    buttons: {
+                        confirm: "تأكيد"
+                    }
+                });
+            }else{
+                swal("Good job!", `${res.msg}`, "success");
+            
+            }
+             document.getElementById("contactfrom").reset(); // Reset the form
+        }else if(res.status == false){
+           
+          if(lang == "ar"){
+
+            
+            if(formdata.get('website') && res.message.website){
+              swal({
+                title: "عذراً !",
+                text: "يجب ألا يزيد حقل الموقع الالكتروني عن 55 حرفًا.",
+                icon: "error",
+                buttons: {
+                    confirm: "موافق"
+                }
+            });
+            }
+               
+            }else{
+              if(formdata.get('website') && res.message.website){
+                swal("Sorry !", `${res.message.website}`, "error");
+              }
+            }
+            
+            
+        }
+  
+    
+    })
+    .catch(error => {
+    
+        console.error('Error:', error);
+    });
+
+    })
+
+/* end contact form */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  /* Team */

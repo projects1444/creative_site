@@ -3613,7 +3613,7 @@ ol li {
   color: red;
   margin: 0 0 15px 0;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .contact .php-email-form .error-message {
@@ -3688,6 +3688,9 @@ ol li {
 .contact .php-email-form button[type="submit"]:hover {
   background: #8dbad2;
 }
+.contact .php-email-form button[type="submit"]:focus {
+  outline: none;
+  }
 
 @-webkit-keyframes animate-loading {
   0% {
@@ -4301,6 +4304,23 @@ ol li {
   transition: 0.3s;
   border-radius: 50px;
 }
+ @media (max-width:500px) {
+  #footer .footer-newsletter form button[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 12px;
+  padding: 0 20px;
+  margin: 3px;
+  background: #68A4C4;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+  }
+} 
 #footer .footer-newsletter form button[type="submit"]:focus{
   outline: 0;
 }

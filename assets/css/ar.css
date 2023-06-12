@@ -1019,9 +1019,9 @@ button {
     padding: 20px 0;
     background: #1e4356;
   }
-  #header.header-transparent {
-    /* background: none; */
-  }
+  /* #header.header-transparent {
+    background: none;
+  } */
   
   .hire2{
     font-size: 10px;
@@ -2444,6 +2444,9 @@ width: 165px;
 .p{
   width: 100px;
   text-align: center;
+  
+  font-size: 15px;
+
 }
 .p2{
  
@@ -3659,7 +3662,7 @@ ol li{
     color: red;
     margin: 5px 0 15px 0;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 12px;
     text-align: start;
   }
   
@@ -3734,7 +3737,9 @@ ol li{
   .contact .php-email-form button[type="submit"]:hover {
     background: #8dbad2;
   }
-  
+  .contact .php-email-form button[type="submit"]:focus {
+  outline: none;
+  }
   @-webkit-keyframes animate-loading {
     0% {
       transform: rotate(0deg);
@@ -4347,6 +4352,24 @@ ol li{
     color: #fff;
     transition: 0.3s;
     border-radius: 50px;
+  }
+  @media (max-width:500px) {
+    #footer .footer-newsletter form button[type="submit"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 70%;
+      bottom: 0;
+      border: 0;
+      background: none;
+      font-size: 14px;
+      padding: 0 20px;
+      margin: 3px;
+      background: #68A4C4;
+      color: #fff;
+      transition: 0.3s;
+      border-radius: 50px;
+    }
   }
   #footer .footer-newsletter form button[type="submit"]:focus{
     outline: 0;

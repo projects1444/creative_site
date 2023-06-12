@@ -985,59 +985,59 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="" method="post" role="form" id="contactfrom" class="php-email-form">
               <div class="form-row">
+
                 <div class="col-md-6 form-group">
                     <label for="name" class="form-label"  data-i18n="contact2_name">Your Name</label>
-               
-                  <input type="text" name="name" class="form-control name-ar" id="name"  data-rule="minlen:4"  />
-                  
+                    <input type="text" name="name" class="form-control name-ar" id="name"  data-rule="minlen:8"  />
                   <div class="validate"></div>
                 </div>
+
                 <div class="col-md-6 form-group">
-                    <label for="name" class="form-label"  data-i18n="Email2">Email</label>
-               
-                  <input type="email" class="form-control email-ar" name="email" id="email" placeholder="emailadress@mail.com" data-rule="email" data-msg="" />
-                 
+                    <label for="email" class="form-label"  data-i18n="Email2">Email</label>
+                    <input type="email" class="form-control email-ar" name="email" id="email" data-rule="required" placeholder="Example@mail.com"  data-msg="" />
                   <div class="validate"></div>
                 </div>
+
                 <div class="col-md-6 form-group">
-                    <label for="name" class="form-label"  data-i18n="contact_phone2">phone</label>             
-                 
-                    <input type="text" name="name" class="form-control phone-ar" id="phone"  data-rule="minlen:10"   data-msg="" />
-                    
+                    <label for="phone" class="form-label"  data-i18n="contact_phone2">phone</label>             
+                    <input type="text" name="phone" class="form-control phone-ar" id="phone"  data-rule="minlen:10"   data-msg="" />
                     <div class="validate"></div>
-                  </div>
+                </div>
+
                   <div class="col-md-6 form-group">
-                    <label for="name" class="form-label"  data-i18n="choose_service">phone</label> 
-                    <select class="form-control" aria-label="Default select example">
-                      <option selected data-i18n="choose_service2"></option>
-                      <option value="1" data-i18n="Software_development">Software_development</option>
-                      <option value="2" data-i18n="graphic_design">graphic_design</option>
-                      <option value="3" data-i18n="E_Marketing">E_Marketing</option>
-                    </select>
-                    </div>
+                        <label for="service_id" class="form-label"  data-i18n="choose_service">choose_service</label> 
+                        <select class="form-control service-ar" name="service_id" data-rule="required" data-msg="asdaf"  aria-label="Default select example"  >
+                        <option value="" data-i18n="choose_service2"></option>
+                        <option value="5" data-i18n="Software_development">Software_development</option>
+                        <option value="8" data-i18n="graphic_design">graphic_design</option>
+                        <option value="7" data-i18n="E_Marketing">E_Marketing</option>
+                        </select>
+                        <div class="validate"></div>
+                  </div>
               </div>
             
             
               <div class="form-group">
-                <label for="name" class="form-label"  data-i18n="write_message">phone</label>  
+                    <label for="msg" class="form-label"  data-i18n="write_message">write_message</label>  
+                    <textarea class="form-control message-ar" name="msg" rows="5" data-rule="required" ></textarea>
+                <div class="validate"></div>
+              </div>
 
-                <textarea class="form-control message-ar" name="message" rows="5" data-rule="required" ></textarea>
-                
-                <div class="validate"></div>
-              </div>
                 <div class="form-group">
-                    <label for="name" class="form-label"  data-i18n="website">website</label> 
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="www.websitename.com"   />
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit"data-i18n="Send_Message">Send Message</button></div>
+                     <label for="website" class="form-label"  data-i18n="website">website</label> 
+                     <input type="text" class="form-control site-ar" name="website" id="subject" placeholder="www.websitename.com"  data-rule="required"   />
+                     <div class="validate"></div>
+                </div>
+
+              <!-- <div class="mb-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div> -->
+
+              <div class="text-center"><button type="submit"data-i18n="Send_Message" id="submitbtnt">Send Message</button></div>
             </form>
           </div>
 
@@ -1067,7 +1067,7 @@
           </div>
           <div class="col-lg-6">
             <form action="" method="post" id="subscibe-form">
-              <input type="email" name="email" class="form-control" id="subscribe-input"  placeholder="emailadress@mail.com">
+              <input type="email" name="email" class="form-control" id="subscribe-input"  placeholder="Example@mail.com">
               <button type="submit" id="submit-btn" value="Subscribe" class="subscribe" data-i18n="Subscribe"></button>></button>
             </form>
           </div>
