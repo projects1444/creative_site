@@ -84,14 +84,6 @@ headers.append('lang', `${lang}`);
 
     /* end footer subscribe form */
 
-
-
-
-
-
-
-
-
     /* contact form */
     const contactfrom = document.getElementById("contactfrom");
     const submitbtn = document.getElementById("submitbtnt");
@@ -164,28 +156,6 @@ headers.append('lang', `${lang}`);
 /* end contact form */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  /* Team */
 
 
@@ -254,26 +224,51 @@ fetch("https://testam.info/creativecloudsit/api/teams", {
        phoneParagraph.style.textAlign = "start";
  
        // Append the elements to their respective parent elements
-       memberImgDiv.appendChild(memberImg);
-       memberImgDiv.appendChild(socialDiv);
-
+       if(memberImgDiv){
+        memberImgDiv.appendChild(memberImg);
+        memberImgDiv.appendChild(socialDiv);
+       }
+   
+      if(socialDiv){
         socialDiv.appendChild(a1);
         socialDiv.appendChild(a2);
         socialDiv.appendChild(a3);
         socialDiv.appendChild(a4);
-
-        a1.appendChild(i1);
-        a2.appendChild(i2);
-        a3.appendChild(i3);
-        a4.appendChild(i4);
+      }
+       
+        if(a1){
+          a1.appendChild(i1);
+        }
+        if(a2){
+          a2.appendChild(i2);
+        }
+        if(a3){
+          a3.appendChild(i3);
+        }
+        if(a4){
+          a4.appendChild(i4);
+        }
+       
+        // a2.appendChild(i2);
+        // a3.appendChild(i3);
+        // a4.appendChild(i4);
  
-       memberInfoDiv.appendChild(nameHeading);
-       memberInfoDiv.appendChild(jobSpan);
-       memberInfoDiv.appendChild(phoneParagraph);
-       memberInnerDiv.appendChild(memberImgDiv);
-       memberInnerDiv.appendChild(memberInfoDiv);
-       memberDiv.appendChild(memberInnerDiv);
-       membersContainer.appendChild(memberDiv);
+        if(memberInfoDiv){
+          memberInfoDiv.appendChild(nameHeading);
+          memberInfoDiv.appendChild(jobSpan);
+          memberInfoDiv.appendChild(phoneParagraph);
+        }
+        if(memberInnerDiv){
+          memberInnerDiv.appendChild(memberImgDiv);
+          memberInnerDiv.appendChild(memberInfoDiv);
+        }
+      if(memberDiv){
+        memberDiv.appendChild(memberInnerDiv);
+      }
+      if(membersContainer){
+        membersContainer.appendChild(memberDiv);
+      }
+      
      });
     })
     .catch(error => {
@@ -323,13 +318,14 @@ fetch("https://testam.info/creativecloudsit/api/services", {
     linkA.textContent = item.name;
     descriptionP.textContent = item.description;
     // Append the elements to the container
-    ServicesContainer.appendChild(colDiv);
-    colDiv.appendChild(iconBoxDiv);
-    iconBoxDiv.appendChild(iconDiv);
-    iconDiv.appendChild(iconI);
-    iconBoxDiv.appendChild(titleH4);
-    titleH4.appendChild(linkA);
-    iconBoxDiv.appendChild(descriptionP);
+    if(ServicesContainer){ ServicesContainer.appendChild(colDiv);}
+    if(colDiv){ colDiv.appendChild(iconBoxDiv);}
+    if(iconBoxDiv){iconBoxDiv.appendChild(iconDiv);}
+    if(iconDiv){iconDiv.appendChild(iconI);}
+    if(iconBoxDiv){ iconBoxDiv.appendChild(titleH4);}
+    if(titleH4){titleH4.appendChild(linkA);}
+    if(iconBoxDiv){iconBoxDiv.appendChild(descriptionP);}
+    
 
     // Set the data from the API
     linkA.textContent = item.name;
@@ -356,17 +352,19 @@ fetch("https://testam.info/creativecloudsit/api/counter", {
     .then(response => response.json())
     .then(res => {
      let  Counterdata = res.data;
+   
     
     
     // Update the counter values
     document.getElementById("counter1").textContent = Counterdata.counter1;
     document.getElementById("counter2").textContent = Counterdata.counter2;
     document.getElementById("counter3").textContent = Counterdata.counter3;
-
+    document.getElementById("counter4").textContent = Counterdata.counter4;
     // Update the counter labels
     document.getElementById("counter1Label").textContent = Counterdata.title1;
     document.getElementById("counter2Label").textContent = Counterdata.title2;
     document.getElementById("counter3Label").textContent = Counterdata.title3;
+    document.getElementById("counter4Label").textContent = Counterdata.title4;
         
 
   
@@ -425,14 +423,20 @@ fetch("https://testam.info/creativecloudsit/api/features", {
         description.textContent = item.description;
         description.style.textAlign = "start";
 
-
-        contentDiv.appendChild(heading);
-        contentDiv.appendChild(description);
-
-        featureDiv.appendChild(imageDiv);
-        featureDiv.appendChild(contentDiv);
-
-        FeatureContainer.appendChild(featureDiv);
+        if(contentDiv){
+          contentDiv.appendChild(heading);
+          contentDiv.appendChild(description);
+        }
+  
+        if(featureDiv){
+          featureDiv.appendChild(imageDiv);
+          featureDiv.appendChild(contentDiv);
+        }
+      
+        if(FeatureContainer){
+          FeatureContainer.appendChild(featureDiv);
+        }
+     
     });
     
     })
@@ -488,15 +492,24 @@ fetch("https://testam.info/creativecloudsit/api/sliders", {
     anchor.textContent = item.btn_text2;
   
     // Append the heading, description, and anchor to the carousel container div
-    carouselContainerDiv.appendChild(heading);
-    carouselContainerDiv.appendChild(description);
-    carouselContainerDiv.appendChild(anchor);
+    if(carouselContainerDiv){
+      carouselContainerDiv.appendChild(heading);
+      carouselContainerDiv.appendChild(description);
+      carouselContainerDiv.appendChild(anchor);
+    }
+
   
     // Append the carousel container div to the carousel item div
-    carouselItemDiv.appendChild(carouselContainerDiv);
+    if(carouselItemDiv){
+
+      carouselItemDiv.appendChild(carouselContainerDiv);
+    }
   
     // Append the carousel item div to the parent element
-    parentElement.appendChild(carouselItemDiv);
+    if(parentElement){
+
+      parentElement.appendChild(carouselItemDiv);
+    }
   });
 
      // Add the carousel control buttons
@@ -521,8 +534,10 @@ fetch("https://testam.info/creativecloudsit/api/sliders", {
         `;
 
         // Append the carousel control buttons to the parent element
-        parentElement.appendChild(carouselControlPrev);
-        parentElement.appendChild(carouselControlNext); 
+        if(parentElement){
+          parentElement.appendChild(carouselControlPrev);
+          parentElement.appendChild(carouselControlNext); 
+        }
     })
     .catch(error => {
      
@@ -532,52 +547,7 @@ fetch("https://testam.info/creativecloudsit/api/sliders", {
 
 /* End Sliders */
 
-/* About us */
-
-
- 
-fetch("https://testam.info/creativecloudsit/api/about", {
-    method: 'GET',
-    headers: headers
-  })
-    .then(response => response.json())
-    .then(res => {
-        let Aboutdata = res.data;
-        
-       
-
-        // Access the required properties from the API response
-        const testimonialsTitle = Aboutdata.tetstimonials_title;
-        const testimonialsDescription =  Aboutdata.tetstimonials_description;
-
-
-        // Update the HTML content of the elements
-        const imgsrc =  document.querySelector('.img-src');
-        const FeatureTitle = document.querySelector('.Features-Title');
-        const FeatureDescription = document.querySelector('.Features-desc');
-
-        const skillstitle = document.querySelector('.skills-title');
-        const skillsdescription = document.querySelector('.skill_desc');
-
-        const titleElement = document.querySelector('.Tetstimonials-Title');
-        const descriptionElement = document.querySelector('.Tetstimonials-desc');
-
-        // Update the content of the elements with the retrieved data
-       
-        // FeatureTitle.textContent = Aboutdata.features_title;
-        // FeatureDescription.textContent = Aboutdata.features_description;
-
-        // skillstitle.textContent = Aboutdata.skills_title;
-        // skillsdescription.textContent = Aboutdata.skills_description;
-
-        titleElement.textContent  = testimonialsTitle;
-        descriptionElement.textContent  = testimonialsDescription;
-        imgsrc.src =  Aboutdata.image;
-    })
-    .catch(error => {
-     
-      console.error('Error:', error);
-    });
+    /* About us */
 
     fetch("https://testam.info/creativecloudsit/api/about", {
         method: 'GET',
@@ -586,41 +556,190 @@ fetch("https://testam.info/creativecloudsit/api/about", {
         .then(response => response.json())
         .then(res => {
             let Aboutdata = res.data;
+            
+      
+            // Access the required properties from the API response
+            const testimonialsTitle = Aboutdata.tetstimonials_title;
+            const testimonialsDescription =  Aboutdata.tetstimonials_description;
+
+
             // Update the HTML content of the elements
-        
-            const skillstitle = document.querySelector('.skills-title');
-            const skillsdescription = document.querySelector('.skill_desc');
-            // Update the content of the elements with the retrieved data
-          
-            skillstitle.textContent = Aboutdata.skills_title;
-            skillsdescription.textContent = Aboutdata.skills_description;
-    
+            const imgsrc =  document.querySelector('.img-src');
+            const titleElement = document.querySelector('.Tetstimonials-Title');
+            const descriptionElement = document.querySelector('.Tetstimonials-desc');
+
+
+            titleElement.textContent  = testimonialsTitle;
+            descriptionElement.textContent  = testimonialsDescription;
+            imgsrc.src =  Aboutdata.image;
+
+            const def1 =document.getElementById("defintion");
+            if(def1){
+              def1.textContent = Aboutdata.description;
+            }
+            const def2 =document.getElementById("defintion2");
+            if(def2){
+              def2.textContent = Aboutdata.mini_description;
+            }
+            const li1 =document.getElementById("li1");
+            if(li1){
+              li1.textContent = Aboutdata.point1;
+            }
+            const li2 =document.getElementById("li2");
+            if(li2){
+              li2.textContent = Aboutdata.point2;
+            }
+            const li3 =document.getElementById("li3");
+            if(li3){
+              li3.textContent = Aboutdata.point3;
+            }
+
         })
         .catch(error => {
-         
+        
           console.error('Error:', error);
         });
+
         fetch("https://testam.info/creativecloudsit/api/about", {
-    method: 'GET',
-    headers: headers
-  })
-    .then(response => response.json())
-    .then(res => {
-        let Aboutdata = res.data;
-        // Update the HTML content of the elements
-        const FeatureTitle = document.querySelector('.Features-Title');
-        const FeatureDescription = document.querySelector('.Features-desc');
+            method: 'GET',
+            headers: headers
+          })
+            .then(response => response.json())
+            .then(res => {
+                let Aboutdata = res.data;
+                // Update the HTML content of the elements
+            
+                const skillstitle = document.querySelector('.skills-title');
+                const skillsdescription = document.querySelector('.skill_desc');
+              
+                // Update the content of the elements with the retrieved data
+              
+                skillstitle.textContent = Aboutdata.skills_title;
+                skillsdescription.textContent = Aboutdata.skills_description;
+             
+            })
+            .catch(error => {
+            
+              console.error('Error:', error);
+            });
+            fetch("https://testam.info/creativecloudsit/api/about", {
+        method: 'GET',
+        headers: headers
+      })
+        .then(response => response.json())
+        .then(res => {
+            let Aboutdata = res.data;
+            // Update the HTML content of the elements
+            const FeatureTitle = document.querySelector('.Features-Title');
+            const FeatureDescription = document.querySelector('.Features-desc');
 
-        // Update the content of the elements with the retrieved data
+            // Update the content of the elements with the retrieved data
+          if(FeatureTitle){
+
+            FeatureTitle.textContent = Aboutdata.features_title;
+          }
+          if(FeatureDescription){
+
+            FeatureDescription.textContent = Aboutdata.features_description;
+          }
+      
+        })
+        .catch(error => {
+        
+          console.error('Error:', error);
+        });
+    /* End  About us */
+
+
+      /* Tetstimonials */
+
+      fetch("https://testam.info/creativecloudsit/api/tetstimonials", {
+          method: 'GET',
+          headers: headers
+        })
+          .then(response => response.json())
+          .then(res => {
+            let apiData = res.data;
+            console.log(apiData);
+        
+            document.getElementById('img1').src = apiData[0].image;
+            document.getElementById('name1').textContent = apiData[0].name;
+            document.getElementById('title1').textContent = apiData[0].title;
+            document.getElementById('desc1').textContent = apiData[0].description;
        
-        FeatureTitle.textContent = Aboutdata.features_title;
-        FeatureDescription.textContent = Aboutdata.features_description;
-  
-    })
-    .catch(error => {
-     
-      console.error('Error:', error);
-    });
-/* End  About us */
 
+            document.getElementById('img2').src = apiData[1].image;
+            document.getElementById('name2').textContent = apiData[1].name;
+            document.getElementById('title2').textContent = apiData[1].title;
+            document.getElementById('desc2').textContent = apiData[1].description;
+
+       
+            document.getElementById('img3').src = apiData[2].image;
+            document.getElementById('name3').textContent = apiData[2].name;
+            document.getElementById('title3').textContent = apiData[2].title;
+            document.getElementById('desc3').textContent = apiData[2].description;
+
+       
+            document.getElementById('img4').src = apiData[3].image;
+            document.getElementById('name4').textContent = apiData[3].name;
+            document.getElementById('title4').textContent = apiData[3].title;
+            document.getElementById('desc4').textContent = apiData[3].description;
+
+            document.getElementById('img5').src = apiData[4].image;
+            document.getElementById('name5').textContent = apiData[4].name;
+            document.getElementById('title5').textContent = apiData[4].title;
+            document.getElementById('desc5').textContent = apiData[4].description;
+            // console.log(apiData[2]);
+
+         
+
+
+         
+          })
+          .catch(error => {
+          
+            console.error('Error:', error);
+          });
+      
+      /* End Tetstimonials */
+ 
+
+      /* why use us */
+
+
+      fetch("https://testam.info/creativecloudsit/api/whyour", {
+          method: 'GET',
+          headers: headers
+        })
+          .then(response => response.json())
+          .then(res => {
+            whydata = res.data;
+            const firstTitleElement = document.getElementById("first-title");
+            const secondTitleElement = document.getElementById("second-title");
+            const firstDescriptionElement = document.getElementById("first-description");
+            const secondDescriptionElement = document.getElementById("second-description");
+            const fimage = document.getElementById("Fimage");
+            fimage.src = whydata.first_image;
+            if(firstTitleElement){
+              firstTitleElement.textContent = whydata.first_title;
+            }
+            if(secondTitleElement){
+              secondTitleElement.textContent = whydata.second_title;
+            }
+            if(firstDescriptionElement){
+              firstDescriptionElement.textContent = whydata.first_description;
+            }
+            if(secondDescriptionElement){
+              secondDescriptionElement.textContent = whydata.second_description;
+            }
+         
+          })
+          .catch(error => {
+          
+            console.error('Error:', error);
+          });
+      /* End why use us */
+
+
+      
 

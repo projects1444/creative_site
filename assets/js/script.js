@@ -382,12 +382,23 @@ const translations = {
     online18:"Online Collaboration Marketplace",
     online19:"Dental Imaging Management System",
     Features:"Features",
-
-
+    name3:"mostafa ali",
+    title3:"software teste",
+    name4:"Shimaa Elhussien",
+    title4:"web developer",
+    name5:"mohamed ahmed",
+    title5:"manager",
 
 
   },
   ar: {
+    name4:"شيماء الحسين",
+    title4:"مطورة مواقع",
+    name5:"محمد احمد",
+    title5:"المدير",
+
+    title3:"مختبر برامج",
+    name3:"مصطفي علي",
     Features:"المميزات",
     online16:"تطبيق ويب للتوظيف",
     online17:"سوق السفر عبر الإنترنت",

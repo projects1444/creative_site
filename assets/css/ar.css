@@ -1684,7 +1684,7 @@ right: 35px;
   }
   
   .why-us .icon-box .icon {
-    float: left;
+    float: right;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1709,11 +1709,12 @@ right: 35px;
   }
   
   .why-us .icon-box .title {
-    margin-left: 95px;
+    margin-right: 95px;
     font-weight: 700;
     margin-bottom: 10px;
     font-size: 18px;
     text-transform: uppercase;
+    text-align: start;
   }
   
   .why-us .icon-box .title a {
@@ -1726,9 +1727,10 @@ right: 35px;
   }
   
   .why-us .icon-box .description {
-    margin-left: 95px;
+    margin-right: 95px;
     line-height: 24px;
     font-size: 14px;
+    text-align: start;
   }
   
   .why-us .video-box {
