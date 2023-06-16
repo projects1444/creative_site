@@ -1979,7 +1979,7 @@ section {
   .para{
     height: 115px;
   }
-  .card-body{
+ .reg .card-body{
     height: 180px;
   }
 }
