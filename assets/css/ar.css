@@ -3154,8 +3154,11 @@ ol li{
 
 }
 
-.contact-name::placeholder{
-  font-size: 17px;
+.name-ar::placeholder{
+  font-size: 12px;
+}
+.email-ar::placeholder{
+  font-size: 12px;
 }
 .ol-desc{
   padding-inline-start: 15px;
@@ -3360,6 +3363,7 @@ ol li{
   }
   
   .pricing h4 {
+    text-align: center;
     font-size: 46px;
     color: #68A4C4;
     font-weight: 400;
@@ -3383,6 +3387,7 @@ ol li{
   
   .pricing ul li {
     padding-bottom: 12px;
+    text-align: start;
   }
   
   .pricing ul i {
@@ -3759,7 +3764,14 @@ ol li{
       transform: rotate(360deg);
     }
   }
-  
+  .php-email-form .validate {
+    display: none;
+    color: red;
+    margin: 5px 0 15px 0;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: start;
+  }
   /*--------------------------------------------------------------
   # Map
   --------------------------------------------------------------*/

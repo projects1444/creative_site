@@ -1001,27 +1001,33 @@
       <div class="container">
 
         <div class="row">
-          <div class="col-lg-6 video-box">
-            <img src="assets/img/why-us.jpg" class="img-fluid" alt="">
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
-          </div>
-
-          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <div class="col-lg-6 video-box">
+                <img src="" id="vedioImg"  class="img-fluid" alt="">
+              <a href="" id="vedio" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
             </div>
-
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+  
+            <div class="col-lg-6 d-flex flex-column justify-content-center p-5" id="why-container">
+  
+              <div class="icon-box">
+                  <!-- <i class="bx bx-fingerprint"></i> -->
+                <div class="icon">
+                  <img src="" alt="" id="firstImg" style="width: 32px;">
+                </div>
+                <h4 class="title" ><a href="" id="first-title">Lorem Ipsum</a></h4>
+                <p class="description" id="first-description">pturi sint occaecati cupiditate non provident</p>
+              </div>
+  
+              <div class="icon-box">
+                  <!-- <i class="bx bx-gift"></i> -->
+                <div class="icon">
+                  <img src="" alt="" id="secondImg" style="width: 32px;">
+                </div>
+                <h4 class="title" ><a href="" id="second-title">Nemo Enim</a></h4>
+                <p class="description" id="second-description">ignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              </div>
+  
             </div>
-
           </div>
-        </div>
 
       </div>
     </section><!-- End Why Us Section -->
@@ -1034,24 +1040,24 @@
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/service-details-1.jpg" alt="...">
+                <img src="" id="mission-img" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="#">Our Mission</a></h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
+                <h5 class="card-title"><a href="#" id="mission-title">Our Mission</a></h5>
+                <p class="card-text" style="text-align: start;" id="mission-desc">Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                <div class="read-more d-flex"><a href="#"> <span data-i18n="Read">Read More</span> <i  id="arrow"></i> </a></div>
               </div>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/service-details-2.jpg" alt="...">
+                <img src="" id="Plan-img" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="#">Our Plan</a></h5>
-                <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
+                <h5 class="card-title"><a href="#" id="Plan-title">Our Plan</a></h5>
+                <p class="card-text" style="text-align: start;" id="Plan-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+                <div class="read-more d-flex"><a href="#"> <span data-i18n="Read">Read More</span> <i  id="Plan-arrow"></i> </a></div>
               </div>
             </div>
 
@@ -1059,24 +1065,26 @@
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/service-details-3.jpg" alt="...">
+                <img src="" id="Vision-img" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="#">Our Vision</a></h5>
-                <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
+                <h5 class="card-title"><a href="#"  id="Vision-title">Our Vision</a></h5>
+                <p class="card-text" style="text-align: start;" id="Vision-desc">Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</p>
+                <div class="read-more d-flex"><a href="#"> <span data-i18n="Read">Read More</span> <i  id="Vision-arrow"></i> </a></div>
+          
               </div>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/service-details-4.jpg" alt="...">
+                <img src="" id="Care-img" alt="...">
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="#">Our Care</a></h5>
-                <p class="card-text">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem. In molestiae earum ab sit esse voluptatem. Eos ipsam cumque ipsum officiis qui nihil aut incidunt aut</p>
-                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read More</a></div>
+                <h5 class="card-title"><a href="#" id="Care-title">Our Care</a></h5>
+                <p class="card-text" style="text-align: start;" id="Care-desc">Nostrum eum sed et autem dolorum perspiciatis. Magni porro quisquam laudantium voluptatem. In molestiae earum ab sit esse voluptatem. Eos ipsam cumque ipsum officiis qui nihil aut incidunt aut</p>
+                <div class="read-more d-flex"><a href="#"> <span data-i18n="Read">Read More</span> <i  id="Care-arrow"></i> </a></div>
+          
               </div>
             </div>
           </div>
@@ -1090,8 +1098,10 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2 id="pricing-title">Pricing</h2>
+          <div class="d-flex justify-content-center">
+              <p style="width: 80%; font-size: 18px;" id="pricing-desc">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          </div>
         </div>
 
         <div class="row no-gutters">
