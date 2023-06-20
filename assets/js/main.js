@@ -12,6 +12,9 @@
 
   $(document).ready(function() {
   
+
+
+
    $(window).resize(function(){
      if ($(window).width() >= 980){	
    
@@ -235,3 +238,76 @@
   });
 
 })(jQuery);
+
+
+
+// window.addEventListener('scroll', function() {
+//   var header = document.getElementById("header")
+//   var navSection = document.querySelector('.nav-section');
+//  var  mainsection = document.querySelector('.main-section');
+//   var fixedNav = document.querySelector('.fixed-nav');
+//   var navHeight = navSection.offsetHeight;
+//   var mainsectionhegith = mainsection.offsetHeight;
+// console.log(scrollY);
+// console.log(mainsectionhegith);
+//   if (window.scrollY >= mainsectionhegith) {
+//     fixedNav.classList.add('onTop');
+//   } else {
+//     fixedNav.classList.remove('onTop');
+//   }
+// });
+
+window.addEventListener('scroll', function() {
+  var header = document.getElementById("header");
+  var navSection = document.querySelector('.nav-section');
+  var mainSection = document.querySelector('.main-section');
+  var fixedNav = document.querySelector('.fixed-nav');
+  var navHeight = navSection.offsetHeight;
+  var mainSectionHeight = mainSection.offsetHeight;
+
+  if (window.scrollY >= mainSectionHeight) {
+    fixedNav.classList.add('onTop');
+  } else {
+    fixedNav.classList.remove('onTop');
+  }
+});
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('.link');
+  const sections = document.querySelectorAll('.content-section');
+  const ServiceCustom = document.querySelectorAll('.ServiceCustom');
+
+  function removeActiveClass() {
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+    });
+  }
+
+  function addActiveClass(index) {
+    navLinks[index].classList.add('active');
+  }
+
+  function setActiveLink() {
+    const scrollPosition = window.scrollY;
+    if (scrollPosition === 0) {
+      removeActiveClass();
+      return;
+    }
+  
+    sections.forEach((section, index) => {
+      const sectionTop = section.offsetTop - 60; // Adjust to match the height of the fixed navbar
+      const sectionHeight = section.offsetHeight;
+      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        removeActiveClass();
+        addActiveClass(index +1);
+      }
+    });
+  }
+
+  // Event listener for scroll
+  window.addEventListener('scroll', setActiveLink);
+});

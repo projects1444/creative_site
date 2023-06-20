@@ -1,0 +1,66 @@
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+     
+
+<div class="container">
+                 <div class="nav">
+                     <div class="header"></div>
+                     <div class="menu">
+                           <ul>
+                               <li><a href="#">Home</a></li>
+                               <li><a href="#">About</a></li>
+                               <li><a href="#">Services</a></li>
+                               <li><a href="#">Portfolio</a></li>
+                               <li><a href="#">Contact</a></li>
+                           </ul>
+                     </div>
+                 </div>
+                 <section></section>
+                 <section>
+                     <h1>Sticky Header - Navbar Fixed Top After Scrolling</h1>
+                     <p>
+                       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                         a galley of type and scrambled it to make a type specimen book. 
+                     </p>
+                     <p>
+                           It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                            more-or-less normal distribution of letters. 
+                     </p>
+                 </section>
+                 <section></section>
+                 <section>
+                       <h1>Sticky Header - Navbar Fixed Top After Scrolling</h1>
+                       <p>
+                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                          been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                           a galley of type and scrambled it to make a type specimen book. 
+                       </p>
+                       <p>
+                             It is a long established fact that a reader will be distracted by the readable content of a
+                              page when looking at its layout. The point of using Lorem Ipsum is that it has a 
+                              more-or-less normal distribution of letters. 
+                       </p>
+                   </section>
+                 <section></section>
+           </div>
+<script>
+
+
+$(document).ready(function(){
+                  $(window).scroll(function(){
+                      $val = $(window).scrollTop();
+                      if($val > 150){
+                         $('.container .nav .menu').css({
+                             position : 'fixed',
+                             top : 0,
+                             left : 0
+                         })
+                      }else{
+                        $('.container .nav .menu').css({
+                             position : 'relative'
+                        })  
+                      }
+                  })
+              })
+</script>

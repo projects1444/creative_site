@@ -19,9 +19,11 @@ selectElement.addEventListener("change", (event) => {
   if (language === "ar") {
     headerElement.dir = "rtl";
     stylesheet.setAttribute("href", "assets/css/ar.css");
+   
   } else {
     headerElement.dir = "ltr";
     stylesheet.setAttribute("href", "assets/css/style.css");
+   
   }
 
 
@@ -34,6 +36,7 @@ languageSelector.addEventListener("change", (event) => {
   setLanguage(event.target.value);
   localStorage.setItem("lang", event.target.value);
   const stylesheet = document.getElementById("language-stylesheet");
+
   const headerElement = document.getElementById("header");
   const navElement = document.querySelector("nav");
   const inpNmae =  document.getElementById("name");
@@ -45,9 +48,11 @@ languageSelector.addEventListener("change", (event) => {
   if (language === "ar") {
     headerElement.dir = "rtl";
     stylesheet.setAttribute("href", "assets/css/ar.css");
+
   } else {
     headerElement.dir = "ltr";
     stylesheet.setAttribute("href", "assets/css/style.css");
+  
   }
 
 });
@@ -56,15 +61,19 @@ languageSelector.addEventListener("change", (event) => {
 document.addEventListener("DOMContentLoaded", () => {
   const languageSelector = document.querySelector("select");
   var selectElement = document.getElementById("language-select");
+ 
   const language = localStorage.getItem("lang") || "en"; // اذا لم تكن اللغة متوفرة استخدم الانجليزية
   selectElement.value = language;
   languageSelector.value = language;
   setLanguage(language);
   const stylesheet = document.getElementById("language-stylesheet");
+
   if (language === "ar") {
     stylesheet.setAttribute("href", "assets/css/ar.css");
+
   } else {
     stylesheet.setAttribute("href", "assets/css/style.css");
+ 
   }
 
 
@@ -179,7 +188,7 @@ const translations = {
     test4:"I couldn't be happier with the outcome of my project, thanks to this company. Their team of experts was incredibly talented and displayed a deep understanding of the industry. They provided valuable insights and guidance",
     test5:"Working with this company was a game-changer for my business. They transformed my ideas into a visually stunning and user-friendly website that perfectly represents my brand ",
     our_approach:"Our Approach",
-    about_desc:"learn what makes us experts in custom product development",
+    about_desc:"Solving business challenges with custom built software products.",
     approach_desc :"discover our transparent product development approach",
     Tetstimonials_desc:"our clients success stories speak best about our work",
     Awards:"Awards",
@@ -267,6 +276,7 @@ const translations = {
     online:"online marketplace for selling collectibles",
     view:"view all our works",
     custom_software_development:"Custom Software Development",
+    custom_software_development_service:"Custom Software Development Services",
     online_marketplace:"Online Marketplace Development",
     MVP:"MVP development",
     Saas:"Saas development",
@@ -388,10 +398,77 @@ const translations = {
     title4:"web developer",
     name5:"mohamed ahmed",
     title5:"manager",
+    Custom_Software:"Custom Software",
+    Development_Services:"Development Services",
+    Development_Services_desc:"We build high-performing custom software for businesses that need more than a standard solution.",
+    ser:"services",
+    industries:" industries",
+    Business_Type:"Business Type",
+    Benefits:"Benefits",
+    process:"process",
+    Tech_Stack :"Tech Stack ",
+    Requirements:"Requirements",
+    Cases:"Cases",
+    Free_Quote:"Free Quote",
+    FAQ:"FAQ",
+    custom_offer:"Custom software development services we offer",
+    custom_offer_desc:"CCIT team has extensive experience creating custom software products, whether single-page applications or complex enterprise platforms. We are proud to bring our best expertise to build custom software that we specialize in.",
+    Software_development_consulting:"Software development consulting",
+    Software_development_consulting_desc:"Our quality experts will analyze your business idea, conceptualize your project, and offer tech solutions to help you get the best value from your product.",
+    online_marketplace_development_desc:"We're a top provider of custom online marketplaces for various sectors of businesses that drive massive traffic and satisfy plenty of users.",
+    Sass_desc:"With our SaaS development services, you will get a custom SaaS solution enabling you to provide cutting-edge technologies to your online environment.",
+    mobile_App_development_desc:"We have vast experience in mobile application development. So, we can develop a mobile solution that meets your unique business needs and workflows for any domain.",
+    MVP_desc:"As skilled progressive web app developers, we can create a PWA solution for your business. Thus, you can enhance brand awareness and connect with customers.",
+    Custom_software_design:"Custom software design",
+    Custom_software_design_desc:"Our experienced designers create software designs that are unique, usable, and visually appealing for the fast growth of your business.",
+    have:"Do you have a great idea for a software product?",
+    will_help:"We will help to bring it to life.",
+    talk:"Talk to an expert",
+    industries_title:"We bring expertise across different industries",
+    industries_desc:"During our work in software development for various industries, we have accumulated vast experience. We are glad to share it with our clients. Our experts consult clients in every product development phase, keeping all processes transparent. So, the clients receive the product they expect to get.",
+    online_marketplaces:"Online marketplaces",
+    online_marketplaces_desc:"",
+
+
+
+
+
+
+
 
 
   },
   ar: {
+    online_marketplaces:"الأسواق عبر الإنترنت",
+    online_marketplaces_desc:"",
+    industries_title:"نجلب الخبرة عبر الصناعات المختلفة",
+    industries_desc:"خلال عملنا في تطوير البرمجيات لمختلف الصناعات ، تراكمت لدينا خبرة واسعة. نحن سعداء لمشاركتها مع عملائنا. يقوم خبراؤنا باستشارة العملاء في كل مرحلة من مراحل تطوير المنتج ، مع الحفاظ على شفافية جميع العمليات. لذلك ، يتلقى العملاء المنتج الذي يتوقعون الحصول عليه.",
+    talk:"تحدث إلى مختص",
+    will_help:"سوف نساعد على جعله  حقيقاٌ.",
+    have:"هل لديك فكرة جيدة عن منتج برمجي؟",
+    Custom_software_design_desc:"يقوم المصممون ذوو الخبرة لدينا بإنشاء تصميمات برمجية فريدة وقابلة للاستخدام وجذابة بصريًا للنمو السريع لعملك.",
+    Custom_software_design:"تصميم البرامج المخصصة",
+    MVP_desc:"بصفتنا مطوري تطبيقات الويب التقدميين المهرة ، يمكننا إنشاء حل PWA لعملك. وبالتالي ، يمكنك تعزيز الوعي بالعلامة التجارية والتواصل مع العملاء.",
+    mobile_App_development_desc:"لدينا خبرة واسعة في تطوير تطبيقات الهاتف المحمول. لذلك ، يمكننا تطوير حل محمول يلبي احتياجات عملك الفريدة وسير العمل لأي مجال.",
+    Sass_desc:"من خلال خدمات تطوير SaaS الخاصة بنا ، ستحصل على حل SaaS مخصص يتيح لك توفير التقنيات المتطورة لبيئتك على الإنترنت.",
+    online_marketplace_development_desc:"نحن أفضل مزود للأسواق المخصصة عبر الإنترنت لقطاعات مختلفة من الأعمال التجارية التي تجذب عددًا هائلاً من الزيارات وترضي الكثير من المستخدمين.",
+    Software_development_consulting_desc:"سيقوم خبراء الجودة لدينا بتحليل فكرة عملك ، ووضع تصور لمشروعك ، وتقديم حلول تقنية لمساعدتك في الحصول على أفضل قيمة من منتجك.",
+    Software_development_consulting:"استشارات تطوير البرمجيات",
+    custom_offer_desc:"يتمتع فريق سحب الابداع بخبرة واسعة في إنشاء منتجات برمجية مخصصة ، سواء كانت تطبيقات من صفحة واحدة أو أنظمة أساسية معقدة للمؤسسات. نحن فخورون بتقديم أفضل خبراتنا لبناء برامج مخصصة نتخصص فيها.",
+    custom_offer:"خدمات تطوير البرمجيات المخصصة التي نقدمها",
+    FAQ:"الاسئلة الشائعة",
+    Free_Quote:"سعر مجاني",
+    Cases:"حالات",
+    Requirements:"متطلبات",
+    Tech_Stack:"التكنولوجيا",
+    process:"عملية",
+    Benefits:"فوائد",
+    Business_Type:"نوع العمل",
+    industries:"الصناعات",
+    ser:"الخدمات",
+    Development_Services_desc:"نحن نبني برامج مخصصة عالية الأداء للشركات التي تحتاج إلى أكثر من حل قياسي.",
+    Development_Services:"البرمجيات المخصصة",
+    Custom_Software:"خدمات تطوير",
     name4:"شيماء الحسين",
     title4:"مطورة مواقع",
     name5:"محمد احمد",
@@ -532,7 +609,7 @@ const translations = {
     test4:"لا يمكن أن أكون أكثر سعادة بنتيجة مشروعي ، بفضل هذه الشركة. كان فريق الخبراء لديهم موهوبًا بشكل لا يصدق وأظهروا فهماً عميقاً للصناعة. لقد قدموا رؤى وإرشادات قيمة",
     test5:"أدى العمل مع هذه الشركة إلى تغيير قواعد اللعبة في عملي. لقد حولوا أفكاري إلى موقع ويب مذهل بصريًا وسهل الاستخدام يمثل علامتي التجارية بشكل مثالي",
     our_approach:"نهجنا",
-    about_desc:"تعرف على ما يجعلنا خبراء في تطوير المنتجات المخصصة",
+    about_desc:"حل تحديات الأعمال باستخدام منتجات برمجية مخصصة",
     approach_desc:"اكتشف نهج تطوير منتجاتنا الشفاف",
     Tetstimonials_desc:"تتحدث قصص نجاح عملائنا بشكل أفضل عن عملنا",
     Awards:"الجوائز",
@@ -621,6 +698,7 @@ const translations = {
     online:"سوق على الإنترنت لبيع المقتنيات",
     view:"عرض جميع أعمالنا",
     custom_software_development:"تطوير البرامج المخصصة",
+    custom_software_development_service:"خدمات تطوير البرمجيات المخصصة",
     online_marketplace:"تطوير السوق عبر الإنترنت",
     MVP:"برمجة MVP",
     Saas:"برمجة Saas",
