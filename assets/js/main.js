@@ -262,7 +262,7 @@ window.addEventListener('scroll', function() {
   var navSection = document.querySelector('.nav-section');
   var mainSection = document.querySelector('.main-section');
   var fixedNav = document.querySelector('.fixed-nav');
-  var navHeight = navSection.offsetHeight;
+  // var navHeight = navSection.offsetHeight;
   var mainSectionHeight = mainSection.offsetHeight;
 
   if (window.scrollY >= mainSectionHeight) {

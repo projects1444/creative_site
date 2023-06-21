@@ -17,12 +17,70 @@ headers.append('lang', `${lang}`);
         })
           .then(response => response.json())
           .then(res => {
+         
             const settingData = res.data;
+             /* Approach */
+             const ourapproach = document.getElementById("our-approach");
+             const ApproachDesc1  = document.getElementById("Approach-desc1");
+             const ApproachDesc2  = document.getElementById("Approach-desc2");
+        
+             if(ourapproach && ApproachDesc1 && ApproachDesc2){
+              ourapproach.textContent = settingData.approach_title;
+              ApproachDesc1.textContent = settingData.approach_description_1;
+              ApproachDesc2.textContent = settingData.approach_description_2;
+             }
+            
+             const agiletitle = document.getElementById("agile-title");
+             const agiledesc  = document.getElementById("agile-desc");
+             
+        
+             if(agiletitle && agiledesc){
+              agiletitle.textContent = settingData.agile_mindest_title;
+              agiledesc.textContent = settingData.agile_mindest_description;
+            
+             }
+             const best_practices_tilte = document.getElementById("best_practices_tilte");
+             const best_practices_description  = document.getElementById("best_practices_description");
+
+             if(best_practices_tilte && best_practices_description){
+              best_practices_tilte.textContent = settingData.best_practices_tilte;
+              best_practices_description.textContent = settingData.best_practices_description;
+             }
+
+             const teamtitle = document.getElementById("team-title");
+             const teamDesc  = document.getElementById("team-desc");
+
+             if(teamtitle && teamDesc){
+              teamtitle.textContent = settingData.reliable_team_tilte;
+              teamDesc.textContent = settingData.reliable_team_description;
+             }
+
+            
+             const provenitle = document.getElementById("our-proven-title");
+             const provenDesc  = document.getElementById("our-proven-desc");
+
+             if(provenitle && provenDesc){
+              provenitle.textContent = settingData.our_proven_tilte;
+              provenDesc.textContent = settingData.our_proven_description;
+             }
+             const stacktitle = document.getElementById("stack-title");
+             const stackDesc  = document.getElementById("stack-desc");
+
+             if(stacktitle && stackDesc){
+              stacktitle.textContent = settingData.tech_stack_tilte;
+              stackDesc.textContent = settingData.tech_stack_description;
+             }
+
+
+
+
+            console.log(settingData);
             const arrow = document.getElementById("arrow");
             const Visionarrow = document.getElementById("Vision-arrow");
             const Planarrow = document.getElementById("Plan-arrow");
             const Carearrow = document.getElementById("Care-arrow");
             if(lang == "ar"){
+              
               arrow.classList.add("icofont-arrow-left");
               Visionarrow.classList.add("icofont-arrow-left");
               Planarrow.classList.add("icofont-arrow-left");
@@ -100,7 +158,7 @@ headers.append('lang', `${lang}`);
                 pricingdesc.textContent = settingData.pricing_description
               }
               
-
+             
 
             console.log(data);
           })
@@ -140,7 +198,7 @@ headers.append('lang', `${lang}`);
     /* footer subscribe form */
         const myfrom = document.getElementById("subscibe-form");
         const subscibeInput = document.getElementById("subscribe-input");
-
+if(myfrom){
         myfrom.addEventListener('submit',function(e){
             e.preventDefault();
             const formdata = new FormData(this);
@@ -207,7 +265,7 @@ headers.append('lang', `${lang}`);
         });
 
         })
-
+      }
     /* end footer subscribe form */
 
     /* contact form */
@@ -1066,43 +1124,53 @@ fetch("https://testam.info/creativecloudsit/api/sliders", {
         var fileInput = document.getElementById("fileInput");
 
         const icon = document.querySelector(".icobtn");
-        icon.addEventListener("click", function() {
-          fileInput.click();
-        });
-
-      fileInput.addEventListener("change", function() {
-        // Handle the selected file
-        console.log(fileInput.files.length );
-        console.log("Selected file:", fileInput.files[0]);
-        const filenamecontainer = document.getElementById("filenamecontainer");
-        const filename = document.getElementById("filename");      
-        if (fileInput.files.length > 0) {
-          filenamecontainer.style.visibility= "visible"
-        } else {
-          filenamecontainer.style.visibility= "hidden"
+        if(icon){
+          icon.addEventListener("click", function() {
+            fileInput.click();
+          });
         }
-        filename.textContent =  fileInput.files[0].name
-      });
+       
+        if(fileInput){
+          fileInput.addEventListener("change", function() {
+            // Handle the selected file
+            console.log(fileInput.files.length );
+            console.log("Selected file:", fileInput.files[0]);
+            const filenamecontainer = document.getElementById("filenamecontainer");
+            const filename = document.getElementById("filename");      
+            if (fileInput.files.length > 0) {
+              filenamecontainer.style.visibility= "visible"
+            } else {
+              filenamecontainer.style.visibility= "hidden"
+            }
+            filename.textContent =  fileInput.files[0].name
+          });
+        }
+    
 
       const  btnremove = document.getElementById("btnremove");
-      btnremove.addEventListener("click", function() {
-        if (fileInput.files.length > 0) {
-          fileInput.value = null;
-          console.log(fileInput.files.length );
-          filenamecontainer.style.visibility= "hidden"
-        }
-      });
-
-      subscribe.addEventListener("change", function() {
-        console.log("Checkbox value:", subscribe.checked);
-        if(subscribe.checked == true){
-          subscribe.value = 2;
-        }else{
-          subscribe.value = 1;
-        }
-        
-      });
-
+      if(btnremove){
+        btnremove.addEventListener("click", function() {
+          if (fileInput.files.length > 0) {
+            fileInput.value = null;
+            console.log(fileInput.files.length );
+            filenamecontainer.style.visibility= "hidden"
+          }
+        });
+      }
+ 
+      if(subscribe){
+        subscribe.addEventListener("change", function() {
+          console.log("Checkbox value:", subscribe.checked);
+          if(subscribe.checked == true){
+            subscribe.value = 2;
+          }else{
+            subscribe.value = 1;
+          }
+          
+        });
+  
+      }
+    
 
     const getTouch = document.getElementById("getTouch");
    
@@ -1183,3 +1251,230 @@ fetch("https://testam.info/creativecloudsit/api/sliders", {
    
 
 /* end get touch form */
+
+
+/* our proven */
+fetch("https://testam.info/creativecloudsit/api/ourproven", {
+    method: 'GET',
+    headers: headers
+  })
+    .then(response => response.json())
+    .then(res => {
+            let  ourprovendata = res.data;
+            console.log(ourprovendata);
+              /* 1 */
+              const ResearchDiscovery = document.getElementById("Research-discovery");
+              const Researchdiscoverydesc = document.getElementById("Research-discovery-desc");
+              if(ResearchDiscovery && Researchdiscoverydesc){
+                ResearchDiscovery.textContent = ourprovendata[0].name;
+                Researchdiscoverydesc.textContent = ourprovendata[0].description;
+              }
+              /* 2 */
+              const Product_design = document.getElementsByClassName("Product_design");
+              const product_design_desc = document.getElementsByClassName("product_design_desc");
+              if(Product_design[0] && product_design_desc[0] && Product_design[1] && product_design_desc[1]  ){
+                Product_design[0].textContent = ourprovendata[1].name;
+              Product_design[1].textContent = ourprovendata[1].name;
+              product_design_desc[0].textContent = ourprovendata[1].description;
+                product_design_desc[1].textContent = ourprovendata[1].description;
+              }
+
+
+              /* 3 */
+              const Product_development = document.getElementById("Product_development");
+              const Product_development_desc = document.getElementById("Product_development_desc");
+              if(Product_development && Product_development_desc){
+                Product_development.textContent = ourprovendata[2].name;
+                Product_development_desc.textContent = ourprovendata[2].description;
+              }
+              /* 4 */
+              const Optimization_and_QA = document.getElementsByClassName("Optimization_and_QA");
+              const Optimization_and_QA_desc = document.getElementsByClassName("Optimization_and_QA_desc");
+              if(Optimization_and_QA[0] && Optimization_and_QA_desc[0] && Optimization_and_QA[1] && Optimization_and_QA_desc[1]  ){
+                  Optimization_and_QA[0].textContent = ourprovendata[3].name;
+                  Optimization_and_QA[1].textContent = ourprovendata[3].name;
+                  Optimization_and_QA_desc[0].textContent = ourprovendata[3].description;
+                  Optimization_and_QA_desc[1].textContent = ourprovendata[3].description;
+              }
+               /* 5 */
+               const Deployment_monitoring = document.getElementsByClassName("Deployment_monitoring");
+               const Deployment_monitoring_desc = document.getElementsByClassName("Deployment_monitoring_desc");
+               if(Deployment_monitoring[0] && Deployment_monitoring_desc[0] && Deployment_monitoring[1] && Deployment_monitoring_desc[1]  ){
+                   Deployment_monitoring[0].textContent = ourprovendata[4].name;
+                   Deployment_monitoring[1].textContent = ourprovendata[4].name;
+                   Deployment_monitoring_desc[0].textContent = ourprovendata[4].description;
+                   Deployment_monitoring_desc[1].textContent = ourprovendata[4].description;
+               }
+  
+})
+    .catch(error => {
+     
+      console.error('Error:', error);
+    });
+
+
+/* End our proven */
+
+
+/*  toolhelping */
+fetch("https://testam.info/creativecloudsit/api/toolhelping", {
+    method: 'GET',
+    headers: headers
+  })
+    .then(response => response.json())
+    .then(res => {
+            let  toolsHelping = res.data;
+            const toolitle = document.getElementById("tool-title");
+            const toolDesc  = document.getElementById("tool-desc");
+            const toolimg  = document.getElementById("toolimg");
+
+            if(toolitle && toolDesc && toolimg){
+             toolitle.textContent = toolsHelping[0].name;
+             toolDesc.textContent = toolsHelping[0].description;
+             toolimg.src = toolsHelping[0].image;
+            }
+  
+})
+    .catch(error => {
+     
+      console.error('Error:', error);
+    });
+
+
+/* End toolhelping*/
+
+/*  bestpractice */
+fetch("https://testam.info/creativecloudsit/api/bestpractice", {
+    method: 'GET',
+    headers: headers
+  })
+    .then(response => response.json())
+    .then(res => {
+            let  bestpractice = res.data;
+            const Acceptance_tests = document.getElementById("Acceptance_tests");
+            const Acceptance_tests_desc  = document.getElementById("Acceptance_tests_desc");
+          
+            const Following_coding = document.getElementById("Following_coding");
+            const Following_coding_desc  = document.getElementById("Following_coding_desc");
+
+            const Refactoring = document.getElementById("Refactoring");
+            const Refactoring_desc  = document.getElementById("Refactoring_desc");
+
+            const pair = document.getElementById("pair");
+            const pair_desc  = document.getElementById("pair_desc");
+
+            const Code_reviews = document.getElementById("Code_reviews");
+            const Code_reviews_desc  = document.getElementById("Code_reviews_desc");
+
+            const test_deriven = document.getElementById("test_deriven");
+            const test_deriven_desc  = document.getElementById("test_deriven_desc");
+            
+            if( 
+                Acceptance_tests && Acceptance_tests_desc && Following_coding 
+                && Following_coding_desc && Refactoring && Refactoring_desc  
+                && pair && pair_desc && Code_reviews && Code_reviews_desc && test_deriven && test_deriven_desc
+
+              ){
+                Acceptance_tests.textContent = bestpractice[0].name;
+                Acceptance_tests_desc.textContent = bestpractice[0].description;  
+
+                Following_coding.textContent = bestpractice[1].name;
+                Following_coding_desc.textContent = bestpractice[1].description;
+
+                Refactoring.textContent = bestpractice[2].name;
+                Refactoring_desc.textContent = bestpractice[2].description;
+
+                pair.textContent = bestpractice[3].name;
+                pair_desc.textContent = bestpractice[3].description;
+                
+                Code_reviews.textContent = bestpractice[4].name;
+                Code_reviews_desc.textContent = bestpractice[4].description;
+
+                test_deriven.textContent = bestpractice[5].name;
+                test_deriven_desc.textContent = bestpractice[5].description;
+              
+            }
+
+
+
+
+  
+})
+    .catch(error => {
+     
+      console.error('Error:', error);
+    });
+
+
+/* End bestpractice*/
+
+
+/*  agilemindest */
+fetch("https://testam.info/creativecloudsit/api/agilemindest", {
+    method: 'GET',
+    headers: headers
+  })
+    .then(response => response.json())
+    .then(res => {
+            let  agilemindest = res.data;
+            const Strong_communications = document.getElementById("Strong_communications");
+            const Strong_communications_desc  = document.getElementById("Strong_communications_desc");
+          
+            const Daily_standups = document.getElementById("Daily_standups");
+            const Daily_standups_desc  = document.getElementById("Daily_standups_desc");
+
+            const Weekly_desgined_sprints = document.getElementById("Weekly_desgined_sprints");
+            const Weekly_desgined_sprints_desc  = document.getElementById("Weekly_desgined_sprints_desc");
+
+            const house_project_manager = document.getElementById("house_project_manager");
+            const house_project_manager_desc  = document.getElementById("house_project_manager_desc");
+
+            const Fully_transparent_process = document.getElementById("Fully_transparent_process");
+            const Fully_transparent_process_desc  = document.getElementById("Fully_transparent_process_desc");
+
+            const Regular_retrospectives = document.getElementById("Regular_retrospectives");
+            const Regular_retrospectives_desc  = document.getElementById("Regular_retrospectives_desc");
+
+            if( 
+                Strong_communications && Strong_communications_desc && Daily_standups && Daily_standups_desc 
+              && Weekly_desgined_sprints && Weekly_desgined_sprints_desc
+              && house_project_manager && house_project_manager_desc
+              && Fully_transparent_process && Fully_transparent_process_desc
+              && Regular_retrospectives && Regular_retrospectives_desc
+
+
+              ){
+                Strong_communications.textContent = agilemindest[0].name;
+                Strong_communications_desc.textContent = agilemindest[0].description;  
+
+                Daily_standups.textContent = agilemindest[1].name;
+                Daily_standups_desc.textContent = agilemindest[1].description;  
+
+                Weekly_desgined_sprints.textContent = agilemindest[2].name;
+                Weekly_desgined_sprints_desc.textContent = agilemindest[2].description;  
+
+                house_project_manager.textContent = agilemindest[3].name;
+                house_project_manager_desc.textContent = agilemindest[3].description;
+
+                Fully_transparent_process.textContent = agilemindest[4].name;
+                Fully_transparent_process_desc.textContent = agilemindest[4].description;
+
+                Regular_retrospectives.textContent = agilemindest[5].name;
+                Regular_retrospectives_desc.textContent = agilemindest[5].description;
+
+              
+              
+            }
+
+
+
+
+  
+})
+    .catch(error => {
+     
+      console.error('Error:', error);
+    });
+
+
+/* End agilemindest*/
