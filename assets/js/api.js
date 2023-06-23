@@ -1478,3 +1478,195 @@ fetch("https://testam.info/creativecloudsit/api/agilemindest", {
 
 
 /* End agilemindest*/
+
+/*  team comment */
+fetch("https://testam.info/creativecloudsit/api/teamcomment", {
+    method: 'GET',
+    headers: headers
+  })
+    .then(response => response.json())
+    .then(res => {
+            let  teamcomment = res.data;
+            const comment1 = document.getElementById("comment1");
+            const teamcommentImage1 = document.getElementById("image-team-comment1");
+            const teamcommentname1 = document.getElementById("name-team-comment1");
+            const teamcommentjop1 = document.getElementById("jop-team-comment1");
+
+            const comment2 = document.getElementById("comment2");
+            const teamcommentImage2 = document.getElementById("image-team-comment2");
+            const teamcommentname2 = document.getElementById("name-team-comment2");
+            const teamcommentjop2 = document.getElementById("jop-team-comment2");
+            if( comment1 && teamcommentImage1 && teamcommentname1 && teamcommentjop1 &&
+              comment2 && teamcommentImage2 && teamcommentname2 && teamcommentjop2
+              ){
+              comment1.textContent = teamcomment[0].comment;
+              teamcommentImage1.src =teamcomment[0].member.image;
+              teamcommentname1.textContent =teamcomment[0].member.name;
+              teamcommentjop1.textContent =teamcomment[0].member.job;
+
+              comment2.textContent = teamcomment[1].comment;
+              teamcommentImage2.src =teamcomment[1].member.image;
+              teamcommentname2.textContent =teamcomment[1].member.name;
+              teamcommentjop2.textContent =teamcomment[1].member.job;
+            }
+          
+
+
+  
+})
+    .catch(error => {
+     
+      console.error('Error:', error);
+    });
+
+
+
+/* end  team comment */
+
+/*  sucess partener */
+fetch("https://testam.info/creativecloudsit/api/successpartner", {
+    method: 'GET',
+    headers: headers
+  })
+    .then(response => response.json())
+    .then(res => {
+            let  successpartner = res.data;
+            const succImage1 = document.getElementById("part-image1");
+            const succImage2 = document.getElementById("part-image2");
+            const succImage3 = document.getElementById("part-image3");
+            const succImage4 = document.getElementById("part-image4");
+            const succImage5 = document.getElementById("part-image5");
+            const succImage6 = document.getElementById("part-image6");
+            const succImage7 = document.getElementById("part-image7");
+            const succImage8 = document.getElementById("part-image8");
+            const succImage9 = document.getElementById("part-image9");
+            const succImage10 = document.getElementById("part-image10");
+            const succImage11 = document.getElementById("part-image11");
+          
+            if( succImage1 && succImage2 && succImage3 && succImage4 && succImage5
+              && succImage6 && succImage7 && succImage8 && succImage9 && succImage10 && succImage11
+              ){
+                succImage1.src = successpartner[0].image;
+                succImage2.src = successpartner[1].image;
+                succImage3.src = successpartner[2].image;
+                succImage4.src = successpartner[3].image;
+                succImage5.src = successpartner[4].image;
+                succImage6.src = successpartner[5].image;
+                succImage7.src = successpartner[6].image;
+                succImage8.src = successpartner[7].image;
+                succImage9.src = successpartner[8].image;
+                succImage10.src = successpartner[9].image;
+                succImage11.src = successpartner[10].image;
+            }
+          
+
+
+  
+})
+    .catch(error => {
+     
+      console.error('Error:', error);
+    });
+
+
+
+/* end sucess partener */
+
+/*  service pricing */
+fetch("https://testam.info/creativecloudsit/api/pricings", {
+    method: 'GET',
+    headers: headers
+  })
+    .then(response => response.json())
+    .then(res => {
+            let  freePricings = res.data[0];
+            const priceTitle1 = document.getElementById("price-title1");
+            const priceTime1 = document.getElementById("price-time1");
+            const pricenum1 = document.getElementById("pric-num1");
+            const descfree1 = document.getElementById("desc-free1");
+            const descfree2 = document.getElementById("desc-free2");
+            const descfree3 = document.getElementById("desc-free3");
+            const descfree4 = document.getElementById("desc-free4");
+            const descfree5 = document.getElementById("desc-free5");
+
+
+            let nofreePricings1 = res.data[1];
+            const priceTitle2 = document.getElementById("price-title2");
+            const priceTime2 = document.getElementById("price-time2");
+            const pricenum2 = document.getElementById("pric-num2");
+            const descnofree1 = document.getElementById("desc-nofree1");
+            const descnofree2 = document.getElementById("desc-nofree2");
+            const descnofree3 = document.getElementById("desc-nofree3");
+            const descnofree4 = document.getElementById("desc-nofree4");
+            const descnofree5 = document.getElementById("desc-nofree5");
+           
+
+
+            let nofreePricings2 = res.data[2];
+            const priceTitle3 = document.getElementById("price-title3");
+            const priceTime3 = document.getElementById("price-time3");
+            const pricenum3 = document.getElementById("pric-num3");
+            const descnofree11 = document.getElementById("desc-nofree11");
+            const descnofree22 = document.getElementById("desc-nofree22");
+            const descnofree33 = document.getElementById("desc-nofree33");
+            const descnofree44 = document.getElementById("desc-nofree44");
+            const descnofree55 = document.getElementById("desc-nofree55");
+           
+          
+            if( priceTitle1 && priceTime1 && pricenum1 && descfree1 && descfree2 && descfree3 && descfree4 && descfree5
+            &&  priceTitle2 && priceTime2 && pricenum2 && descnofree1 && descnofree2 && descnofree3 && descnofree4 && descnofree5
+            && priceTitle3 && priceTime3 && pricenum3 && descnofree11 && descnofree22 && descnofree33 && descnofree44 && descnofree55  
+            ){
+
+                // free
+                priceTitle1.textContent = freePricings.title;
+                priceTime1.textContent  = freePricings.hint;
+                // pricenum1.textContent  = freePricings.price_after;
+                descfree1.textContent = freePricings.details[0].title;
+                descfree2.textContent = freePricings.details[1].title;
+                descfree3.textContent = freePricings.details[2].title;
+                descfree4.textContent = freePricings.details[3].title;
+                descfree5.textContent = freePricings.details[4].title;
+
+
+                // 29 $
+
+                priceTitle2.textContent = nofreePricings1.title;
+                priceTime2.textContent  = nofreePricings1.hint;
+                pricenum2.textContent  = nofreePricings1.price_after;
+                descnofree1.textContent = nofreePricings1.details[0].title;
+                descnofree2.textContent = nofreePricings1.details[1].title;
+                descnofree3.textContent = nofreePricings1.details[2].title;
+                descnofree4.textContent = nofreePricings1.details[3].title;
+                descnofree5.textContent = nofreePricings1.details[4].title;
+
+
+                   // 49 $
+
+                   priceTitle3.textContent = nofreePricings2.title;
+                   priceTime3.textContent  = nofreePricings2.hint;
+                   pricenum3.textContent  = nofreePricings2.price_after;
+                   descnofree11.textContent = nofreePricings2.details[0].title;
+                   descnofree22.textContent = nofreePricings2.details[1].title;
+                   descnofree33.textContent = nofreePricings2.details[2].title;
+                   descnofree44.textContent = nofreePricings2.details[3].title;
+                   descnofree55.textContent = nofreePricings2.details[4].title;
+   
+   
+
+
+        
+            }
+          
+
+
+  
+})
+    .catch(error => {
+     
+      console.error('Error:', error);
+    });
+
+
+
+/* end service pricing */
