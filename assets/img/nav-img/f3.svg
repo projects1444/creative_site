@@ -1,0 +1,11 @@
+<svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon">
+<path id="Oval 15" opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M45 90C69.8528 90 90 69.8528 90 45C90 20.1472 69.8528 0 45 0C20.1472 0 0 20.1472 0 45C0 69.8528 20.1472 90 45 90Z" fill="#D9DEE8"/>
+<path id="Oval 14" fill-rule="evenodd" clip-rule="evenodd" d="M45 80C64.33 80 80 64.33 80 45C80 25.67 64.33 10 45 10C25.67 10 10 25.67 10 45C10 64.33 25.67 80 45 80Z" fill="white" stroke="#474F5F" stroke-dasharray="4 4"/>
+<g id="code-s-slash-fill">
+<g id="Group">
+<path id="Vector" d="M60 45L52.9288 52.0712L51.1613 50.3037L56.465 45L51.1613 39.6962L52.9288 37.9288L60 45ZM33.535 45L38.8387 50.3037L37.0712 52.0712L30 45L37.0712 37.9288L38.8375 39.6962L33.535 45ZM42.235 56.25H39.575L47.765 33.75H50.425L42.235 56.25Z" fill="#023986"/>
+</g>
+</g>
+</g>
+</svg>

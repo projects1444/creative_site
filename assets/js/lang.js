@@ -7,6 +7,7 @@ var namear = document.getElementsByClassName('name-ar')[0];
  var Sitear = document.getElementsByClassName('site-ar')[0];
  var Servicear = document.getElementsByClassName('service-ar')[0];
  var hearSelect = document.getElementsByClassName('hearSelect')[0];
+ var budget =  document.getElementsByClassName('budget')[0];
 // console.log(lang);
 if(lang === 'ar'){
 // console.log(namear);
@@ -15,14 +16,14 @@ namear.setAttribute('data-msg', 'ادخل علي الاقل 8 حروف');
 
 Emailar.setAttribute('data-msg', 'يرجي إدخال بريد الكتروني صحيح ');
 
- if(Phonear){
-  Phonear.setAttribute('placeholder', '********** 966+');
-Phonear.setAttribute('data-msg', 'يرجي ادخال 10 ارقام علي الاقل');
+//  if(Phonear){
+//   Phonear.setAttribute('placeholder', '********** 966+');
+// Phonear.setAttribute('data-msg', 'يرجي ادخال 10 ارقام علي الاقل');
 
- }
+//  }
  if(Messagear){
   Messagear.setAttribute('placeholder', 'إكتب رسالتك هنا ....');
-  Messagear.setAttribute('data-msg', "من فضلك اكتب لنا شيئا");
+  Messagear.setAttribute('data-msg', "من فضلك اكتب لنا شيئًا على الأقل 8 أحرف");
  }
 
 if(Sitear){
@@ -36,6 +37,9 @@ if(Servicear){
 if(hearSelect){
   hearSelect.setAttribute('data-msg', "إختر كيف سمعت عنا");
 }
+if(budget){
+  budget.setAttribute('data-msg', "إخترالميزانية");
+}
 }else{
   namear.setAttribute('placeholder', 'Your Name');
   namear.setAttribute('data-msg', 'Please enter at least 8 chars');
@@ -43,18 +47,24 @@ if(hearSelect){
   Emailar.setAttribute('data-msg', 'Please enter a valid email');
 
 
-  Phonear.setAttribute('placeholder', '966+ ********** ');
-  Phonear.setAttribute('data-msg', 'Please enter at least 10 chars');
-
-  Messagear.setAttribute('placeholder', 'write your message here ....');
-  Messagear.setAttribute('data-msg', 'Please write something for us');
-
-  Sitear.setAttribute('data-msg', 'Please write your website');
-
-  Servicear.setAttribute('data-msg', "Please select a service");
-
-
-
-   // hearSelect.setAttribute('data-msg', "select How did you hear about us");
+  // Phonear.setAttribute('placeholder', '966+ ********** ');
+  // Phonear.setAttribute('data-msg', 'Please enter at least 10 chars');
+  if(Messagear){
+    Messagear.setAttribute('placeholder', 'write your message here ....');
+    Messagear.setAttribute('data-msg', 'Please write us something at least 8 characters');
+  }
+  if(Sitear){
+    Sitear.setAttribute('data-msg', 'Please write your website');
+  }
+  if(Servicear){
+    Servicear.setAttribute('data-msg', "Please select a service");
+  }
+  if(hearSelect){
+    hearSelect.setAttribute('data-msg', "select How did you hear about us");
+  }
+  if(budget){
+    budget.setAttribute('data-msg', "select budget");
+  }
+  
   
 }

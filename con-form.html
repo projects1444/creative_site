@@ -31,7 +31,7 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!-- contry code and flag input css -->
-    <link rel="stylesheet" href="./assets/css/international-telephone-input.css">
+    <link rel="stylesheet" href="assets/css/international-telephone-input.css">
     <!-- Template Main CSS File -->
   
     	<!-- Bootstrap -->
@@ -137,11 +137,11 @@
                                                                             <div class="icon"><i class='bx bx-line-chart'></i></div>
                                                                         </div>
                                                                         <div class="text">
-                                                                            <a href="" style="padding: 0; height: auto;" data-i18n="online_marketplace">
+                                                                            <a href="online-marketplace-development.html" style="padding: 0; height: auto;" data-i18n="online_marketplace">
                                                                                online_marketplace
                                                                             </a>
                                                                             <div class="div">
-                                                                                <p data-i18n="Awards_desc">sdasdasafdff</p>
+                                                                                <p data-i18n="online_marketplace_desc">sdasdasafdff</p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -613,11 +613,11 @@
                                                         <div class="icon"><i class='bx bx-line-chart'></i></div>
                                                     </div>
                                                     <div class="text">
-                                                        <a href="" style="padding: 0; height: auto;" data-i18n="online_marketplace">
+                                                        <a href="online-marketplace-development.html" style="padding: 0; height: auto;" data-i18n="online_marketplace">
                                                             
                                                         </a>
                                                         <div class="div">
-                                                            <p data-i18n="Awards_desc">sdasdasafdff</p>
+                                                            <p data-i18n="online_marketplace_desc">sdasdasafdff</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1022,38 +1022,39 @@
                                 <label for="phone" class="form-label"  data-i18n="contact_phone">contact_phone</label>
                                
                                 <div class="iti">
-                                    <input type="tel" id="phone2" name="phone" class="form-control "  data-rule="minlen:10"   data-msg="" >
-                                    <div class="validate"></div>
+                                    <input type="tel" id="phone2" name="phone" class="form-control " required  >
+                                 
+                                    <!-- data-rule="minlen:10"  -->
+                                    <!-- <div class="validate"></div> -->
                                 </div>
+                                <div>
+                                    <p id="errorMessage" hidden style=" color: red;
+                                    font-size: 12px;
+                                    font-weight: 600;text-align: start;"></p>
+                                  </div>
                               </div>
                               <div class="col-md-6 form-group">
-                              <select class="form-control  hearSelect" id="reach_by_id" name="reach_by_id"   aria-label="Default select example "  style="font-size: 12px;">
+                              <select class="form-control  hearSelect" id="reach_by_id" name="reach_by_id" data-rule="required"  aria-label="Default select example "  style="font-size: 12px;">
                                 <option value="" data-i18n="hear"></option>
-                                <!-- <option selected data-i18n="hear"></option>
-                                <option value="1" data-i18n="Clutch">Clutch</option>
-                                <option value="2" data-i18n="Linedin">Linedin</option>
-                                <option value="3" data-i18n="Quora">Quora</option>
-                                <option value="4" data-i18n="Google_Search">Google Search</option>
-                                <option value="5" data-i18n="Facebook">Facebook</option>
-                                <option value="6" data-i18n="Dev_To">Dev.To</option>
-                                <option value="7" data-i18n="Medium">Medium</option>
-                                <option value="2" data-i18n="From_A_Friend">From A Friend</option>
-                                <option value="3" data-i18n="Other">Other</option> -->
+
                               </select>
+                              <div class="validate"></div>
                              
                               </div>
                               <div class="col-md-6 form-group">
-                                <select class="form-control budget" id="budget_id" name="budget_id" aria-label="Default select example"style="font-size: 12px;">
-                                  <!-- <option selected data-i18n="budget">Open this select menu</option>
+                                <select class="form-control budget" id="budget_id" name="budget_id" data-rule="required"  aria-label="Default select example"style="font-size: 12px;">
+                                    <option value="" selected data-i18n="budget">Open this select menu</option>
+                                    <!-- <option selected data-i18n="budget">Open this select menu</option>
                                   <option value="1">$25000 - $50000</option>
                                   <option value="2">$50000 - $100000</option>
                                   <option value="3" data-i18n="Over">Over $100000</option>
                                   <option value="3" data-i18n="disclose">Over $100000</option> -->
                                 </select>
+                                <div class="validate"></div>
                                 </div>
                                 <div class="form-group col-sm-12">
                                     <label for="msg" class="form-label"  data-i18n="contact_message">Email</label>
-                                  <textarea class="form-control message-ar Conmsg" id="msg2" name="msg" rows="5" data-rule="required" ></textarea>
+                                  <textarea class="form-control message-ar Conmsg" id="msg2" name="msg" rows="5" data-rule="minlen:8" ></textarea>
                                   <div class="validate"></div>
                                 </div>
                                 <div class="form-group col-md-12" style="text-align: start;">

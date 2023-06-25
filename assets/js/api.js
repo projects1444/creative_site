@@ -1085,15 +1085,15 @@ fetch("https://testam.info/creativecloudsit/api/sliders", {
           const selectElement = document.querySelector('.budget');
 
           // Create the default option
-          const defaultOption = document.createElement('option');
-          defaultOption.setAttribute('selected', true);
-          if(lang =="ar"){
-            defaultOption.textContent = "ما هي ميزانيتك ؟ ";
-          }
-          else{
-            defaultOption.textContent = "What is your budget ? ";
-          }
-          selectElement.appendChild(defaultOption);
+          // const defaultOption = document.createElement('option');
+          // defaultOption.setAttribute('selected', true);
+          // if(lang =="ar"){
+          //   defaultOption.textContent = "ما هي ميزانيتك ؟ ";
+          // }
+          // else{
+          //   defaultOption.textContent = "What is your budget ? ";
+          // }
+          // selectElement.appendChild(defaultOption);
 
           // Create options based on the data
           budget.forEach(item => {
@@ -1178,6 +1178,7 @@ fetch("https://testam.info/creativecloudsit/api/sliders", {
     if(getTouch){
       getTouch.addEventListener('submit',function(e){
         e.preventDefault();
+        const errors = [];
         const formdata = new FormData();
         var getTouchname = document.getElementById('name2').value;
         var email = document.getElementById('email2').value;
@@ -1185,7 +1186,27 @@ fetch("https://testam.info/creativecloudsit/api/sliders", {
         var reach_by_id = document.getElementById('reach_by_id').value;
         var budget_id = document.getElementById('budget_id').value;
         var msg = document.getElementById('msg2').value;
+        const errorMessage = document.getElementById("errorMessage");
       //  var fileInput = document.getElementById("fileInput");
+      
+    if( phone.length < 8){
+      if(lang == "ar"){
+        errors.push("يجب ان لا يقل رقم الهاتف ع 8 ارقام");
+      }else{
+        errors.push("phone must be at least 8 charaters");
+      }
+   
+      console.log(errors);
+      
+  }
+      if(errors.length > 0){
+        e.preventDefault();
+        // errorMessage.style.display ="none";
+        errorMessage.toggleAttribute('hidden');
+        errorMessage.innerHTML = errors.join(', ');
+    }else{
+      errorMessage.setAttribute('hidden', '');
+    }
         formdata.append('name', getTouchname);
         formdata.append('email', email);
         formdata.append('phone', phone);
@@ -1193,16 +1214,10 @@ fetch("https://testam.info/creativecloudsit/api/sliders", {
         formdata.append('budget_id', budget_id);
         formdata.append('msg', msg);
         formdata.append('subscribe', subscribe.value);
-        formdata.append('file[]', fileInput.files[0]);
+        if (fileInput.files.length > 0){
+          formdata.append('file[]', fileInput.files[0]);
+        }
 
-        console.log(formdata.get("name"));
-        console.log(formdata.get("email"));
-        console.log(formdata.get("phone"));
-        console.log(formdata.get("reach_by_id"));
-        console.log(formdata.get("budget_id"));
-        console.log(formdata.get("msg"));
-        console.log(formdata.get("subscribe"));
-         console.log(formdata.get("file[]"));
     
         
         fetch("https://testam.info/creativecloudsit/api/get_touch", {
@@ -1227,17 +1242,24 @@ fetch("https://testam.info/creativecloudsit/api/sliders", {
                 swal("Good job!", `${res.msg}`, "success");
             
             }
+            
+
              document.getElementById("getTouch").reset(); // Reset the form
-        }else if(res.status == false){
-           if(lang == "ar"){
-            swal("عذراٌ !", "يرجي ادخال جميع البيانات", "error");
-           }else{
-            swal("Sorry !", "Please enter all data", "error");
-           }
+         
+             fileInput.value = null;
+             console.log(fileInput.files.length );
+             filenamecontainer.style.visibility= "hidden"
+        }
+        // else if(res.status == false){
+        //    if(lang == "ar"){
+        //     swal("عذراً !", "يرجي ادخال جميع البيانات", "error");
+        //    }else{
+        //     swal("Sorry !", "Please enter all data", "error");
+        //    }
           
             
             
-        }
+        // }
   
     
     })
