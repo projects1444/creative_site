@@ -38,7 +38,7 @@ if(hearSelect){
   hearSelect.setAttribute('data-msg', "إختر كيف سمعت عنا");
 }
 if(budget){
-  budget.setAttribute('data-msg', "إخترالميزانية");
+  budget.setAttribute('data-msg', "إختر الميزانية");
 }
 }else{
   namear.setAttribute('placeholder', 'Your Name');

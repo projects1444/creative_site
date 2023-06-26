@@ -5,11 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Team - Moderna Bootstrap Template</title>
+  <title>ui-ux-design</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
   <link rel="stylesheet" href="./assets/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
@@ -21,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+ 
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -28,6 +28,9 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+     <!-- contry code and flag input css -->
+     <link rel="stylesheet" href="./assets/css/international-telephone-input.css">
 
   <!-- Template Main CSS File -->
 	<!-- Bootstrap -->
@@ -36,21 +39,53 @@
 
 	<!-- Responsive -->
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link href="assets/css/style.css" rel="stylesheet" id="language-stylesheet">
+    <style>
+       
 
-  <!-- =======================================================
-  * Template Name: Moderna - v2.0.1
-  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+        ul {
+            top: 100% !important;
+            transform: translateY(0%) !important;
+        }
+
+        .iti {
+            position: relative;
+            display: inline-block;
+            direction: ltr;
+            width: 100%;
+        }
+
+        input[type=tel] {
+            padding-right: 6px;
+            padding-left: 52px;
+            margin-left: 0;
+
+            position: relative;
+            z-index: 0;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            margin-right: 0;
+            border: 1px solid #CCC;
+            
+            height: 38px;
+            /* padding: 6px 12px; */
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 100%;
+            color: inherit;
+        }
+
+    
+    
+    </style>
+
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header class="header-area fixed-top header-transparent " id="header">
+  <header class="header-area fixed-top header-transparent " id="header" >
     <!-- main header start -->
     <div class="main-header d-none d-lg-block">
 
@@ -81,10 +116,13 @@
                                                             <li >
                                                                 <div class="parent">
                                                                     <div class="image">
-                                                                        <div class="icon"><i class='bx bx-code-alt'></i></div>
+                                                                        <div class="icon">
+                                                                            <!-- <i class='bx bx-code-alt'></i> -->
+                                                                            <img src="./assets/img/nav-img/custom-soft.svg" alt="" width="23px">
+                                                                        </div>
                                                                     </div>
                                                                     <div class="text">
-                                                                       <a href="Custom-Software.html" style="padding: 0; height: auto;" data-i18n="custom_software_development">
+                                                                       <a href="Custom-Software.html" style="padding: 0; height: auto;"  data-i18n="custom_software_development">
                                                                                 custom_software_development
                                                                             </a>
                                                                         <div class="div">
@@ -100,7 +138,7 @@
                                                                         <div class="icon"><i class='bx bx-line-chart'></i></div>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <a href="online-marketplace-development.html" style="padding: 0; height: auto;" data-i18n="online_marketplace">
+                                                                        <a href="online-marketplace-development.html"  style="padding: 0; height: auto;" data-i18n="online_marketplace">
                                                                            online_marketplace
                                                                         </a>
                                                                         <div class="div">
@@ -115,7 +153,7 @@
                                                                         <div class="icon"><i class='bx bx-laptop'></i></div>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <a href="ui-ux-desgin.html" style="padding: 0;height: auto;" data-i18n="UI_UX_desgin">
+                                                                        <a href="ui-ux-desgin.html" class="active" style="padding: 0;height: auto;" data-i18n="UI_UX_desgin">
                                                                            UI_UX_desgin
                                                                         </a>
                                                                         <div class="div">
@@ -330,8 +368,8 @@
                                                                         <div class="icon"><i class='bx bx-briefcase-alt'></i></div>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <a href="team.html" style="padding: 0;height: auto;"  class="active" data-i18n="Our_Team">
-                                                                            Tetstimonials
+                                                                        <a href="team.html" style="padding: 0;height: auto;"   data-i18n="Our_Team">
+                                                                           Tetstimonials
                                                                         </a>
                                                                         <div class="div">
                                                                             <p data-i18n="Tetstimonials_desc">sdasdasafdff</p>
@@ -561,7 +599,7 @@
                                                         <div class="icon"><i class='bx bx-code-alt'></i></div>
                                                     </div>
                                                     <div class="text">
-                                                       <a href="Custom-Software.html" style="padding: 0; height: auto;"  data-i18n="custom_software_development">
+                                                       <a href="Custom-Software.html" style="padding: 0; height: auto;"   data-i18n="custom_software_development">
                                                                 
                                                             </a>
                                                         <div class="div">
@@ -576,7 +614,7 @@
                                                     <div class="icon"><i class='bx bx-line-chart'></i></div>
                                                 </div>
                                                 <div class="text">
-                                                    <a href="online-marketplace-development.html" style="padding: 0; height: auto;" data-i18n="online_marketplace">
+                                                    <a href="online-marketplace-development.html"   style="padding: 0; height: auto;" data-i18n="online_marketplace">
                                                         
                                                     </a>
                                                     <div class="div">
@@ -591,7 +629,7 @@
                                                     <div class="icon"><i class='bx bx-laptop'></i></div>
                                                 </div>
                                                 <div class="text">
-                                                    <a href="ui-ux-desgin.html" style="padding: 0;height: auto;" data-i18n="UI_UX_desgin">
+                                                    <a href="ui-ux-desgin.html" class="active" style="padding: 0;height: auto;" data-i18n="UI_UX_desgin">
                                                         <h4 >UI_UX_desgin</h4>
                                                     </a>
                                                     <div class="div">
@@ -783,7 +821,7 @@
                                                 <div class="icon"><i class='bx bx-briefcase-alt'></i></div>
                                             </div>
                                             <div class="text">
-                                                <a href="team.html" style="padding: 0;height: auto;"  class="active" data-i18n="Our_Team">
+                                                <a href="team.html" style="padding: 0;height: auto;"   data-i18n="Our_Team">
                                                     <h4>Tetstimonials</h4>
                                                 </a>
                                                 <div class="div">
@@ -934,243 +972,1153 @@
         </div>
     </div>
 </aside>
- 
-
   <main id="main">
 
-    <!-- ======= Our Team Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
+    <!-- ======= Contact Section ======= -->
+  
+    
+    <!-- ======= custom Section ======= -->
+     <section class="ServiceCustom main-section" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+        <div class="breadcrumbs">
+            <div class="container">
+      
+              <div class="d-flex justify-content-between align-items-start ol-container">
+                <!-- <h2 data-i18n="contact_us">Contact</h2> -->
+                <ol class="custom-ol">
+                  <li ><a href="index.html" data-i18n="home" class="home">Home</a></li>
+                  <li data-i18n="design_services" class="link">UI/UX Design Services</li>
+                </ol>
+              </div>
+      
+            </div>
+          </div>
+        <div class="container">
+            <div class="custom-software">
+                <h1 class="title">
+                    <span class="span1" data-i18n="UI_UX_desgin2">Online Marketplace</span>
+                  <span class="span2" data-i18n="Services"> Services</span>
+                </h1>
+                <p data-i18n="UI_UX_desgin2_desc"></p>
+    
+            </div>
+          <div class="row custom-images">
+            <div class=" col-lg-2  col-sm-4 col-6 image">
+                <img src="./assets/img/nav-img/clutch.png" alt="">
+            </div>
+            <div class=" col-lg-2  col-sm-4 col-6 image">
+                <img src="./assets/img/nav-img/top.png" alt="">
+            </div>
+            <div class=" col-lg-2  col-sm-4 col-6 image">
+                <img src="./assets/img/nav-img/mainfest.png" alt="">
+            </div>
+            <div class=" col-lg-2  col-sm-4 col-6 image">
+                <img src="./assets/img/nav-img/web.png" alt="">
+            </div>
+            <div class=" col-lg-2  col-sm-4 col-6 image">
+                <img src="./assets/img/nav-img/5.png" alt="">
+            </div>
+            <div class=" col-lg-2  col-sm-4 col-6 image">
+                <img src="./assets/img/nav-img/6.png" alt="">
+            </div>
+           
+          
 
-        <div class="d-flex justify-content-between align-items-center">
-          <h2 data-i18n="Our_Team">Our Team</h2>
-          <ol>
-            <li data-i18n="home"><a href="index.html">Home</a></li>
-            <li  data-i18n="Our_Team">Our Team</li>
-          </ol>
+
+
+          </div>
+
+  
         </div>
+     </section><!-- End custom Section -->
 
-      </div>
-    </section><!-- End Our Team Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-      <div class="container">
-
-        <div class="row" id="members-container" >
-
-          <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
+     <section id="stack" class="stack content-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title Custom-Offer-title d-flex justify-content-center" >
+                <div style="max-width: 790px;" >
+                    <h1 data-i18n="benfit_you_earn">benfit_you_earn</h1>
+                    <p data-i18n="benfit_you_earn_desc" class="Custom-Offer-desc">benfit_you_earn_desc</p>
                 </div>
-              </div>
-              <div class="member-info">
-                <h4 style="text-align: start;">Walter White</h4>
-                <span style="text-align: start;">Chief Executive Officer</span>
-                <p style="text-align: start;">Animi est delectus alias quam repellendus nihil nobis dolor. Est sapiente occaecati et dolore. Omnis aut ut nesciunt explicabo qui. Eius nam deleniti ut omnis repudiandae perferendis qui. Neque non quidem sit sed pariatur quia modi ea occaecati. Incidunt ea non est corporis in.</p>
-              </div >
+            
+           
             </div>
-          </div>
+        <div>
+            <div class="container" dir="ltr">
+        
+                    <div style="display: flex;justify-content: center; max-height: 46px;" >
+                            <ul class="nav nav-tabs2" >
+                                <li class="active">
+                                    <a data-toggle="tab" href="#with_UIUX"  >with UI/UX team</a>                  
+                                </li>
+                                <li >                  
+                                    <a data-toggle="tab" href="#without_UIUX" >without UI/UX team</a>                
+                                </li>
+                                  
+                            </ul>
+                    </div>
+                    <div class="tab-container2">
+                        <div class="tab-content tab-content2">
+                            <div id="with_UIUX" class="tab-pane fade  active">
+                         
+                                <div class="parent-all">
+                                    <div class="container">
+                                      <div class="row navs2">
+                                        <div class="col-lg-4 col-md-6  col-12 mt-4 pt-2">
+                                            <div class="card" >
+                                                <img class="card-img-top" src="./assets/img/service-details-1.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                  <h5 class="card-title" data-i18n="card1_title1">Card title</h5>
+                                                  <p class="card-text" data-i18n="card1_desc2"></p>
+                                                </div>
+                                               
+                                              </div>
+                                        </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aspernatur iste esse aliquam enim et corporis. Molestiae voluptatem aut eligendi quis aut. Libero vel amet voluptatem eos rerum non doloremque. Dolores eum non.</p>
-              </div>
-            </div>
-          </div>
+                                        <div class= " col-lg-4 col-md-6  col-12 mt-4 pt-2">
+                                            <div class="card" >
+                                                <img class="card-img-top" src="./assets/img/service-details-2.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                  <h5 class="card-title"  data-i18n="card1_title2">Card title</h5>
+                                                  <p class="card-text" data-i18n="card1_desc2"></p>
+                                                </div>
+                                               
+                                              </div>
+                                        </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Ut enim possimus nihil cupiditate beatae. Veniam facere quae non qui necessitatibus rerum eos vero. Maxime sit sunt quo dolor autem est qui quaerat aliquid. Tenetur possimus qui enim.</p>
-              </div>
-            </div>
-          </div>
+                                        <div class=" col-lg-4 col-md-6  col-12 mt-4 pt-2">
+                                            <div class="card" >
+                                                <img class="card-img-top" src="./assets/img/service-details-3.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                  <h5 class="card-title"  data-i18n="card1_title3">Card title</h5>
+                                                  <p class="card-text" data-i18n="card1_desc2"></p>
+                                                </div>
+                                               
+                                              </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-                <p>Sint qui cupiditate. Asperiores fugit impedit aspernatur et mollitia. Molestiae qui placeat labore assumenda id qui nesciunt quo reprehenderit. Rem dolores similique quis soluta culpa enim quia ratione ea.</p>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Niall Katz</h4>
-                <span>Marketing</span>
-                <p>Aut ex esse explicabo quia harum ea accusamus excepturi. Temporibus at quia quisquam veritatis impedit. Porro laborum voluptatum sed necessitatibus a saepe. Deserunt laborum quasi consequatur voluptatum iusto sint qui fuga vel. Enim eveniet sed quibusdam rerum in. Non dicta architecto consequatur quo praesentium nesciunt.</p>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Demi Lewis</h4>
-                <span>Financing</span>
-                <p>Amet labore numquam corrupti est. Nostrum amet voluptas consectetur dolor voluptatem architecto distinctio consequuntur eligendi. Quam impedit enim aut nesciunt aut dicta quam exercitationem. Reprehenderit exercitationem magnam. Ullam similique ut voluptas totam nobis porro accusamus nulla omnis.</p>
-              </div>
+
+                            </div>                    
+                            <div id="without_UIUX" class="tab-pane fade  ">
+                      
+                                <div class="parent-all">
+                                    <div class="container">
+                                      <div class="row navs2">
+                                        <div class="col-lg-4 col-md-6  col-12 mt-4 pt-2">
+                                            <div class="card" >
+                                                <img class="card-img-top" src="./assets/img/recent-posts-1.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                  <h5 class="card-title" data-i18n="card1_title1">Card title</h5>
+                                                  <p class="card-text" data-i18n="card1_desc2"></p>
+                                                </div>
+                                               
+                                              </div>
+                                        </div>
+
+                                        <div class= " col-lg-4 col-md-6  col-12 mt-4 pt-2">
+                                            <div class="card" >
+                                                <img class="card-img-top" src="./assets/img/recent-posts-2.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                  <h5 class="card-title"  data-i18n="card1_title2">Card title</h5>
+                                                  <p class="card-text" data-i18n="card1_desc2"></p>
+                                                </div>
+                                               
+                                              </div>
+                                        </div>
+
+                                        <div class=" col-lg-4 col-md-6  col-12 mt-4 pt-2">
+                                            <div class="card" >
+                                                <img class="card-img-top" src="./assets/img/recent-posts-3.jpg" alt="Card image cap">
+                                                <div class="card-body">
+                                                  <h5 class="card-title"  data-i18n="card1_title3">Card title</h5>
+                                                  <p class="card-text" data-i18n="card1_desc2"></p>
+                                                </div>
+                                               
+                                              </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+
+        
+                            </div>
+                          
+
+                        </div>
+                    </div>
+                    
             </div>
-          </div> -->
+        </div>
+        
 
         </div>
+      </section>
 
-      </div>
-    </section><!-- End Team Section -->
+      <section id="stack" class="stack content-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title Custom-Offer-title d-flex justify-content-center" >
+                <div>
+                    <h1 data-i18n="differ">benfit_you_earn</h1>
+                 
+                </div>            
+           
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-4  col-12 benfit mt-4 ">
+                    <h4 data-i18n="What_tasks">What tasks do the user interface (UI) designers perform:</h4>
+                    <ul>
+                        <li data-i18n="style">Create the website style</li>
+                        <li data-i18n="Consider">Consider the state and appearance of all user interface elements and the font hierarchy</li>
+                        <li data-i18n="Develop_guideline">Develop a guideline to collect all the elements above for ease of development</li>
+                    </ul>
+                </div>
+                <div class="col-md-4  col-12  mt-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="./assets/img/phone.png" class="benfit-img" alt="" >
+                    </div>
+                </div>
+                <div class="col-md-4  col-12 benfit mt-4 ">
+                    <h4 data-i18n="What_tasks2">What tasks do user experience (UX) designers perform</h4>
+                    <ul>
+                        <li data-i18n="style2">Create the website style</li>
+                        <li data-i18n="Consider2">Consider the state and appearance of all user interface elements and the font hierarchy</li>
+                        <li data-i18n="Develop_guideline2">Develop a guideline to collect all the elements above for ease of development</li>
+                        <li data-i18n="high_fidelity"></li>
+                    </ul>
+                </div>
+            </div>
+      
+        
 
-  </main><!-- End #main -->
+        </div>
+      </section>
+      <section  class="stories " data-aos="fade-up">
+        <div class="container">
+            <div class="section-title Approach-title " >
+                <h1 data-i18n="Services_by" style="max-width: 722px;">Services_by</h1>
+                <p data-i18n="Services_by_desc" class="cases-Custom-Offer-desc"></p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="team-desc-parent">
+                        <p class="team-desc" data-i18n="team_desc_one"> </p>
+                        <p class="team-desc" data-i18n="team_desc_two"></p>
+                    </div>
+                    
+                </div>
+             
+
+                <div class="col-md-6 col-sm-12 ima-conflict ">
+                    <div class="team-images-parent">
+                            <img src="./assets/img/testimonials/testimonials-4.jpg" alt="" class="team-images-im1">
+                            <img src="./assets/img/testimonials/testimonials-5.jpg" alt=""class="team-images-im2">               
+                    </div>
+                   
+                </div>
+            </div>
+
+         
+
+        </div>
+      </section>
+
+        <section class="agile" data-aos="fade-up" >
+            <div class="container" style="border-top: 1px solid rgb(227, 227, 236);padding-top: 60px;">
+            
+            
+
+                <div class="row">
+                
+                    <div class="one  col-md-3 col-sm-12">
+                        <div>
+                            <img src="./assets/img/asd.jpg" alt="" style="width: 135px;
+                            height: 135px;
+                            aspect-ratio: auto 135 /135;
+                            border-radius: 50%;">
+                        </div>
+                        <div>
+                            <h5 class="text-center" data-i18n="CEOName">Ahmed</h5>
+                            <h5 class="text-center CEO" data-i18n="CEO">CEO at CCIT</h5>
+                        </div>
+                    </div>
+
+                    <div class="tow col-md-9 col-sm-12" >
+                    <p data-i18n="ceo1" style="text-align: start;"></p>
+                    <p data-i18n="ceo2"  style="text-align: start;"></p>
+                    </div>
+                </div>
+            
+
+            </div>
+        </section>
+        <section class="custom-gradiant" data-aos="fade-up">
+            <div class="container">
+    
+            <div class="gradiant">
+            <div class="next">
+                <h3 class="text-center" data-i18n="do_you_need">looking</h3>
+                <p class="text-center" data-i18n="will_help">tell_us</p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn view-btn"><a href="con-form.html" data-i18n="contact" style="font-size: 18px; color: white;">Get in Touch</a></button>
+                </div>
+            </div>
+            </div>
+    
+            
+    
+            </div>
+           </section>
+           <section  class="stories " data-aos="fade-up">
+            <div class="container">
+                <div class="section-title Approach-title " >
+                    <h1 data-i18n="Our_case_studies" style="max-width: 722px;">Our_case_studies</h1>
+                    <p data-i18n="Our_case_studies_desc" class="cases-Custom-Offer-desc"></p>
+                </div>
+            <div class="row ">
+                <div class="col-12 video-box why-us d-flex justify-content-center">
+                    <img src="./assets/img/nav-img/aboutus.jpg" style="border-radius: 10px;" id="vedioImg"  class="img-fluid" alt="">
+                  <a href="" id="vedio" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+                </div>
+            </div>
+             
+    
+            </div>
+          </section>
+          <section  class="stories " data-aos="fade-up">
+            <div class="container">
+                <div class="section-title Approach-title " >
+                    <h1 data-i18n="steps" >steps</h1>
+                    <p data-i18n="steps_desc" class="cases-Custom-Offer-desc" style="max-width: 750px;"></p>
+                </div>
+            <div class="row ">
+                <div class="col-12" data-aos="fade-up">
+                    <div>
+                        <div class=" stepsProcessFirst stepsProcess">
+                            <div class="stepProcessInfo">
+                                <div class="stepsProcesstitle" data-i18n="Research_onely">
+                                    Research
+                                </div>
+                                <div class="stepsProcessdesc">
+                                  <p data-i18n="At_this_stage">
+                                   
+                                  </p>
+                                     <div style="margin-bottom: 15px;"></div>
+                                   <p data-i18n="Also">
+                                  
+                                   </p>
+                                </div>
+                              
+                            </div>
+                              <div class="stepsProcessimage">
+                                    <img src="./assets/img/service-details-1.jpg" alt="">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" data-aos="fade-up">
+                    <div>
+                        <div class=" stepsProcessFirst stepsProcess second-color">
+                            <div class="stepsProcessimage">
+                                <img src="./assets/img/service-details-3.jpg" alt="">
+                            </div>
+                            <div class="stepProcessInfo">
+                              
+                                <div class="stepsProcesstitle" data-i18n="Prototyping">
+                                    Prototyping
+                                </div>
+                                <div class="stepsProcessdesc">
+                                  <p data-i18n="At_next">
+                                   
+                                  </p>
+                                     <div style="margin-bottom: 15px;"></div>
+                                   <p data-i18n="therefor">
+                                  
+                                   </p>
+                                </div>
+                              
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" data-aos="fade-up">
+                    <div>
+                        <div class=" stepsProcessFirst stepsProcess">
+                            <div class="stepProcessInfo">
+                                <div class="stepsProcesstitle" data-i18n="Visualization">
+                                    Visualization
+                                </div>
+                                <div class="stepsProcessdesc">
+                                  <p data-i18n="we_collect">
+                                   
+                                  </p>
+                                     <div style="margin-bottom: 15px;"></div>
+                                   <p data-i18n="its_an">
+                                  
+                                   </p>
+                                </div>
+                              
+                            </div>
+                              <div class="stepsProcessimage">
+                                    <img src="./assets/img/service-details-4.jpg" alt="">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" data-aos="fade-up">
+                    <div>
+                        <div class=" stepsProcessFirst stepsProcess second-color">
+                            <div class="stepsProcessimage">
+                                <img src="./assets/img/service-details-2.jpg" alt="">
+                            </div>
+                            <div class="stepProcessInfo">
+                              
+                                <div class="stepsProcesstitle" data-i18n="Design">
+                                    Design
+                                </div>
+                                <div class="stepsProcessdesc">
+                                  <p data-i18n="based_on">
+                                   
+                                  </p>
+                                     <div style="margin-bottom: 15px;"></div>
+                                   <p data-i18n="then_we">
+                                  
+                                   </p>
+                                </div>
+                              
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+             
+    
+            </div>
+          </section>
+          <section class="phone" data-aos="fade-up">
+            <div class="container">
+    
+                <div class="section-title Approach-title " >
+                    <h3 data-i18n="feat_case_study">Our Skills</h3>
+                
+                </div>
+                <div class="row phone2">
+                    
+                    <div class="col-lg-6 col-sm-12">
+                    <a href="" class="custom"> <h3 data-i18n="Custom_Ecommerce_Solution" ></h3></a> 
+                    <p data-i18n="phone_desc"></p>
+                    <h3 data-i18n="results">results</h3>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <p style="text-align: start;">100%</p>
+                            <p style="text-align: start; font-size: 14px;" data-i18n="increase"></p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-12"></div>
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                            <p style="text-align: start;">100%</p>
+                            <p style="text-align: start; font-size: 14px;" data-i18n="increase2"></p>
+                        </div>
+                    </div>
+    
+                    <h3 data-i18n="case_study" class="case_study"></h3>
+                    <div class="page1">
+                        <p data-i18n="recomnd"></p>
+                        <div class="d-flex align-items-center" style="gap: 20px;">
+                            <div>
+                                <img src="./assets/img/asd.jpg" alt="" style="width: 75px;
+                                height: 75px;
+                                border-radius: 50%;">
+                            </div>
+                            <div>
+                                <h2 style="text-align: start; color: #232323;
+                            
+                                font-size: 18px;
+                                font-weight: 700;
+                                line-height: 27px;" data-i18n="CEOName">Name</h2>
+                                <p style="text-align: start;    color: #474f5f;
+                            
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 22px;" data-i18n="Director">Director , Website name</p>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="d-flex justify-content-center cont-img" >
+                        <!-- <img src="./assets/img/iPhone02.png" alt="" > -->
+                        <img src="./assets/img/phone3.png" alt="" style="width:50%; height: 90%;" >
+                        <!-- <img src="./assets/img/nav-img/disco.webp" alt="" style="width:90%;height: 90%;" > -->
+                        </div>
+                    </div>
+                    <div  class="page2 col-lg-6 col-sm-12">
+                        <p data-i18n="recomnd"></p>
+                        <div class="d-flex align-items-center" style="gap: 20px;">
+                            <div>
+                                <img src="./assets/img/asd.jpg" alt="" style="width: 75px;
+                                height: 75px;
+                                border-radius: 50%;">
+                            </div>
+                            <div>
+                                <h2 style="text-align: start; color: #232323;
+                            
+                                font-size: 18px;
+                                font-weight: 700;
+                                line-height: 27px;" data-i18n="CEOName">Name</h2>
+                                <p style="text-align: start;    color: #474f5f;
+                            
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 22px;" data-i18n="Director">Director , Website name</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                
+    
+                </div>
+           </section>
+           <section class="businesses content-section" id="businesses " data-aos="fade-up">
+            <div class="container">
+            
+                <div class="section-title businesses-title " >
+                    <h1 data-i18n="Deliverables" style="max-width: 722px;">Deliverables_title</h1>
+                    <p  class="Custom-Offer-desc" data-i18n="Deliverables_desc">Deliverables_desc</p>   
+            
+                </div>
+    
+                <div class="row">
+                  
+                    <div class=" col-sm-6  pt-2 ">
+                        <div
+                            class="card features fea-primary rounded p-4   position-relative overflow-hidden ">
+                        
+                            <div class="businesse-icon">
+                                <i class='bx bx-rocket' style="transform: rotate(-45deg);"></i>
+                            </div>
+                            <div class="card-body p-0 content">
+                            <h5 class="hed2  " data-i18n="clicble">Startups</h5>
+                            <p class=" businesses-desc  mb-0 " data-i18n="clicble_desc" >Startups_desc</p>
+                            </div>
+                        
+                        </div>
+                        </div>
+                
+                    
+                    <!--end col-->
+                    <div class=" col-sm-6  pt-2 ">
+                        <div
+                            class="card features fea-primary rounded p-4   position-relative overflow-hidden ">
+                        
+                            <div class="businesse-icon">
+                                <i class='bx bx-store'></i>
+                            </div>
+                            <div class="card-body p-0 content">
+                            <h5 class="hed2  " data-i18n="Website_visual_style">Website_visual_style</h5>
+                            <p class=" businesses-desc  mb-0 " data-i18n="Website_visual_style_desc" >Website_visual_style_desc</p>
+                            </div>
+                        
+                        </div>
+                        </div>
+                
+                    
+                    <!--end col-->
+    
+                    <div class=" col-sm-6  pt-2 ">
+                        <div
+                            class="card features fea-primary rounded p-4   position-relative overflow-hidden ">
+                        
+                            <div class="businesse-icon">
+                                <i class='bx bx-buildings'></i>
+                            </div>
+                            <div class="card-body p-0 content">
+                            <h5 class="hed2  " data-i18n="Guideline">Guideline</h5>
+                            <p class=" businesses-desc  mb-0 " data-i18n="Guideline_desc" >Guideline_desc</p>
+                            </div>
+                        
+                        </div>
+                        </div>
+                
+                    
+                    <!--end col-->
+                    <div class=" col-sm-6  pt-2 ">
+                        <div
+                            class="card features fea-primary rounded p-4   position-relative overflow-hidden ">
+                        
+                            <div class="businesse-icon">
+                                <i class='bx bx-building'></i>
+                            </div>
+                            <div class="card-body p-0 content">
+                            <h5 class="hed2  " data-i18n="Design_mockup">Design_mockup </h5>
+                            <p class=" businesses-desc  mb-0 " data-i18n="Design_mockup_desc" >Design_mockup _desc</p>
+                            </div>
+                        
+                        </div>
+                        </div>
+                
+                </div>
+            
+    
+            </div>
+             </section>  
+             <section id="industries" class="content-section Custom-Offer" data-aos="fade-up">
+                <div class="container">
+        
+                    <div class="section-title Custom-Offer-title d-flex justify-content-center" >
+                    <div style="max-width: 730px;">
+                        <h1 data-i18n="webDesgin">industries</h1>
+                        <p data-i18n="webDesgin_desc" class="Custom-Offer-desc">industries_desc</p>
+                   
+                    </div>
+                    </div>
+                    <div class="row cust justify-content-center">
+                      
+                        <!--end col-->
+                  
+                        <div class="col-lg-4  col-sm-6 mt-4 pt-2">
+                            <div
+                              class="card features custom-hover fea-primary rounded p-4  text-center position-relative overflow-hidden ">
+                              <div class="hidden3"></div>
+                              <div class="div-ico3">
+                                
+                             <img src="./assets/img/nav-img/rental.png"  alt="">
+                             </div>
+                            
+                              <div class="card-body p-0 content custm-soft">
+                                <h5 ><a href="" data-i18n="Rental">
+                                    Rental
+                                </a></h5>
+                                <p class="para mb-0 text-center" data-i18n="Rental_desc" >It is a long established fact that a reader.</p>
+                              </div>
+                             
+                            </div>
+                          </div>
+                        <!--end col-->
+                  
+                     
+                        <div class="col-lg-4  col-sm-6 mt-4 pt-2">
+                            <div
+                              class="card features custom-hover fea-primary rounded p-4  text-center position-relative overflow-hidden ">
+                              <div class="hidden2"></div>
+                              <div class="div-ico3">
+                                
+                             <img src="./assets/img/nav-img/shopping.png"  alt="">
+                             </div>
+                            
+                              <div class="card-body p-0 content custm-soft">
+                                <h5 ><a href="" data-i18n="E_commerce">
+                                    E_commerce
+                                </a></h5>
+                                <p class="para mb-0 text-center" data-i18n="E_commerce_desc" >It is a long established fact that a reader.</p>
+                              </div>
+                             
+                            </div>
+                          </div>
+                        <!--end col-->
+                  
+                        <div class="col-lg-4  col-sm-6 mt-4 pt-2">
+                            <div
+                              class="card features custom-hover fea-primary rounded p-4  text-center position-relative overflow-hidden ">
+                              <div class="hidden3"></div>
+                              <div class="div-ico3">
+                                
+                             <img src="./assets/img/nav-img/plan.png"  alt="">
+                             </div>
+                            
+                              <div class="card-body p-0 content custm-soft">
+                                <h5 ><a href="" data-i18n="Travel">
+                                    Travel
+                                </a></h5>
+                                <p class="para mb-0 text-center" data-i18n="Travel_desc" >It is a long established fact that a reader.</p>
+                              </div>
+                             
+                            </div>
+                          </div>
+                        <!--end col-->
+                  
+                        <div class="col-lg-4  col-sm-6 mt-4 pt-2">
+                            <div
+                              class="card features custom-hover fea-primary rounded p-4  text-center position-relative overflow-hidden ">
+                              <div class="hidden4"></div>
+                              <div class="div-ico3">
+                                
+                             <img src="./assets/img/nav-img/car.png"  alt="">
+                             </div>
+                            
+                              <div class="card-body p-0 content custm-soft">
+                                <h5 ><a href="" data-i18n="Automotive">
+                                    Automotive
+                                </a></h5>
+                                <p class="para mb-0 text-center" data-i18n="Automotive_desc" >It is a long established fact that a reader.</p>
+                              </div>
+                             
+                            </div>
+                          </div>
+                        <!--end col-->
+                  
+                        <div class="col-lg-4  col-sm-6 mt-4 pt-2">
+                            <div
+                              class="card features custom-hover fea-primary rounded p-4  text-center position-relative overflow-hidden ">
+                              <div class="hidden1"></div>
+                              <div class="div-ico3">
+                                
+                             <img src="./assets/img/nav-img/insurance.png"  alt="">
+                             </div>
+                            
+                              <div class="card-body p-0 content custm-soft">
+                                <h5 ><a href="" data-i18n="insurance">
+                                    insurance
+                                </a></h5>
+                                <p class="para mb-0 text-center" data-i18n="insurance_desc" >It is a long established fact that a reader.</p>
+                              </div>
+                             
+                            </div>
+                          </div>
+                        <!--end col-->
+                  
+                        <div class="col-lg-4  col-sm-6 mt-4 pt-2">
+                            <div
+                              class="card features custom-hover fea-primary rounded p-4  text-center position-relative overflow-hidden ">
+                              <div class="hidden2"></div>
+                              <div class="div-ico3">
+                                
+                             <img src="./assets/img/nav-img/search.png"  alt="">
+                             </div>
+                            
+                              <div class="card-body p-0 content custm-soft">
+                                <h5 ><a href="" data-i18n="Recruiting">
+                                    Recruiting
+                                </a></h5>
+                                <p class="para mb-0 text-center" data-i18n="Recruiting_desc" >It is a long established fact that a reader.</p>
+                              </div>
+                             
+                            </div>
+                          </div>
+                        
+                        <!--end col-->
+                    
+                        
+                        <!--end col-->
+                  
+                      </div>
+                
+                
+        
+                </div>
+            </section>
+            <section class="phone" data-aos="fade-up">
+                <div class="container">
+        
+                    <div class="section-title Approach-title " >
+                        <h3 data-i18n="feat_case_study">Our Skills</h3>
+                    
+                    </div>
+                    <div class="row phone2">
+                        
+                        <div class="col-lg-6 col-sm-12">
+                        <a href="" class="custom"> <h3 data-i18n="online13" ></h3></a> 
+                        <p data-i18n="phone_desc"></p>
+                        <h3 data-i18n="results">results</h3>
+                        <div class="row " style="margin: 15px 0;">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                             <div class="DiscoverWorksItem" data-i18n="Ensured">
+                               
+                             </div>
+                            </div>
+                            <!-- <div class="col-lg-2 col-md-2 col-sm-12"></div> -->
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="DiscoverWorksItem" data-i18n="Delivered_a_scalable">
+                                   
+                                </div>
+                               </div>
+                        </div>
+        
+                        <h3 data-i18n="case_study" class="case_study"></h3>
+                        <div class="page1">
+                            <p data-i18n="recomnd"></p>
+                            <div class="d-flex align-items-center" style="gap: 20px;">
+                                <div>
+                                    <img src="./assets/img/asd.jpg" alt="" style="width: 75px;
+                                    height: 75px;
+                                    border-radius: 50%;">
+                                </div>
+                                <div>
+                                    <h2 style="text-align: start; color: #232323;
+                                
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    line-height: 27px;" data-i18n="CEOName">Name</h2>
+                                    <p style="text-align: start;    color: #474f5f;
+                                
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 22px;" data-i18n="Director">Director , Website name</p>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="d-flex justify-content-center cont-img" >
+                            <!-- <img src="./assets/img/iPhone02.png" alt="" > -->
+                            <img src="./assets/img/phone3.png" alt="" style="width:50%; height: 90%;" >
+                            <!-- <img src="./assets/img/nav-img/disco.webp" alt="" style="width:90%;height: 90%;" > -->
+                            </div>
+                        </div>
+                        <div  class="page2 col-lg-6 col-sm-12">
+                            <p data-i18n="recomnd"></p>
+                            <div class="d-flex align-items-center" style="gap: 20px;">
+                                <div>
+                                    <img src="./assets/img/asd.jpg" alt="" style="width: 75px;
+                                    height: 75px;
+                                    border-radius: 50%;">
+                                </div>
+                                <div>
+                                    <h2 style="text-align: start; color: #232323;
+                                
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    line-height: 27px;" data-i18n="CEOName">Name</h2>
+                                    <p style="text-align: start;    color: #474f5f;
+                                
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 22px;" data-i18n="Director">Director , Website name</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    
+        
+                    </div>
+               </section>
+               <section class="custom-gradiant" data-aos="fade-up">
+                <div class="container">
+        
+                <div class="gradiant">
+                <div class="next">
+                    <h3 class="text-center" data-i18n="ready_to">ready_to</h3>
+                    <p class="text-center" data-i18n="tell_us">tell_us</p>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn view-btn"><a href="con-form.html" data-i18n="contact" style="font-size: 18px; color: white;">Get in Touch</a></button>
+                    </div>
+                </div>
+                </div>
+        
+                
+        
+                </div>
+             </section>
+             <section class="featured" data-aos="fade-up">
+                <div class="container">
+
+            <p style="margin: 0; color: red;" data-i18n="Insights">Insights</p>
+            <h4 data-i18n="Featured_articles">asdasdasfafa</h4>
+                <div class="row feature">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card" >
+                            <a href="">
+                                <img src="./assets/img/portfolio/portfolio-3.jpg" class="card-img-top" alt="..."  style="height: 200px;">
+                                <div class="card-body">
+                                    <h5 class="card-title" data-i18n="Design" style="color: #023986;">Enterpreneuship</h5>
+                                    <p class="card-text" data-i18n="sassSearch" style="color: black;"></p>
+                        
+                                </div>
+                            </a>
+                        
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card" >
+                            <a href=""> 
+                                <img src="./assets/img/portfolio/portfolio-2.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                                <div class="card-body">
+                                <h5 class="card-title" data-i18n="Design" style="color: #023986;">Design</h5>
+                                <p class="card-text" data-i18n="Design_desc" style="color: black;"></p>
+                                
+                                </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card" >
+                            <a href="">
+                                <img src="./assets/img/portfolio/portfolio-1.jpg" class="card-img-top" alt="..."  style="height: 200px;">
+                                <div class="card-body">
+                                    <h5 class="card-title" data-i18n="Design" style="color: #023986;">technology</h5>
+                                    <p class="card-text" data-i18n="technology_desc" style="color: black;"></p>
+                                
+                                </div>
+
+                            </a>
+                        
+                        </div>
+                    </div>
+                
+                </div>
+                
+
+                </div>
+            </section>
+            <section  id="Free_Quote" class="Approach content-section" data-aos="fade-up">
+                <div class="container">
+                    <div class="section-title businesses-title " >
+                        <h1 data-i18n="let2" style="max-width: 722px;">businesses_title</h1>
+                    </div>
+                 
+        
+                        <div class="row">
+                
+                          <div class="col-lg-5 col-md-4 col-sm-12">
+                
+                            <div>
+                                <div style="margin-bottom: 10px; display: flex; justify-content: start;">
+                                    <img src="./assets/img/asd.png" alt="" style="width: 70%;">
+                                </div>
+                                <div>
+                                    <h3 data-i18n="whats" style="text-align: start;">what's next?</h3>
+                                    <ol  class="ol-desc">
+                                        <li  data-i18n="taya">Coffee</li>
+                                        <li  data-i18n="NDA"></li>
+                                        <li  data-i18n="custom_soft">Milk</li>
+                                      </ol> 
+                                </div>
+                            </div>
+                
+                          </div>
+                
+                          <div class="col-lg-7 col-md-8 col-sm-12 frm-contain ">
+                          
+                            <h5 data-i18n="tell_us2" style="text-align: start;"></h5>
+                            <form action="" method="post" id="getTouch" role="form" class="php-email-form">
+                                <div class="form-row">
+                                  <div class="col-sm-12 form-group ">
+                                      <label for="name" class="form-label"  data-i18n="contact_name">Your Name</label>
+                                    <input type="text" name="name" class="form-control name-ar" id="name2"   data-rule="minlen:8"  />
+                                    <div class="validate"></div>
+                                  </div>
+                                  <div class="col-md-6 form-group">
+                                      <label for="email" class="form-label"  data-i18n="Email">Email</label>
+                                    <input type="email" class="form-control email-ar" name="email" id="email2" data-rule="required" placeholder="Example@mail.com"  data-msg="" />
+                                    <div class="validate"></div>
+                                  </div>
+                                  <div class="col-md-6 form-group">
+                                      <label for="phone" class="form-label"  data-i18n="contact_phone">contact_phone</label>
+                                     
+                                      <div class="iti">
+                                          <input type="tel" id="phone2" name="phone" class="form-control " required  >
+                                       
+                                          <!-- data-rule="minlen:10"  -->
+                                          <!-- <div class="validate"></div> -->
+                                      </div>
+                                      <div>
+                                          <p id="errorMessage" hidden style=" color: red;
+                                          font-size: 12px;
+                                          font-weight: 600;text-align: start;"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                    <select class="form-control  hearSelect" id="reach_by_id" name="reach_by_id" data-rule="required"  aria-label="Default select example "  style="font-size: 12px;">
+                                      <option value="" data-i18n="hear"></option>
+        
+                                    </select>
+                                    <div class="validate"></div>
+                                   
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                      <select class="form-control budget" id="budget_id" name="budget_id" data-rule="required"  aria-label="Default select example"style="font-size: 12px;">
+                                          <option value="" selected data-i18n="budget">Open this select menu</option>
+                                          <!-- <option selected data-i18n="budget">Open this select menu</option>
+                                        <option value="1">$25000 - $50000</option>
+                                        <option value="2">$50000 - $100000</option>
+                                        <option value="3" data-i18n="Over">Over $100000</option>
+                                        <option value="3" data-i18n="disclose">Over $100000</option> -->
+                                      </select>
+                                      <div class="validate"></div>
+                                      </div>
+                                      <div class="form-group col-sm-12">
+                                          <label for="msg" class="form-label"  data-i18n="contact_message">Email</label>
+                                        <textarea class="form-control message-ar Conmsg" id="msg2" name="msg" rows="5" data-rule="minlen:8" ></textarea>
+                                        <div class="validate"></div>
+                                      </div>
+                                      <div class="form-group col-md-12" style="text-align: start;">
+                                        <input type="checkbox" id="subscribe" name="subscribe" value="1">
+                                        <label for="subscribe" data-i18n="stay" style="font-size: 12px;"> I have a bike</label> 
+                                      </div>
+        
+                                </div>
+                              
+                               
+                                
+                                <div class=" submit-container">
+                                  <div > 
+                                    <div style="cursor: pointer;" class="icobtn">
+                                      <i class="fa fa-paperclip " aria-hidden="true" style="transform: rotate(135deg);"></i>
+                                      <span data-i18n="attach">attach files</span>
+                                      <input type="file" id="fileInput" name="fileInput" style="display: none;">
+                                     
+                                    </div>
+                                      <div class="d-flex justify-content-between  align-items-center" style="visibility: hidden;" id="filenamecontainer">
+                                          <i class='fa fa-remove ' id="btnremove" style="cursor: pointer;"></i>
+                                          <span id="filename" style="font-size: 12px;"></span>
+                                      </div>
+                                  </div>
+                                  <button type="submit" class="sub"  data-i18n="send">Send Message</button>
+                              </div>
+                              </form>
+                           
+                          </div>
+                
+                        </div>
+                
+                 
+                
+        
+                </div>
+              </section> 
+
+  </main>
+  
+  <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h4 data-i18n="Newsletter">Our Newsletter</h4>
-            <p  data-i18n="follow" style="text-align: start;">You can follow our newsletter from here</p>
-          </div>
-          <div class="col-lg-6">
-            <form action="" method="post" id="subscibe-form">
-                <input type="email" name="email" class="form-control" id="subscribe-input"  placeholder="Example@mail.com">
-                <button type="submit" id="submit-btn" value="Subscribe" class="subscribe" data-i18n="Subscribe"></button>></button>
-              </form>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="footer-top">
-      <div class="container">
-        <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4 data-i18n="services"> Services</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="custom_software_development">custom software development</a></li>
+                        <li><a href="#" data-i18n="online_marketplace">online marketplace development</a></li>
+                        <li><a href="#" data-i18n="MVP">MVP development</a></li>
+                        <li><a href="#" data-i18n="Saas">Saas development</a></li>
+                        <li><a href="#" data-i18n="product_discovery">product_discovery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4 style="visibility:hidden;"> asd</h4>
+                    <ul>
+                        <li> <a href="#" data-i18n="PWA">PWA</a></li>
+                        <li> <a href="#" data-i18n="design_development">About us</a></li>
+                        <li> <a href="#" data-i18n="mobile_development">mobile_development</a></li>
+                        <li> <a href="#" data-i18n="devops_development">devops_development</a></li>
+                        <li> <a href="#" data-i18n="QA">QA</a></li>
+                    </ul>
+                </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4 data-i18n="Useful_Links">Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="home">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="service">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="Terms_of_service">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="Privacy_policy">Privacy policy</a></li>
-            </ul>
-          </div>
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4 data-i18n="Company"> company</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="about"></a></li>
+                        <li><a href="#" data-i18n="our_works"></a></li>
+                        <li><a href="#" data-i18n="Tetstimonials"></a> </li>
+                        <li><a href="#" data-i18n="careers">careers</a> &nbsp;<span class="hire" data-i18n="HIRING">HIRING</span></li>
+                        <li><a href="#" data-i18n="approach">approach</a></li>
+                        <li><a href="#" data-i18n="blog">blog</a></li>
+                        <li><a href="#" data-i18n="FAQ">approach</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h4 data-i18n="Insights"> Insights</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="H_T_B"></a></li>
+                        <li><a href="#" data-i18n="What_cost"></a></li>
+                        <li><a href="#" data-i18n="how_to_build"></a> </li>
+                        <li><a href="#" data-i18n="veu_react"></a> </li>
+                        <li><a href="#" data-i18n="sass_broduct"></a></li>
+                        <li><a href="#" data-i18n="service_market"></a></li>
+                   
+                    </ul>
+                </div>
+<!-- 
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h4 data-i18n="contact">Contact Us</h4>
+                    <p>
+                        <span data-i18n="Al_Ranuna">Al-Ranuna neighborhood</span> <br>
+                        <span data-i18n="Madinah">Madinah, NY 41311</span><br>
+                        <span data-i18n="Saudi_Arabia">Saudi Arabia </span><br><br>
+                        <strong data-i18n="Phone">Phone:</strong> +966 59 808 0208<br>
+                        <strong data-i18n="Email">Email:</strong>info@creativecloudsit.com<br>
+                    </p>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4 data-i18n="service">Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="Web_Design">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="Web_Development">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="Product_Management">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="Marketing">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="graphic_design">Graphic Design</a></li>
-            </ul>
-          </div>
+                </div> -->
+               
+                <!-- <div class="col-lg-3 col-md-6 footer-info">
+                    <h3 data-i18n="about">About Creative Clouds IT</h3>
+                    <p data-i18n="desc">A comany spepcialized in the field of technology, employing many experts in
+                        various fields.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+                </div> -->
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4 data-i18n="contact">Contact Us</h4>
-            <p>
-              <span data-i18n="Al_Ranuna">Al-Ranuna neighborhood</span> <br>
-              <span data-i18n="Madinah">Madinah, NY 41311</span><br>
-              <span data-i18n="Saudi_Arabia">Saudi Arabia </span><br><br>
-              <strong data-i18n="Phone">Phone:</strong> +966 59 808 0208<br>
-              <strong data-i18n="Email">Email:</strong>info@creativecloudsit.com<br>
-            </p>
-
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3 data-i18n="about">About Creative Clouds IT</h3>
-            <p data-i18n="desc">A comany spepcialized in the field of technology, employing many experts in various fields.</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
-          </div>
-
+           
         </div>
-      </div>
     </div>
 
     <div class="container">
-      <div class="copyright" >
-        <span data-i18n="rghits">All Rights Reserved .</span>
-        &copy; 2023 . <strong><span data-i18n="Clouds">Creative Clouds IT</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-Creative Clouds IT/ -->
-      </div>
+       
+
+        
+        <div class="d-flex justify-content-around last_section"> 
+            <div class="row" >
+            <div class="first col-12 col-lg-4">
+                <div>
+                    <img src="./assets/img/newSaled.png" alt="" style="width: 55px;">
+                </div>
+                <div>
+                    <h5 style="text-align: start;" data-i18n="Sales_department">Sales department</h5>
+                    <p style="text-align: start;">Hello@</p>
+                    <p style="text-align: start;" data-i18n="phone_num"></p>
+                </div>
+            </div>
+            <div class="second col-12 col-lg-4">
+                <div>
+                    <img src="./assets/img/newRok.png" alt="" style="width: 55px;">
+                </div>
+                <div>
+                    <h5 style="text-align: start;" data-i18n="opportunities">opportunities</h5>
+                    <p style="text-align: start;">Job@</p>
+                 
+                </div>
+            </div>
+            <div class="third col-12 col-lg-4">
+                <div>
+                    <img src="./assets/img/newSahm.png" alt="" style="width: 55px;">
+                </div>
+                <div>
+                    <h5 style="text-align: start;" data-i18n="Marketing_cooperations">Marketing_cooperations</h5>
+                    <p style="text-align: start;">pr@</p>
+                 
+                </div>
+            </div>
+        </div>
     </div>
-  </footer><!-- End Footer -->
+    </div>
+</footer>
+  <!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
+  <!-- <script src="assets/css/new version/bootstrap.bundle.min.js"></script> -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
+
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -1180,25 +2128,60 @@
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <!-- Template Main JS File -->
-  <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/slider.js"></script>
+
+  <script src="assets/css/swiper-bundle.min.js"></script>
 
 
-
-    <!--Jquery js-->
-      <script src="assets/js/jquery-3.0.0.min.js"></script>
-      <!--Bootstrap js-->
-      <script src="assets/js/bootstrap.min.js"></script>
-      <!-- Smooth Scroll -->
-      <script src="assets/js/smooth-scroll.js"></script>
-      <!--Main js-->
-      <script src="assets/js/main2.js"></script>
+     <!-- JavaScript -->
+      <!--Uncomment this line-->
+   
+      <script src="assets/js/script.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="assets/css/international-telephone-input.js"></script>
+  
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-      <script  src="assets/js/api.js"></script>
+ 
+          <!--Jquery js-->
+          <script src="assets/js/jquery-3.0.0.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+          <!--Bootstrap js-->
+          <script src="assets/js/bootstrap.min.js"></script>
+          <!-- Smooth Scroll -->
+          <script src="assets/js/slider.js"></script>
+          
+          <!--Main js-->
+          <script src="assets/js/lang.js"></script>
+          <script src="assets/js/main2.js"></script>
+          <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+          <script  src="assets/js/api.js"></script>
+          <script>
+          $('.slider').slick({
+            arrows: true,
+            infinite: true,
+            dots: true,
+            prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+            nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>'
+            });
+       
+            const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
+                accordionItemHeaders.forEach(accordionItemHeader => {
+                accordionItemHeader.addEventListener("click", event => {
+                    
+
+                    accordionItemHeader.classList.toggle("active");
+                    const accordionItemBody = accordionItemHeader.nextElementSibling;
+                    if(accordionItemHeader.classList.contains("active")) {
+                    accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+                    }
+                    else {
+                    accordionItemBody.style.maxHeight = 0;
+                    }
+                    
+                });
+                });
+    </script>
+           
 </body>
 
 </html>

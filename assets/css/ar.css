@@ -5679,6 +5679,7 @@ line-height: 30px;
   font-weight: bold;
 }
 .online p{
+  text-align: center;
   font-size: 14px;
 }
 .online3{
@@ -5793,6 +5794,9 @@ line-height: 30px;
   top: 135px;
   z-index: -1;
 }
+.end-wrapper{
+  margin-top: 35px;
+}
 @media (max-width:767px) {
   .exceptional-software-section__line ,.exceptional-wrapper img{
     display: none;
@@ -5807,11 +5811,13 @@ line-height: 30px;
     padding-bottom: 30px!important;
     padding-right: 20px!important;
     padding-top: 0 !important;
+    margin-top:0 ;
+    }
+    .end-wrapper{
+      margin-top:0;
     }
 }
-.end-wrapper{
-  margin-top: 35px;
-}
+
 .exceptional-wrapper img {
 
   animation: pulse-blue 2s infinite;
@@ -6045,4 +6051,256 @@ text-align: start;
   padding: 10px;
 }
 /* end online-marketplace-development  */
-/* end online-marketplace-development  */
+
+/* UI/UX services  */
+
+.nav-tabs2{
+  border-bottom: 0; 
+  padding-inline-start: 0;
+  height: 100%;
+  align-items: center;
+  background: rgb(236, 238, 243);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto 40px;
+  max-width: 350px;
+  padding: 3px 0px;
+}
+.nav-tabs2 li.active  {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(217, 222, 232);
+  box-shadow: rgba(35, 35, 35, 0.08) 0px 4px 8px;
+  color: rgb(51, 53, 57);
+  cursor: default;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out 0s;
+}
+.nav-tabs2 li  {
+  border: 1px solid rgb(236, 238, 243);
+  border-radius: 40px;
+  color: rgb(110, 110, 127);
+  cursor: pointer;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 6px 0;
+  transition: all 0.2s ease-in-out 0s;
+}
+.nav-tabs2 li  a {
+  padding: 0 15px;
+
+  color: black;
+}
+.tab-container2{
+  width: 100%;
+
+}
+
+.tab-content2{
+  padding: 0;
+}
+.navs2 .card{
+  min-height: 530px;
+
+  border-width: 0px 1px 1px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-color: rgb(217, 222, 232);
+    border-bottom-color: rgb(217, 222, 232);
+    border-left-color: rgb(217, 222, 232);
+    border-image: initial;
+    border-radius: 20px 20px 10px 10px;
+    border-top-style: initial;
+    border-top-color: initial;
+}
+.card-img-top{
+  max-height: 166px;
+    overflow: hidden;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+.navs2 .card .card-title{
+  color: rgb(51, 53, 57);
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  margin: 0px 0px 10px;
+  text-align: end;
+}
+.navs2 .card .card-text{
+  color: rgb(71, 79, 95);
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 100%;
+    text-align: end;
+}
+
+.benfit h4{
+  color: rgb(51, 53, 57);
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+ text-align: start;
+    max-width: 305px;
+}
+.benfit ul {
+  padding-inline-start: 20px;
+}
+.benfit ul li{
+  color: #474f5f;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 6px;
+    position: relative;
+    text-align: start;
+  
+}
+.benfit ul li::after{
+  content: "\2713";
+  height: 15px;
+  right: -25px;
+  position: absolute;
+  top: -3px;
+  width: 15px;
+  font-size: 21px;
+  color: #5b5bd5;
+}
+.benfit ul li::before{
+  background: #d9dee8;
+  border-radius: 50px;
+  content: "";
+  height: 14px;
+  right: -25px;
+  position: absolute;
+  top: 5px;
+  width: 14px;
+
+}
+.benfit-img{
+  width: 70%;
+}
+@media (max-width:767px) {
+  .benfit-img{
+    width: 50%;
+  }
+}
+
+.stepsProcessFirst{
+  background: #eadbce;
+}
+.stepsProcess{
+  align-items: flex-start;
+  border-radius: 10px;
+  display: flex;
+  height: 100%;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.stepProcessInfo{
+  height: 100%;
+  padding: 30px 40px 15px;
+  width: 50%;
+}
+.stepsProcesstitle{
+  font-family: Poppins,sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    margin-bottom: 15px;
+    text-align: start;
+}
+.stepsProcessdesc{
+text-align: start;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 15px;
+    max-width: 482px;
+}
+.stepsProcessimage {
+  flex: 0 0 50%;
+  height: 100%;
+  max-width: 50%;
+}
+.stepsProcessimage img {
+  height: 100%;
+  max-height: 400px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+@media (max-width:1115px) {
+  .stepsProcessdesc p{
+    font-size: 14px;
+  }
+}
+@media (max-width:991px) {
+  .stepsProcess{
+    flex-direction: column;
+  }
+  .stepProcessInfo{
+    padding: 20px 20px 10px;
+    width: 100%;
+  }
+  .stepsProcessdesc{
+    max-width: 100%;
+  }
+  .stepsProcessimage{
+    flex: 0 0 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .stepsProcessimage img{
+    max-height: 400px;
+  }
+}
+.second-color{
+  background: #f3ede9;
+
+}
+
+.DiscoverWorksItem{
+  color: #474f5f;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 26px;
+    margin: 0 0 0 25px;
+    max-width: 220px;
+    position: relative;
+    text-align: start;
+}
+.DiscoverWorksItem::before{
+  background: #d9dee8;
+  border-radius: 50px;
+  content: "";
+  height: 14px;
+  right: -25px;
+  position: absolute;
+  top: 5px;
+  width: 14px;
+}
+.DiscoverWorksItem::after{
+  content: "\2713";
+  height: 15px;
+  right: -27px;
+  position: absolute;
+  top: -3px;
+  width: 15px;
+  font-size: 21px;
+  color: #5b5bd5;
+}
+/* End UI/UX services  */
+
+
+/* End UI/UX services  */
+

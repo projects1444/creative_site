@@ -36,6 +36,10 @@
     // Show the "Home" tab and corresponding content as active
     $(".nav-tabs li:first-child").addClass("active");
     $(".tab-content #Front").addClass("active show");
+
+    $(".nav-tabs2 li:first-child").addClass("active");
+    $(".tab-content #with_UIUX").addClass("active show");
+  
   
     
    });
@@ -43,6 +47,19 @@
 
    $(".nav-tabs li").click(function() {
     $(".nav-tabs li").removeClass("active"); // Remove "active" class from all <li> elements
+    $(this).addClass("active"); // Add "active" class to the clicked <li> element
+    
+    $(".q li").click(function() {
+      // Remove active class from all <li> elements
+      $(".q li").removeClass("active");
+  
+      // Add active class to the clicked <li> element
+      $(this).addClass("active");
+    });
+  });
+
+  $(".nav-tabs2 li").click(function() {
+    $(".nav-tabs2 li").removeClass("active"); // Remove "active" class from all <li> elements
     $(this).addClass("active"); // Add "active" class to the clicked <li> element
     
     $(".q li").click(function() {
