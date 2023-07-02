@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Contact - Creative Clouds IT</title>
+  <title>FAQ</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
@@ -20,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+ 
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -27,6 +28,9 @@
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+     <!-- contry code and flag input css -->
+     <link rel="stylesheet" href="./assets/css/international-telephone-input.css">
 
   <!-- Template Main CSS File -->
 	<!-- Bootstrap -->
@@ -35,21 +39,53 @@
 
 	<!-- Responsive -->
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link href="assets/css/style.css" rel="stylesheet" id="language-stylesheet">
+    <style>
+       
 
-  <!-- =======================================================
-  * Template Name: Creative Clouds IT - v2.0.1
-  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-Creative Clouds IT/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+        ul {
+            top: 100% !important;
+            transform: translateY(0%) !important;
+        }
+
+        .iti {
+            position: relative;
+            display: inline-block;
+            direction: ltr;
+            width: 100%;
+        }
+
+        input[type=tel] {
+            padding-right: 6px;
+            padding-left: 52px;
+            margin-left: 0;
+
+            position: relative;
+            z-index: 0;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            margin-right: 0;
+            border: 1px solid #CCC;
+            
+            height: 38px;
+            /* padding: 6px 12px; */
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 100%;
+            color: inherit;
+        }
+
+    
+    
+    </style>
+
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header class="header-area fixed-top header-transparent " id="header">
+  <header class="header-area fixed-top header-transparent " id="header" >
     <!-- main header start -->
     <div class="main-header d-none d-lg-block">
 
@@ -80,10 +116,13 @@
                                                             <li >
                                                                 <div class="parent">
                                                                     <div class="image">
-                                                                        <div class="icon"><i class='bx bx-code-alt'></i></div>
+                                                                        <div class="icon">
+                                                                            <!-- <i class='bx bx-code-alt'></i> -->
+                                                                            <img src="./assets/img/nav-img/custom-soft.svg" alt="" width="23px">
+                                                                        </div>
                                                                     </div>
                                                                     <div class="text">
-                                                                       <a href="Custom-Software.html" style="padding: 0; height: auto;" data-i18n="custom_software_development">
+                                                                       <a href="Custom-Software.html" style="padding: 0; height: auto;" class="active" data-i18n="custom_software_development">
                                                                                 custom_software_development
                                                                             </a>
                                                                         <div class="div">
@@ -246,7 +285,7 @@
                                                 </ul>
                                             </li>
                                             <li><a href="Success_parteners.html" data-i18n="sucess_parteners">sucess_parteners</a></li>
-                                             
+                                           
                                             <li class="static drop-down"><a href="#"  data-i18n="Company">Company </i></a>
                                                 <ul class="megamenu dropdown">
                                                     <li>
@@ -345,7 +384,7 @@
                                                                         <div class="icon"><i class='bx bx-copy-alt'></i></div>
                                                                     </div>
                                                                     <div class="text">
-                                                                        <a href="FAQ.html"  style="padding: 0;height: auto;" data-i18n="FAQ">
+                                                                        <a href="FAQ.html" class="active" style="padding: 0;height: auto;" data-i18n="FAQ">
                                                                             FAQ
                                                                         </a>
                                                                         <div class="div">
@@ -477,7 +516,7 @@
                                                 </ul>
                                             </li>
                                             <li class="careers"><a href="#" data-i18n="careers">careers </a><span class="hire2" data-i18n="HIRING">HIRING</span></li>
-                                            <li><a href="contact.html" class="active" data-i18n="contact_us">Contact us</a></li>
+                                            <li><a href="contact.html"  data-i18n="contact_us">Contact us</a></li>
                                             <li>
                                                 <select class="form-select form-select-sm selct" aria-label=".form-select-sm example">
                                                     <option value="en" data-i18n="english" style="color: black;">English</option>
@@ -562,7 +601,7 @@
                                                         <div class="icon"><i class='bx bx-code-alt'></i></div>
                                                     </div>
                                                     <div class="text">
-                                                       <a href="Custom-Software.html" style="padding: 0; height: auto;"  data-i18n="custom_software_development">
+                                                       <a href="Custom-Software.html" style="padding: 0; height: auto;"  class="active"  data-i18n="custom_software_development">
                                                                 
                                                             </a>
                                                         <div class="div">
@@ -577,7 +616,7 @@
                                                     <div class="icon"><i class='bx bx-line-chart'></i></div>
                                                 </div>
                                                 <div class="text">
-                                                    <a href="online-marketplace-development.html" style="padding: 0; height: auto;" data-i18n="online_marketplace">
+                                                    <a  href="online-marketplace-development.html" style="padding: 0; height: auto;" data-i18n="online_marketplace">
                                                         
                                                     </a>
                                                     <div class="div">
@@ -713,8 +752,8 @@
                                
                             </ul>
                         </li>
-                        <li class="active" style="text-align: start;"><a href="Success_parteners.html" data-i18n="sucess_parteners">sucess_parteners</a></li>
-                        
+                        <li  style="text-align: start;"><a href="Success_parteners.html" data-i18n="sucess_parteners">sucess_parteners</a></li>
+                      
                         <li class="menu-item-has-children "><a href="#" data-i18n="Company">Company</a>
                             <ul class="megamenu dropdown inlin-start">
                                 <li >
@@ -724,7 +763,7 @@
                                                 <div class="icon"><i class='bx bx-copy-alt'></i></div>
                                             </div>
                                             <div class="text">
-                                                <a href="about.html"  style="padding: 0; height: auto;"data-i18n="about">
+                                                <a href="about.html" style="padding: 0; height: auto;"data-i18n="about">
                                                         <h4 >about us</h4>
                                                     </a>
                                                 <div class="div">
@@ -800,7 +839,7 @@
                                                 <div class="icon"><i class='bx bx-copy-alt'></i></div>
                                             </div>
                                             <div class="text">
-                                                <a href="FAQ.html"  style="padding: 0;height: auto;" data-i18n="FAQ">
+                                                <a href="FAQ.html" class="active" style="padding: 0;height: auto;" data-i18n="FAQ">
                                                     <h4 >Press</h4>
                                                 </a>
                                                 <div class="div">
@@ -812,9 +851,9 @@
                                   
                                 </li>
                             </ul>
-                           </li>
-                       
-                           <li class="menu-item-has-children "><a href="#" data-i18n="blog">Blog</a>
+                        </li>
+
+                        <li class="menu-item-has-children "><a href="#" data-i18n="blog">Blog</a>
                             <ul class="megamenu dropdown inlin-start">
                                 <li>
                                     <li>
@@ -912,7 +951,7 @@
                              </ul>   
                         </li>
                         <li class="careers mobile-careers" style="text-align: start;"><a href="#" data-i18n="careers">careers </a><span class="mobile-hire2" data-i18n="HIRING">HIRING</span></li>
-                        <li style="text-align: start;"><a href="contact.html" class="active" data-i18n="contact_us">Contact us</a></li>
+                        <li style="text-align: start;"><a href="contact.html"  data-i18n="contact_us">Contact us</a></li>
                         <li class="mobile-trans">
                             <select id="language-select" class="select">
                               <option value="en" data-i18n="english" style="color: black;">English</option>
@@ -937,220 +976,839 @@
         </div>
     </div>
 </aside>
-  <main id="main">
-
-    <!-- ======= Contact Section ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2 data-i18n="contact_us">Contact</h2>
-          <ol>
-            <li data-i18n="home"><a href="index.html">Home</a></li>
-            <li data-i18n="contact_us">Contact</li>
-          </ol>
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6">
-
+  <main id="main" class="faq-page">
+    <section class="prime-section prime-section__gradientFaqPage">
+        <div class="container container-md">
             <div class="row">
-              <div class="col-md-12">
-                <div class="info-box">
-                  <i class="bx bx-map"></i>
-                  <h3 data-i18n="Saudi_Arabia">Saudi Arabia</h3>
-                  <p data-i18n="Madinah">Madinah, NY 41311</p>
+                <div class="col-12">
+                    <div class="prime-section__wrapper">
+                        <h1 class="prime-section__head" data-i18n="FAQ2">Frequently Asked Questions</h1>
+                        <p class="prime-section__subhead" data-i18n="quwst">
+                            Questions about Codica: our company, 
+                            clients, services, workflows, and warranties for the software solutions we provide.
+                        </p>
+                    </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bx bx-envelope"></i>
-                  <h3 data-i18n="Email_Us">Email Us</h3>
-                  <p>info@creativecloudsit.com</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="bx bx-phone-call"></i>
-                  <h3 data-i18n="Call_Us">Call Us</h3>
-                  <p>+966 59 808 0208</p>
-                </div>
-              </div>
             </div>
+        </div>
+    </section >
+      
+    <section >
+        <div class="container">
+            <div class="row">
+                <div class="col-12 toc-content "id="FAQ">
+                    <div class="faq-page__wrapper">
+                        <h2 class="faq-page__title" id="about-codica" data-i18n="About_ccit">About Codica</h2>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                            <div class="accordion-item-header"  data-i18n="how_are">
+                             
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content" >
+                                    <p data-i18n="how_are_desc" >
+                                        
+                                    </p>
+                                    <p>
+                                        <span data-i18n="check"></span>
+                                        <span> <a href="" data-i18n="protofolio"></a></span>
+                                        <span data-i18n="to_learn"></span>
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="where" >
+                                    Where are your employees located? How many software developers do you have?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="where_desc1"> </p>
+                                    <p data-i18n="where_desc2"> </p>
+                                </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <div class="faq-page__wrapper">
+                        <h2 class="faq-page__title" id="about-codica" data-i18n="General_Questions"></h2>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                            <div class="accordion-item-header"  data-i18n="Are_your_developers">
+                                Are your developers fluent in written and spoken English?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content" >
+                                    <p data-i18n="Are_your_developers_desc" >
+                                        
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="What_forms" >
+                                    What forms of payment do you accept?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="How_long" >
+                                    How long does it take to build a SaaS?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="How_long2" >
+                                    How long does it take to build an MVP?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="Can_you" >
+                                    Can you complete a project started by other developers?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="Can_you2" >
+                                    Can you build my app from scratch?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="Do_you_work" >
+                                    Do you work internationally?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="How_long_does" >
+                                    How long does it take to build a marketplace?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-          </div>
+                    <div class="faq-page__wrapper">
+                        <h2 class="faq-page__title" id="about-codica" data-i18n="Expertise"></h2>
+                        <div class="accordion">
 
-          <div class="col-lg-6">
-            <form action="" method="post" role="form" id="contactfrom" class="php-email-form">
-              <div class="form-row">
+                            <div class="accordion-item">
+                            <div class="accordion-item-header"  data-i18n="Can_you_give">
+                                Can you give an example of domain products you’ve already developed?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content" >
+                                    <p data-i18n="Are_your_developers_desc" >
+                                        
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="What_types" >
+                                    What types of industries does CCIT serve?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+                          
+    
+                      
+                           
+                        </div>
+                    </div>
+                    <div class="faq-page__wrapper">
+                        <h2 class="faq-page__title" id="about-codica" data-i18n="Privacy_and_Сonfidentiality"></h2>
+                        <div class="accordion">
 
-                <div class="col-md-6 form-group">
-                    <label for="name" class="form-label"  data-i18n="contact2_name">Your Name</label>
-                    <input type="text" name="name" class="form-control name-ar" id="name"  data-rule="minlen:8"  />
-                  <div class="validate"></div>
+                            <div class="accordion-item">
+                            <div class="accordion-item-header"  data-i18n="How_does_CCIT">
+                                How does CCIT handle security and prevent issues when collecting or storing users' information?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content" >
+                                    <p data-i18n="Are_your_developers_desc" >
+                                        
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="How_does_your_team" >
+                                    How does your team handle security, namely the collecting and storing of my information?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+                          
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="how_sure" >
+                                    How can I be sure my project is kept confidential?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+    
+                      
+                           
+                        </div>
+                    </div>
+
+
+                    <div class="faq-page__wrapper">
+                        <h2 class="faq-page__title" id="about-codica" data-i18n="Intellectual_Property"></h2>
+                        <div class="accordion">
+
+                            <div class="accordion-item">
+                            <div class="accordion-item-header"  data-i18n="own">
+                                Do I own the legal rights to technology built by CCIT teams?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content" >
+                                    <p data-i18n="Are_your_developers_desc" >
+                                        
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="What_happens" >
+                                    What happens when my project ends?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+                          
+                          
+    
+                      
+                           
+                        </div>
+                    </div>
+                   
+                    <div class="faq-page__wrapper">
+                        <h1 style="margin-bottom: 30px; margin-top: 50px; text-align: start; font-size: 25px;" data-i18n="sof">Software Development Process </h1>
+                        <h2 class="faq-page__title" id="about-codica" data-i18n="Project_discovery"></h2>
+                        <div class="accordion">
+
+                            <div class="accordion-item">
+                            <div class="accordion-item-header"  data-i18n="Why_is_product">
+                                Why is product discovery important and highly recommended?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content" >
+                                    <p data-i18n="Are_your_developers_desc" >
+                                        
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="discovery_take" >
+                                    How long will the discovery take?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+                          
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="What_info" >
+                                    What info should I provide for the discovery?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="skip" >
+                                    Can we skip the project discovery phase or make it shorter?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+
+
+                    <div class="faq-page__wrapper">
+                       
+                        <h2 class="faq-page__title" id="about-codica" data-i18n="UI_UX_desgin2"></h2>
+                        <div class="accordion">
+
+                            <div class="accordion-item">
+                            <div class="accordion-item-header"  data-i18n="writes">
+                                Who writes the content for the website?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content" >
+                                    <p data-i18n="Are_your_developers_desc" >
+                                        
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="provide" >
+                                    Do you provide design services?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+                          
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="provide2" >
+                                    Can you provide us with your main designer's portfolio?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="in_house" >
+                                    Do you have any in-house designers?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="redesign" >
+                                    Do you redesign existing websites?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+
+                    <div class="faq-page__wrapper">
+                 
+                        <h2 class="faq-page__title" id="about-codica" data-i18n="Development_pro"></h2>
+                        <div class="accordion">
+
+                            <div class="accordion-item">
+                            <div class="accordion-item-header"  data-i18n="What_is_your_development">
+                                What is your development process?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content" >
+                                    <p data-i18n="Are_your_developers_desc" >
+                                        
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="specialized_in" >
+                                    What technologies are you specialized in?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+                          
+                            <div class="accordion-item">
+                                <div class="accordion-item-header" data-i18n="methodology" >
+                                    Which project management methodology do you follow?
+                                </div>
+                                <div class="accordion-item-body">
+                                <div class="accordion-item-body-content">
+                                    <p data-i18n="Are_your_developers_desc"> </p>
+                                 
+                                </div>
+                                </div>
+                            </div>
+    
+                          
+                            
+                        </div>
+                    </div>
+                    <div class="faq-page__wrapper">
+                 
+                        <h2 class="faq-page__title" id="about-codica" data-i18n="Testing"></h2>
+                        <div class="accordion">
+
+                            <div class="accordion-item">
+                            <div class="accordion-item-header"  data-i18n="track">
+                                How can I track the testing results?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content" >
+                                    <p data-i18n="Are_your_developers_desc" >
+                                        
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            </div>
+    
+                            
+    
+                          
+                            
+                        </div>
+                    </div>
+
+                    <div class="faq-page__wrapper">
+                 
+                        <h2 class="faq-page__title" id="about-codica" data-i18n="dvops"></h2>
+                        <div class="accordion">
+
+                            <div class="accordion-item">
+                            <div class="accordion-item-header"  data-i18n="own_domain">
+                                Who will own the domain?
+                            </div>
+                            <div class="accordion-item-body">
+                                <div class="accordion-item-body-content" >
+                                    <p data-i18n="Are_your_developers_desc" >
+                                        
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                            </div>
+    
+                            <div class="accordion-item">
+                                <div class="accordion-item-header"  data-i18n="hosts">
+                                    Who hosts the website?
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content" >
+                                        <p data-i18n="Are_your_developers_desc" >
+                                            
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                                </div>
+    
+                                <div class="accordion-item">
+                                    <div class="accordion-item-header"  data-i18n="buy_domain">
+                                        Will you buy the domain for me?
+                                    </div>
+                                    <div class="accordion-item-body">
+                                        <div class="accordion-item-body-content" >
+                                            <p data-i18n="Are_your_developers_desc" >
+                                                
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-item-header"  data-i18n="AWS_experience">
+                                            What is your AWS experience?
+                                        </div>
+                                        <div class="accordion-item-body">
+                                            <div class="accordion-item-body-content" >
+                                                <p data-i18n="Are_your_developers_desc" >
+                                                    
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                        </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-page__wrapper">
+                 
+                        <h2 class="faq-page__title" id="about-codica" data-i18n="Maintenance_and_support"></h2>
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header"  data-i18n="maintenance">
+                                    Do you provide any post-launch support and website maintenance?
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-item-body-content" >
+                                        <p data-i18n="Are_your_developers_desc" >
+                                            
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                                </div>
+                          
+                                  
+                        </div>
+                    </div>
+
+
+
                 </div>
+           
+            </div>
+        </div>
+    </section>
 
-                <div class="col-md-6 form-group">
-                    <label for="email" class="form-label"  data-i18n="Email2">Email</label>
-                    <input type="email" class="form-control email-ar" name="email" id="email" data-rule="required" placeholder="Example@mail.com"  data-msg="" />
-                  <div class="validate"></div>
-                </div>
+    <section  id="Free_Quote" class="Approach content-section" data-aos="fade-up">
+        <div class="container">
+            <div class="section-title businesses-title " >
+                <h1 data-i18n="turn_idea" style="max-width: 722px;">businesses_title</h1>
+            </div>
+         
 
-                <div class="col-md-6 form-group">
-                    <label for="phone" class="form-label"  data-i18n="contact_phone2">phone</label>             
-                    <input type="text" name="phone" class="form-control phone-ar" id="phone"  data-rule="minlen:10"   data-msg="" />
-                    <div class="validate"></div>
-                </div>
-
-                  <div class="col-md-6 form-group">
-                        <label for="service_id" class="form-label"  data-i18n="choose_service">choose_service</label> 
-                        <select class="form-control service-ar contselct" id="contselct" name="service_id" data-rule="required"   aria-label="Default select example"  >
-                            <option value="" data-i18n="choose_service"></option>
-                            <!-- <option value="" data-i18n="choose_service2"></option>
-                        <option value="5" data-i18n="Software_development">Software_development</option>
-                        <option value="8" data-i18n="graphic_design">graphic_design</option>
-                        <option value="7" data-i18n="E_Marketing">E_Marketing</option> -->
-                        </select>
-                        <div class="validate"></div>
+                <div class="row">
+        
+                  <div class="col-lg-5 col-md-4 col-sm-12">
+        
+                    <div>
+                        <div style="margin-bottom: 10px; display: flex; justify-content: start;">
+                            <img src="./assets/img/asd.png" alt="" style="width: 70%;">
+                        </div>
+                        <div>
+                            <h3 data-i18n="whats" style="text-align: start;">what's next?</h3>
+                            <ol  class="ol-desc">
+                                <li  data-i18n="taya">Coffee</li>
+                                <li  data-i18n="NDA"></li>
+                                <li  data-i18n="custom_soft">Milk</li>
+                              </ol> 
+                        </div>
+                    </div>
+        
                   </div>
-              </div>
-            
-            
-              <div class="form-group">
-                    <label for="msg" class="form-label"  data-i18n="write_message">write_message</label>  
-                    <textarea class="form-control message-ar" name="msg" rows="5" data-rule="required" ></textarea>
-                <div class="validate"></div>
-              </div>
+        
+                  <div class="col-lg-7 col-md-8 col-sm-12 frm-contain ">
+                  
+                    <h5 data-i18n="tell_us2" style="text-align: start;"></h5>
+                    <form action="" method="post" id="getTouch" role="form" class="php-email-form">
+                        <div class="form-row">
+                          <div class="col-sm-12 form-group ">
+                              <label for="name" class="form-label"  data-i18n="contact_name">Your Name</label>
+                            <input type="text" name="name" class="form-control name-ar" id="name2"   data-rule="minlen:8"  />
+                            <div class="validate"></div>
+                          </div>
+                          <div class="col-md-6 form-group">
+                              <label for="email" class="form-label"  data-i18n="Email">Email</label>
+                            <input type="email" class="form-control email-ar" name="email" id="email2" data-rule="required" placeholder="Example@mail.com"  data-msg="" />
+                            <div class="validate"></div>
+                          </div>
+                          <div class="col-md-6 form-group">
+                              <label for="phone" class="form-label"  data-i18n="contact_phone">contact_phone</label>
+                             
+                              <div class="iti">
+                                  <input type="tel" id="phone2" name="phone" class="form-control " required  >
+                               
+                                  <!-- data-rule="minlen:10"  -->
+                                  <!-- <div class="validate"></div> -->
+                              </div>
+                              <div>
+                                  <p id="errorMessage" hidden style=" color: red;
+                                  font-size: 12px;
+                                  font-weight: 600;text-align: start;"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 form-group">
+                            <select class="form-control  hearSelect" id="reach_by_id" name="reach_by_id" data-rule="required"  aria-label="Default select example "  style="font-size: 12px;">
+                              <option value="" data-i18n="hear"></option>
 
-                <div class="form-group">
-                     <label for="website" class="form-label"  data-i18n="website">website</label> 
-                     <input type="text" class="form-control site-ar" name="website" id="subject" placeholder="www.websitename.com"  data-rule="required"   />
-                     <div class="validate"></div>
+                            </select>
+                            <div class="validate"></div>
+                           
+                            </div>
+                            <div class="col-md-6 form-group">
+                              <select class="form-control budget" id="budget_id" name="budget_id" data-rule="required"  aria-label="Default select example"style="font-size: 12px;">
+                                  <option value="" selected data-i18n="budget">Open this select menu</option>
+                                  <!-- <option selected data-i18n="budget">Open this select menu</option>
+                                <option value="1">$25000 - $50000</option>
+                                <option value="2">$50000 - $100000</option>
+                                <option value="3" data-i18n="Over">Over $100000</option>
+                                <option value="3" data-i18n="disclose">Over $100000</option> -->
+                              </select>
+                              <div class="validate"></div>
+                              </div>
+                              <div class="form-group col-sm-12">
+                                  <label for="msg" class="form-label"  data-i18n="contact_message">Email</label>
+                                <textarea class="form-control message-ar Conmsg" id="msg2" name="msg" rows="5" data-rule="minlen:8" ></textarea>
+                                <div class="validate"></div>
+                              </div>
+                              <div class="form-group col-md-12" style="text-align: start;">
+                                <input type="checkbox" id="subscribe" name="subscribe" value="1">
+                                <label for="subscribe" data-i18n="stay" style="font-size: 12px;"> I have a bike</label> 
+                              </div>
+
+                        </div>
+                      
+                       
+                        
+                        <div class=" submit-container">
+                          <div > 
+                            <div style="cursor: pointer;" class="icobtn">
+                              <i class="fa fa-paperclip " aria-hidden="true" style="transform: rotate(135deg);"></i>
+                              <span data-i18n="attach">attach files</span>
+                              <input type="file" id="fileInput" name="fileInput" style="display: none;">
+                             
+                            </div>
+                              <div class="d-flex justify-content-between  align-items-center" style="visibility: hidden;" id="filenamecontainer">
+                                  <i class='fa fa-remove ' id="btnremove" style="cursor: pointer;"></i>
+                                  <span id="filename" style="font-size: 12px;"></span>
+                              </div>
+                          </div>
+                          <button type="submit" class="sub"  data-i18n="send">Send Message</button>
+                      </div>
+                      </form>
+                   
+                  </div>
+        
                 </div>
-
-              <!-- <div class="mb-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div> -->
-
-              <div class="text-center"><button type="submit"data-i18n="Send_Message" id="submitbtnt">Send Message</button></div>
-            </form>
-          </div>
+        
+         
+        
 
         </div>
+      </section>  
+ 
 
-      </div>
-    </section><!-- End Contact Section -->
-
-    <!-- ======= Map Section ======= -->
-    <section class="map mt-2">
-      <div class="container-fluid p-0">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14531.54104340871!2d39.5989156!3d24.4200534!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15bdc118fcdbd563%3A0x37412fa0681e6f93!2z2LPYrdioINin2YTYpdio2K_Yp9i5INmE2KrZgtmG2YrYqSDYp9mE2YXYudmE2YjZhdin2KogQ3JlYXRpdmUgQ2xvdWRzIElU!5e0!3m2!1sen!2ssa!4v1681676151646!5m2!1sen!2ssa" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      </div>
-    </section><!-- End Map Section -->
-
-  </main><!-- End #main -->
+  </main>
+  
+  <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h4 data-i18n="Newsletter">Our Newsletter</h4>
-            <p  data-i18n="follow" style="text-align: start;">You can follow our newsletter from here</p>
-          </div>
-          <div class="col-lg-6">
-            <form action="" method="post" id="subscibe-form">
-              <input type="email" name="email" class="form-control" id="subscribe-input"  placeholder="Example@mail.com">
-              <button type="submit" id="submit-btn" value="Subscribe" class="subscribe" data-i18n="Subscribe"></button>></button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="footer-top">
-      <div class="container">
-        <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4 data-i18n="services"> Services</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="custom_software_development">custom software development</a></li>
+                        <li><a href="#" data-i18n="online_marketplace">online marketplace development</a></li>
+                        <li><a href="#" data-i18n="MVP">MVP development</a></li>
+                        <li><a href="#" data-i18n="Saas">Saas development</a></li>
+                        <li><a href="#" data-i18n="product_discovery">product_discovery</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4 style="visibility:hidden;"> asd</h4>
+                    <ul>
+                        <li> <a href="#" data-i18n="PWA">PWA</a></li>
+                        <li> <a href="#" data-i18n="design_development">About us</a></li>
+                        <li> <a href="#" data-i18n="mobile_development">mobile_development</a></li>
+                        <li> <a href="#" data-i18n="devops_development">devops_development</a></li>
+                        <li> <a href="#" data-i18n="QA">QA</a></li>
+                    </ul>
+                </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4 data-i18n="Useful_Links">Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="home">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="about">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="service">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="Terms_of_service">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="Privacy_policy">Privacy policy</a></li>
-            </ul>
-          </div>
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4 data-i18n="Company"> company</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="about"></a></li>
+                        <li><a href="#" data-i18n="our_works"></a></li>
+                        <li><a href="#" data-i18n="Tetstimonials"></a> </li>
+                        <li><a href="#" data-i18n="careers">careers</a> &nbsp;<span class="hire" data-i18n="HIRING">HIRING</span></li>
+                        <li><a href="#" data-i18n="approach">approach</a></li>
+                        <li><a href="#" data-i18n="blog">blog</a></li>
+                        <li><a href="#" data-i18n="FAQ">approach</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 footer-links">
+                    <h4 data-i18n="Insights"> Insights</h4>
+                    <ul>
+                        <li><a href="#" data-i18n="H_T_B"></a></li>
+                        <li><a href="#" data-i18n="What_cost"></a></li>
+                        <li><a href="#" data-i18n="how_to_build"></a> </li>
+                        <li><a href="#" data-i18n="veu_react"></a> </li>
+                        <li><a href="#" data-i18n="sass_broduct"></a></li>
+                        <li><a href="#" data-i18n="service_market"></a></li>
+                   
+                    </ul>
+                </div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4 data-i18n="service">Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="Web_Design">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="Web_Development">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="Product_Management">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="Marketing">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" data-i18n="graphic_design">Graphic Design</a></li>
-            </ul>
-          </div>
 
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4 data-i18n="contact">Contact Us</h4>
-            <p>
-              <span data-i18n="Al_Ranuna">Al-Ranuna neighborhood</span> <br>
-              <span data-i18n="Madinah">Madinah, NY 41311</span><br>
-              <span data-i18n="Saudi_Arabia">Saudi Arabia </span><br><br>
-              <strong data-i18n="Phone">Phone:</strong> +966 59 808 0208<br>
-              <strong data-i18n="Email">Email:</strong>info@creativecloudsit.com<br>
-            </p>
-
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3 data-i18n="about">About Creative Clouds IT</h3>
-            <p data-i18n="desc">A comany spepcialized in the field of technology, employing many experts in various fields.</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
-          </div>
-
+           
         </div>
-      </div>
     </div>
 
     <div class="container">
-      <div class="copyright" >
-        <span data-i18n="rghits">All Rights Reserved .</span>
-        &copy; 2023 . <strong><span data-i18n="Clouds">Creative Clouds IT</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-Creative Clouds IT/ -->
-      </div>
+       
+
+        
+        <div class="d-flex justify-content-around last_section"> 
+            <div class="row" >
+            <div class="first col-12 col-lg-4">
+                <div>
+                    <img src="./assets/img/newSaled.png" alt="" style="width: 55px;">
+                </div>
+                <div>
+                    <h5 style="text-align: start;" data-i18n="Sales_department">Sales department</h5>
+                    <p style="text-align: start;">Hello@</p>
+                    <p style="text-align: start;" data-i18n="phone_num"></p>
+                </div>
+            </div>
+            <div class="second col-12 col-lg-4">
+                <div>
+                    <img src="./assets/img/newRok.png" alt="" style="width: 55px;">
+                </div>
+                <div>
+                    <h5 style="text-align: start;" data-i18n="opportunities">opportunities</h5>
+                    <p style="text-align: start;">Job@</p>
+                 
+                </div>
+            </div>
+            <div class="third col-12 col-lg-4">
+                <div>
+                    <img src="./assets/img/newSahm.png" alt="" style="width: 55px;">
+                </div>
+                <div>
+                    <h5 style="text-align: start;" data-i18n="Marketing_cooperations">Marketing_cooperations</h5>
+                    <p style="text-align: start;">pr@</p>
+                 
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- <div>
+           <div class="dmca">
+            <a href="">
+                <img src="./assets/img/dmca.jpg" alt="" style="width: 65px;">
+            </a>
+           </div>
+        </div>
+        <div class="footer-small">
+            <div class="d-none d-lg-block">
+                <div class="fo-sm">
+                    <div class="fo-sm-txt">
+                        ©  CCIT 2023
+                    </div>
+                    <a href="" class="fo-sm-a">
+                        Privacy Policy
+                    </a>
+                </div>
+               
+            </div>
+            <div class="footer-social">
+                <a href=""><i class='bx bxl-facebook'></i></a>
+                <a href=""><i class='bx bxl-twitter'></i></a>
+                <a href=""><i class='bx bxl-linkedin'></i></a>
+                <a href=""><i class='bx bxl-github'></i></a>
+                <a href=""> <i class='bx bxl-youtube'></i> </a>
+                <a href=""><i class='bx bxl-instagram'></i>  </a>
+                <a href=""> <i class='bx bxl-telegram'></i> </a>
+                <a href=""> <i class='bx bxl-tiktok'></i> </a>
+                <a href=""><i class='bx bxl-behance'></i></a>
+                <a href=""><i class='bx bxl-product-hunt'></i></a>
+                <a href=""><i class='bx bxl-dribbble'></i></a>
+            </div>
+        </div> -->
     </div>
-  </footer><!-- End Footer -->
+</footer>
+  <!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
+ 
   <!-- Vendor JS Files -->
+  <!-- <script src="assets/css/new version/bootstrap.bundle.min.js"></script> -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
+
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -1161,7 +1819,7 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
-
+  <script src="assets/css/swiper-bundle.min.js"></script>
 
 
      <!-- JavaScript -->
@@ -1169,20 +1827,45 @@
    
       <script src="assets/js/script.js"></script>
       <script src="assets/js/main.js"></script>
- 
+      <script src="assets/css/international-telephone-input.js"></script>
   
       <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  
+ 
           <!--Jquery js-->
           <script src="assets/js/jquery-3.0.0.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
           <!--Bootstrap js-->
           <script src="assets/js/bootstrap.min.js"></script>
           <!-- Smooth Scroll -->
-          <script src="assets/js/smooth-scroll.js"></script>
+          <script src="assets/js/slider.js"></script>
+          
           <!--Main js-->
           <script src="assets/js/lang.js"></script>
           <script src="assets/js/main2.js"></script>
+          <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
           <script  src="assets/js/api.js"></script>
+    
+          <script>
+         
+         
+              const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+  
+                  accordionItemHeaders.forEach(accordionItemHeader => {
+                  accordionItemHeader.addEventListener("click", event => {
+                      
+  
+                      accordionItemHeader.classList.toggle("active");
+                      const accordionItemBody = accordionItemHeader.nextElementSibling;
+                      if(accordionItemHeader.classList.contains("active")) {
+                      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+                      }
+                      else {
+                      accordionItemBody.style.maxHeight = 0;
+                      }
+                      
+                  });
+                  });
+      </script>
 </body>
 
 </html>

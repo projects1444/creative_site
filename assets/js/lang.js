@@ -8,8 +8,11 @@ var namear = document.getElementsByClassName('name-ar')[0];
  var Servicear = document.getElementsByClassName('service-ar')[0];
  var hearSelect = document.getElementsByClassName('hearSelect')[0];
  var budget =  document.getElementsByClassName('budget')[0];
+ var subName =  document.getElementById("sub-name");
+ var subEmail =  document.getElementById("sub-email");
 // console.log(lang);
-if(lang === 'ar'){
+if(lang === 'ar' ){
+
 // console.log(namear);
 namear.setAttribute('placeholder', 'ادخل الإسم الثلاثي');
 namear.setAttribute('data-msg', 'ادخل علي الاقل 8 حروف');
@@ -40,7 +43,14 @@ if(hearSelect){
 if(budget){
   budget.setAttribute('data-msg', "إختر الميزانية");
 }
+if(subName  && subEmail)
+{
+  subName.setAttribute('placeholder', ' الإسم');
+  subEmail.setAttribute('placeholder', ' البريد الالكتروني');
+}
 }else{
+ 
+
   namear.setAttribute('placeholder', 'Your Name');
   namear.setAttribute('data-msg', 'Please enter at least 8 chars');
 
@@ -65,6 +75,9 @@ if(budget){
   if(budget){
     budget.setAttribute('data-msg', "select budget");
   }
-  
+  if(subName  && subEmail){
+    subName.setAttribute('placeholder', 'Name');
+    subEmail.setAttribute('placeholder', 'E-mail');
+  }
   
 }
