@@ -14,16 +14,19 @@ var namear = document.getElementsByClassName('name-ar')[0];
 if(lang === 'ar' ){
 
 // console.log(namear);
-namear.setAttribute('placeholder', 'ادخل الإسم الثلاثي');
-namear.setAttribute('data-msg', 'ادخل علي الاقل 8 حروف');
+if(namear && Emailar ){
+  namear.setAttribute('placeholder', 'ادخل الإسم الثلاثي');
+  namear.setAttribute('data-msg', 'ادخل علي الاقل 8 حروف');
+  
+  Emailar.setAttribute('data-msg', 'يرجي إدخال بريد الكتروني صحيح ');
+  
+}
 
-Emailar.setAttribute('data-msg', 'يرجي إدخال بريد الكتروني صحيح ');
+ if(Phonear){
+  Phonear.setAttribute('placeholder', '********** 966+');
+Phonear.setAttribute('data-msg', 'يرجي ادخال 10 ارقام علي الاقل');
 
-//  if(Phonear){
-//   Phonear.setAttribute('placeholder', '********** 966+');
-// Phonear.setAttribute('data-msg', 'يرجي ادخال 10 ارقام علي الاقل');
-
-//  }
+ }
  if(Messagear){
   Messagear.setAttribute('placeholder', 'إكتب رسالتك هنا ....');
   Messagear.setAttribute('data-msg', "من فضلك اكتب لنا شيئًا على الأقل 8 أحرف");
@@ -31,7 +34,7 @@ Emailar.setAttribute('data-msg', 'يرجي إدخال بريد الكتروني 
 
 if(Sitear){
 
- // Sitear.setAttribute('data-msg', "من فضلك ادخل موقعك الالكتروني");
+ Sitear.setAttribute('data-msg', "من فضلك ادخل موقعك الالكتروني");
 }
 if(Servicear){
   Servicear.setAttribute('data-msg', "من فضلك إختر خدمة");
@@ -50,15 +53,19 @@ if(subName  && subEmail)
 }
 }else{
  
+  if(namear && Emailar ){
+    namear.setAttribute('placeholder', 'Your Name');
+    namear.setAttribute('data-msg', 'Please enter at least 8 chars');
+  
+    Emailar.setAttribute('data-msg', 'Please enter a valid email');
+  
+  }
 
-  namear.setAttribute('placeholder', 'Your Name');
-  namear.setAttribute('data-msg', 'Please enter at least 8 chars');
+  if(Phonear){
+  Phonear.setAttribute('placeholder', '966+ ********** ');
+  Phonear.setAttribute('data-msg', 'Please enter at least 10 chars');
+  }
 
-  Emailar.setAttribute('data-msg', 'Please enter a valid email');
-
-
-  // Phonear.setAttribute('placeholder', '966+ ********** ');
-  // Phonear.setAttribute('data-msg', 'Please enter at least 10 chars');
   if(Messagear){
     Messagear.setAttribute('placeholder', 'write your message here ....');
     Messagear.setAttribute('data-msg', 'Please write us something at least 8 characters');

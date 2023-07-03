@@ -70,6 +70,18 @@
       $(this).addClass("active");
     });
   });
+  $(".nav-tabs3 li").click(function() {
+    $(".nav-tabs3 li").removeClass("active"); // Remove "active" class from all <li> elements
+    $(this).addClass("active"); // Add "active" class to the clicked <li> element
+    
+    $(".q li").click(function() {
+      // Remove active class from all <li> elements
+      $(".q li").removeClass("active");
+  
+      // Add active class to the clicked <li> element
+      $(this).addClass("active");
+    });
+  });
 
 
 

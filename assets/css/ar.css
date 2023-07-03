@@ -6629,7 +6629,8 @@ text-align: start;
 }
 .award-img img{
   object-fit: contain;
-    width: 100%;
+    /* width: 100%; */
+    width: 140px;
 }
 .awards-info{
   display: flex;
@@ -6658,6 +6659,13 @@ text-align: start;
   .awards-card {
       flex-direction: column;
       gap: 20px;
+  }
+  .award-img{
+    margin-left: 0;
+
+  }
+  .awards-info h1 ,.awards-info p{
+    text-align: center;
   }
 }
 
@@ -6811,7 +6819,7 @@ text-align: start;
 }
 
 .button {
-  border: 1px solid #e0e0e0;
+  /* border: 1px solid #e0e0e0; */
   border-radius: 6px;
   cursor: pointer;
 
@@ -7048,17 +7056,325 @@ display: none;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* End FAQ */
+/* quality */
+.qual-img1{
+  position: absolute;
+  width: 50%;
+  z-index: 99;
+  object-fit: cover;
+  border-radius: 20px;
+  right: -5px;
+}
+.qual-img2{
+  width: 70%;
+  position: relative;
+  left: 0;
+  top: 40px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+
+
+
+.qual-hed {
+  text-align: start;
+  max-width: 309px;
+  color: rgb(51, 53, 57);
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    margin: 10px 0px;
+}
+.qua .card{
+  gap: 0;
+}
+.qua h5{
+ margin: 15px 0;
+}
+.qua p{
+  height: 96px;
+}
+.servicesInfoRoundBlock__card {
+  margin: 0px auto;
+  max-width: 285px;
+  text-align: center;
+}
+.servicesInfoRoundBlock__title {
+  color: rgb(51, 53, 57);
+
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+  margin-bottom: 10px;
+}
+.servicesInfoRoundBlock__description {
+  color: rgb(71, 79, 95);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.servicesInfoRoundBlock__between {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 45px 0px -5px;
+}
+
+@media (max-width: 1050px)
+{
+  .servicesInfoRoundBlock__between {
+    margin: 40px 0px -20px;
+}
+}
+.servicesInfoRoundBlock__card {
+  margin: 0px auto;
+  max-width: 285px;
+  text-align: center;
+}
+.servicesInfoRoundBlock__title {
+  color: rgb(51, 53, 57);
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 33px;
+  margin-bottom: 10px;
+}
+.servicesInfoRoundBlock__description {
+  color: rgb(71, 79, 95);
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.servicesInfoRoundBlock__imageDesktop {
+  margin: 10px 0px;
+  width: 100%;
+}
+@media (max-width: 991px)
+{
+  .servicesInfoRoundBlock__contentOne {
+    margin: -38px 0px 0px 23px;
+}
+}
+
+.md i {
+  font-size: 30px;
+    color: #023986
+}
+.md h4{
+  font-size: 18px;
+  line-height: 27px;
+  text-align: start;
+}
+.md p{
+  color: rgb(71, 79, 95);
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: start;
+}
+.md .info{
+  max-width: 235px;
+}
+.md .info2{
+  max-width: 210px;
+}
+.md1{
+  display: flex;
+  gap: 15px;
+  max-width: 285px;
+  position: absolute;
+  top: 0;
+  right: -4%;
+}
+.md2{
+  display: flex;
+  gap: 15px;
+  max-width: 285px;
+  position: absolute;
+  top: 137px;
+  right: 5%;
+}
+.md3{
+  display: flex;
+  gap: 15px;
+  max-width: 285px;
+  position: absolute;
+  top: 270px;
+  right: 18%;
+}
+.md4{
+  display: flex;
+  gap: 15px;
+  max-width: 285px;
+  position: absolute;
+  bottom: 280px;
+right: 0;
+}
+.md5{
+  display: flex;
+  gap: 15px;
+  max-width: 285px;
+  position: absolute;
+  bottom: 156px;
+  right: 15%;
+}
+.md6{
+  display: flex;
+  gap: 15px;
+  max-width: 285px;
+  position: absolute;
+  bottom: -19px;
+  right: 22%;
+}
+@media (max-width:991px) {
+  .servicesInfoRoundBlock__contentOne , .servicesInfoRoundBlock__between,
+  .servicesInfoRoundBlock__contentSix{
+    display: none;
+  }
+}
+.hideimg{
+  margin-top: 36px;
+  transform: scaleX(-1);
+}
+@media (min-width:1116px) {
+  .all-qual{
+     padding: 0 77px;
+  }
+}
+.cicle2{
+  align-items: center;
+    background: #fff;
+    border: 1px solid #d9dee8;
+    border-radius: 50px;
+    display: flex;
+    height: 54px;
+    justify-content: center;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: -26px;
+    width: 54px;
+}
+.cicle2 img{
+  max-width: 24px;
+}
+.boost p {
+  color: rgb(71, 79, 95);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 3px auto 30px;
+  max-width: 311px;
+}
+.boost h3{
+  font-size:18px
+}
+
+.home-founders-section__card {
+  align-items: center;
+  background: #f9f9fb;
+  border: 1px solid #d9dee8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 30px);
+  justify-content: center;
+  margin-bottom: 30px;
+  max-height: 365px;
+  min-height: 365px;
+  text-align: center;
+}
+.home-founders-section__icons {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+.home-founders-section__num {
+  color: #333539;
+  font-family: Poppins,sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1199px)
+{
+  .home-founders-section__num {
+    font-size: 48px;
+    line-height: 46px;
+}
+}
+.home-founders-section__text {
+  color: #474f5f;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 auto 10px;
+  max-width: 140px;
+}
+.react-reveal {
+  width: 100%;
+}
+.home-founders-section__image {
+  background-color: transparent;
+  border-color: transparent;
+}
+.home-founders-section__image .gatsby-image-wrapper {
+  border-radius: 10px;
+  height: 100%;
+}
+.gatsby-image-wrapper-constrained {
+  display: inline-block;
+  vertical-align: top;
+}
+.gatsby-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.home-founders-section__num span {
+  color: #a5acbc;
+  display: block;
+}
+
+.nav-tabs3 .active a {
+
+  font-weight: bold;
+  color: white;
+
+}
+.nav-tabs3 li.active  {
+  background: #023986;
+}
+.nav-tabs3 li  {
+  background: #FFFFFF;
+
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px 5px 15px;
+}
+.nav-tabs3 li  a {
+  padding: 0 15px;
+
+  color: black;
+}
+@media (max-width: 767px)
+{
+  .nav-tabs3 li  {
+    width:245px
+  }
+}
