@@ -8,6 +8,7 @@ selectElement.addEventListener("change", (event) => {
   setLanguage(event.target.value);
   localStorage.setItem("lang", event.target.value);
   const stylesheet = document.getElementById("language-stylesheet");
+ 
   const headerElement = document.getElementById("header");
   const navElement = document.querySelector("nav");
   const inpNmae =  document.getElementById("name");
@@ -19,10 +20,12 @@ selectElement.addEventListener("change", (event) => {
   if (language === "ar") {
     headerElement.dir = "rtl";
     stylesheet.setAttribute("href", "assets/css/ar.css");
+ 
    
   } else {
     headerElement.dir = "ltr";
     stylesheet.setAttribute("href", "assets/css/style.css");
+ 
    
   }
 
@@ -36,7 +39,7 @@ languageSelector.addEventListener("change", (event) => {
   setLanguage(event.target.value);
   localStorage.setItem("lang", event.target.value);
   const stylesheet = document.getElementById("language-stylesheet");
-
+  // const stylesheet2 = document.getElementById("language-stylesheet2");
   const headerElement = document.getElementById("header");
   const navElement = document.querySelector("nav");
   const inpNmae =  document.getElementById("name");
@@ -52,6 +55,7 @@ languageSelector.addEventListener("change", (event) => {
   } else {
     headerElement.dir = "ltr";
     stylesheet.setAttribute("href", "assets/css/style.css");
+
   
   }
 
@@ -70,10 +74,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (language === "ar") {
     stylesheet.setAttribute("href", "assets/css/ar.css");
-
+  
   } else {
     stylesheet.setAttribute("href", "assets/css/style.css");
- 
+
   }
 
 
@@ -467,7 +471,7 @@ const translations = {
     businesses_desc:"Are you a startupper or an owner of an established business? Want you enterprise to grow? We will help you develop and scale your solution with our efficient custom development services. We know exactly what tasks you need to solve and help with this using our proven technologies.",
     Startups:"Startups",
     Startups_desc:"When it comes to building innovative software, you should act fast to stay ahead of competitors. And we are eager to give a hand! We will help you check the viability of your idea and launch your project quickly with our proven custom development services.",
-    Small_businesses:"Small businesses",
+    Small_businesses:"Small & medium businesses",
     Small_businesses_desc:"At CCIT, we will assist you in meeting your concerns and all the core needs of your business. We will take into consideration your business's hidden risks and fine points. So, we provide the best technical solutions that help your business evolve.",
     Mid_scale_businesses:"Mid-scale businesses",
     Mid_scale_businesses_desc:"CCIT skilled team will create a visually appealing and highly-responsive custom software project for your business, applying the top-notch industry tools and practices. We will be ready to support and further improve your existing software.",
@@ -544,7 +548,7 @@ const translations = {
     Tracking:"Tracking enabled",
     Manageable:"Manageable",
     Content_management:"Content management system (CMS) enabled by default",
-    Maintenance_and_support:"Maintenance and support",
+
     Regular_updates:"Regular updates if needed",
     Cases:"Cases",
     cases_desc:"Our clients like partnering with us for their leading digital projects.",
@@ -883,6 +887,137 @@ const translations = {
     Whybuild:"Why should you build your application with CCIT ?",
     bug_free:"We know how to build reliable and bug-free solutions.", 
     innovative :"Let’s build innovative software together!",
+    SaaS_Development_Services:"SaaS Development Services",
+    SaaS_Development:"SaaS Development",
+    SaaS_Development_ser:"Services",
+    saas_Services_desc:"Moving to the cloud? Become an industry leader with a cost-effective and highly scalable SaaS solution.",
+    Solutions:"Solutions",
+    Our_SaaS_development_services:"Our SaaS development services",
+    Our_SaaS_development_services_desc:"With SaaS development services, CCIT will help your business stand out from competitors with a unique, secure, and scalable solution. Whether you need to create a new cloud-based application for your business or manage an existing product, we are happy to share our expertise and passion for cloud solutions and help you solve any SaaS-related challenge.",
+    SaaS_consulting:"SaaS consulting",
+    SaaS_consulting_desc:"Our consultants help overcome the lack of expertise in SaaS development and transform your vision into a ready plan.",
+    New_SaaS_product_development:"New SaaS product development",
+    New_SaaS_product_development_desc:"We provide services to build SaaS solutions from scratch, from business needs analysis to SaaS deployment.",
+    SaaS_UX_design:"SaaS UX design",
+    SaaS_UX_design_desc:"Our SaaS user experience design services consider both user and business demands, delivering the greatest product value to end-users.",
+    SaaS_UI_design:"SaaS UI design",
+    SaaS_UI_design_desc:"Our SaaS user interface design aims at making neat visual representations of SaaS projects' functions.",
+    SaaS_architecture_design:"SaaS architecture design",
+    SaaS_architecture_design_desc:"In building SaaS architecture design, we always apply our best development skills and techniques to deliver usable and profitable products.",
+    SaaS_application_development:"SaaS application development",
+    SaaS_application_development_desc:"Experienced in a vast range of technologies, our engineers produce high-quality code to implement even your boldest ideas.",
+    TweakinganexistingSaaSapp:"Tweaking an existing SaaS app",
+    TweakinganexistingSaaSapp_desc:"We will upgrade your existing SaaS solution for a great onboarding experience and provide value for more users.",
+    Integration_with_services:"Integration with 3rd-party services",
+    Integration_with_services_desc:"Through maintaining third-party integrations, you can satisfy more specific needs of users and make them stay with you.",
+    SaaScloudapplication:"SaaS cloud application development and migrating",
+    SaaScloudapplication_desc:"Our SaaS development experts will help you migrate your SaaS solution to the cloud, making it scalable and globally available.",
+    SaaStesting:"SaaS testing",
+    SaaStesting_desc:"Our SaaS testers ensure we implement a solution that works and generates the best results for your business.",
+    Maintenance_and_support_desc:"We provide a broad range of support and maintenance services to ensure your product works effectively after the launch.",
+    foraSaaS:"Do you have a great idea for a SaaS product?",
+    We_create:"We create remarkable SaaS solutions",
+    We_create_desc:"With SaaS development services, we build high-quality single-tenant and multi-tenant SaaS platforms, applying the best industry practices.",
+    CMS_system:"CMS systems",
+    CMS_system_desc:"SaaS content management systems are an amazing way to edit and customize your solution simply.",
+    ERP_systems:"ERP systems",
+    ERP_systems_desc:"Moving enterprise resource planning systems to the cloud enables businesses to work more effectively. So, you will see a quicker return on your investment.",
+    CRM_systems:"CRM systems",
+    CRM_systems_desc:"Our robust customer relationship management systems will streamline sales pipelines and improve the customer experience.",
+    Inventory_management:"Inventory management",
+    Inventory_management_desc:"Our inventory management software enables managing inventory, expanding your sales, and staying updated on your stock.",
+    E_commerce_descri:"SaaS eCommerce platforms include the benefits of on-premise and open-source solutions without any of their cons.",
+    Payroll_processing:"Payroll processing",
+    Payroll_processing_desc:"Our payroll processing solutions are simple and streamlined, handling tax formalities automatically to enhance overall business productivity.",
+    HRM_systems:"HRM systems",
+    HRM_systems_desc:"Saas human resource management systems we build are greatly customizable, offering clients flexible options for implementing functional or design changes.",
+    Accounting_apps:"Accounting apps",
+    Accounting_apps_desc:"We provide SaaS accounting software that is secure and allows easy collaboration across devices and locations.",
+    Productivity_apps:"Productivity apps",
+    Productivity_apps_desc:"Project management applications developed by CCIT offer powerful tools for effective project execution while promoting collaborative work.",
+    Trusted_by:"Trusted by businesses of any size",
+    Trusted_by_desc:"Having vast experience in SaaS development for startups and established enterprises, we know what challenges you address and how to solve them with technology. We are here to create a profitable SaaS product for you, whether a B2B, B2C, or C2C type of business.",
+    Startups_desc2:"Designing a prototype, building a new SaaS MVP, or scaling an existing one, you need to act fast. And we got you covered! Launch your product and test ideas quickly and within the budget with our efficient SaaS software development services",
+    Small_businesses_desc2:"CCIT’s programming team will help you move to the cloud with an efficient, secure, and scalable SaaS product and start saving on hardware costs. We will also be happy to maintain, scale, and integrate your existing SaaS solution.",
+    Enterprises_desc2:"Our expert developers are ready to help you with digital transformation. As an experienced SaaS development company, we understand your challenges and will help you automate business processes and save costs with a custom SaaS product explicitly crafted for your company’s needs.",
+    industries_title2:"Our experience in many industries drives results for clients",
+    industries_desc2:"Our experience of custom SaaS solutions development for particular domains has allowed us to grow in-house expertise which we gladly share with our clients. We provide consultations on every stage of the project development and know how to build a successful SaaS app following the best industry standards.",
+    online_marketplaces_desc2:"Marketplaces offer products and services from many sellers at once. SaaS enables marketplaces' ecosystems to be enriched by third-party products that improve the end-user experience.",
+    E_commerce_desc2:"SaaS eCommerce software comprises software, backups, hosting, and, also, technical support. With SaaS, you can significantly raise your eCommerce sales.",
+    Travel_desc2:"SaaS apps we developed help make trips simple, fast, intuitive, and pleasant. So, you will get a solution your users like.",
+    Automotive_desc2 :"We provide reliable and scalable SaaS application development solutions that allow automotive manufacturers to stay ahead of the curve and customers easily buy vehicles.",
+    insurance_desc2  :"We create awesome SaaS projects for insurance businesses that offer a number of unique advantages that can drive you revenue results.",
+    Recruiting_desc2:"With CCIT, you receive a profitable recruiting SaaS solution that makes the entire hiring process for recruiters more optimized and easy.",
+    Rental_desc2:"Rental apps we develop help you keep on top of your rental business. You will enhance bookings and increase revenue by letting users browse rentals and book online.",
+    Media_desc2:"With the growing number of media platforms, users need app helpers to manage various social media accounts. We will provide a robust SaaS media app to skyrocket your business.",
+    Healthcare_desc2:"We apply modern technologies for SaaS healthcare app development to deliver a seamless user experience. So, you will engage more people with a credible solution.",
+    The_SaaS:"The SaaS product development process",
+    The_SaaS_desc:"We are fans of an agile methodology when working on various SaaS apps. The latest tech practices and tools help us satisfy all our clients' needs. Here, we want to share our stages for an effective SaaS project development cycle. This is the core of developing a quality SaaS app.",
+    discovery_desc2:'This stage of SaaS development services helps our team understand your business goals and target group and suggest the best ways to address them.',
+    Our_designers2:"We create prototypes and UI for your future product. This helps us implement the user journey and build an intuitive custom app your users will love.",
+    Product_MVP_development_desc2:"Our mature software developers build your SaaS custom software with the best industry standards. Your platform will be secure, scalable, and maintainable.",
+    Thorough2:"The next stage of SaaS development services is quality assurance. We always put special effort into testing each SaaS site we create and optimizing the code.",
+    monitring22:"We monitor your SaaS platform once it’s deployed and solve any issues that may arise. We can take care of your app and support it on a regular basis.",
+    stack2:"Perfect tech stack to develop a SaaS application",
+    stack_desc2:"Over the years, we have picked a list of tools that help us build high-quality SaaS platforms. Together with our efficient development process, these tools enable us to keep the cost of SaaS software development services within our clients’ expectations.",
+    reliableSaaS:"Looking for a reliable SaaS development agency?",
+    Requirements_title2:"Modern requirements for advanced solutions",
+    Requirements_desc2:"Based on our extensive experience in SaaS web application development, we build robust and high-quality software as a service platforms that meet all modern web standards:",
+    Successful_SaaS:"Successful SaaS app development with CCIT",
+    Successful_SaaS_desc:"Having collaborated with numerous SaaS firms, we know what challenges you are looking to solve and how to address them with technology.",
+    qual_desc_one1:"Applying our extensive development skills and vast domain expertise, CCIT experts create SaaS solutions that are secure, fast-loading, scalable on-demand, and easily integrated with third-party services.",
+    qual_desc_two2:"We know how to design, develop and maintain both single-tenant and multi-tenant robust SaaS platforms with zero downtime. We apply our profound technical expertise, the best industry standards, and DevOps methodologies.",
+    with_UI:"with UI/UX team",
+    without_UI:"without UI/UX team",
+    Discover_our_works:"Discover our works",
+    Bakery_platform:"Bakery platform",
+    Rental_solution:"Rental solution",
+    Service_marketplace22:"Service marketplace",
+    collaboration:"Smart collaboration platform",
+    Digital_Village:"Digital Village is an Australian online service marketplace that brings together business owners and developers for fruitful collaboration and for making excellent software products.",
+    Real_estate:"Real estate online platform",
+    Real_estate_desc:"This project is a real estate SaaS platform that displays homeowners' listings. The solution is responsive, fast-loading, and intuitive, allowing users to add images and 3D tours.",
+    SaaSplatform:"SaaS platform for spikfast",
+    SaaSplatform_desc:"spikfast is an Australian SaaS platform for bakery businesses we developed from scratch. It is intended to optimize business administration and simplify the process of finding and booking desserts for customers.",
+    develop_your:"Why you should develop your SaaS application with CCIT",
+    develop_your_desc:"Hiring a SaaS development company can be a big decision for the future of your business. Here are just some of the reasons why it is worth applying to CCIT and how we can help you.",
+    save_desc2:"We have built an efficient rapid SaaS development process, allowing us to create and deliver your platform on time and on budget.",
+    experts2:"Extensive cloud expertise",
+    experts_desc2:"Having built multiple SaaS products, our SaaS application development company has accumulated profound market and industry knowledge.",
+    Enthusiastic2:"Full control over product development",
+    Enthusiastic_desc2:"Our SaaS web application development process is fully transparent, which is guaranteed by timely reports and excellent communication.",
+    The_needs2:"Secure and scalable solution",
+    The_needs_desc2:"Applying the best DevOps practices and our vast expertise, we ensure the high scalability and security of your SaaS application.",
+    Best_industry_standards2:"Enthusiastic team that cares",
+    Best_industry_standards_desc2:"We are proud of our result-oriented team that values communication and flexibility and focuses on high-value relationships that last.",
+
+    Support_after_launch_desc2:"With CCIT’s SaaS development services, our work doesn’t stop when your product goes live. Our reliable support team will ensure your SaaS app runs smoothly.",
+    credible2:"Deep SaaS development expertise",
+    implement:"As we have vast experience creating successful SaaS projects, we will help you implement your business vision.",
+    asA:"as a reliable SaaS software developer",
+    asA2:"experienced SaaS developers on board",
+    cred_desc44:"Mature designers who build excellent UI and UX that attract users",
+    cred_desc55:"Project managers who know the keys to the successful delivery of any sized SaaS projects.",
+    Revenue_increase:"Revenue increase",
+    Revenue_increase_desc:"The SaaS market is expected to rise to $10 trillion by 2030.",
+    Market_development:"Market development",
+    Market_development_desc:"The cloud app market has grown unstopping year-over-year since 2013.",
+    Value_growth:"Value growth",
+    Value_growth_desc:"SaaS domain value is forecasted to enhance by over 2 x in major European markets by 2025.",
+    right_now:"Why do you need a SaaS solution right now?",
+    right_now_desc:"As more and more enterprises turn to subscription-based SaaS solutions, the demand for SaaS apps is growing. These solutions are popular among businesses because they are cost-effective, scalable, accessible for users, and provide the ability to integrate with existing systems.",
+    clients_say:"Our clients say about CCIT",
+    clients_say_desc:"At CCIT, we value our clients' opinions and suggestions. We aim to realize all your requests for the solution during its development.",
+    accord11:"How much does it cost to develop a SaaS?",
+    accord12:"How is the development of SaaS related to cloud computing?",
+    accord13:"What is SaaS architecture?",
+    accord14:"What is SaaS application development?",
+    accord15:"What is SaaS in web development?",
+    accord16:"Why to use SaaS?",
+    softAsSer_desc:"Our expert team creates secure and scalable cloud platforms.",
+
+
+
 
 
 
@@ -890,6 +1025,139 @@ const translations = {
 
   },
   ar: {
+    softAsSer_desc:"يقوم فريق الخبراء لدينا بإنشاء منصات سحابية آمنة وقابلة للتطوير.",
+    accord11:"ما هي تكلفة تطوير البرامج الخدمية؟",
+    accord12:"كيف يرتبط تطوير البرمجيات الخدمية بالحوسبة السحابية؟",
+    accord13:"ما هي هندسة البرمجيات الخدمية؟",
+    accord14:"ما هو تطوير تطبيقات البرمجيات الخدمية؟",
+    accord15:"ما هي البرمجيات الخدمية في تطوير الويب؟",
+    accord16:"لماذا تستخدم البرمجيات الخدمية؟",
+
+    clients_say:"ما يقوله عملاؤنا عن سحب الابداع",
+    clients_say_desc:"في سحب الابداع ، نقدر آراء واقتراحات عملائنا. نهدف إلى تلبية جميع طلباتك للحل أثناء تطويره.",
+
+    right_now:"لماذا تحتاج إلى حل البرمجيات الخدمية الآن؟",
+    right_now_desc:"مع تحول المزيد والمزيد من المؤسسات إلى حلول البرمجيات الخدمية القائمة على الاشتراك ، يتزايد الطلب على تطبيقات البرمجيات الخدمية. تحظى هذه الحلول بشعبية بين الشركات لأنها فعالة من حيث التكلفة وقابلة للتطوير ويمكن الوصول إليها من قبل المستخدمين وتوفر القدرة على التكامل مع الأنظمة الحالية.",
+
+    Value_growth:"نمو القيمة",
+    Value_growth_desc:"من المتوقع أن تزيد قيمة نطاق البرمجيات الخدمية بأكثر من 2x في الأسواق الأوروبية الرئيسية بحلول عام 2025.",
+    Market_development:"تطوير السوق",
+    Market_development_desc:"نما سوق التطبيقات السحابية بلا توقف عامًا بعد عام منذ عام 2013.",
+    Revenue_increase:"زيادة الإيرادات",
+    Revenue_increase_desc:"من المتوقع أن يرتفع سوق البرمجيات الخدمية إلى 10 تريليون دولار بحلول عام 2030.",
+
+    cred_desc55:"مديرو المشاريع الذين يعرفون مفاتيح التسليم الناجح لأي حجم من البرامج كمشاريع خدمية.",
+    cred_desc44:"المصممون الناضجون الذين يبنون واجهة مستخدم وتجربة مستخدم ممتازة تجذب المستخدمين",
+    asA2:"مطورين ذوي الخبرة",
+
+    asA:"كمطور برامج موثوق",
+    implement:"نظرًا لأن لدينا خبرة واسعة في إنشاء برامج ناجحة كمشاريع خدمية ، فسوف نساعدك على تنفيذ رؤية عملك.",
+
+    credible2:"خبرة تنموية عميقة",
+    Support_after_launch_desc2:"مع برنامج CCIT كخدمات تطوير خدمة ، لا يتوقف عملنا عندما يتم نشر منتجك. سيضمن فريق الدعم الموثوق لدينا تشغيل برنامجك كتطبيق خدمة بسلاسة.",
+    Best_industry_standards2:"فريق متحمس يهتم",
+    Best_industry_standards_desc2:"نحن فخورون بفريقنا الموجه نحو النتائج والذي يقدر التواصل والمرونة ويركز على العلاقات عالية القيمة التي تدوم.",
+    The_needs2:"حل آمن وقابل للتطوير",
+    The_needs_desc2:"بتطبيق أفضل ممارسات DevOps وخبرتنا الواسعة ، نضمن قابلية التوسع والأمان العاليين لبرنامجك كتطبيق خدمة.",
+    Enthusiastic2:"السيطرة الكاملة على تطوير المنتج",
+    Enthusiastic_desc2:"يتسم برنامجنا كعملية تطوير تطبيقات ويب خدمية بالشفافية الكاملة ، وهو ما يضمنه التقارير في الوقت المناسب والتواصل الممتاز.",
+    experts_desc2:"بعد بناء العديد من البرامج كمنتجات خدمية ، اكتسب برنامجنا كشركة تطوير تطبيقات الخدمة معرفة عميقة بالسوق والصناعة.",
+    experts2:"خبرة واسعة في السحابة",
+    save_desc2:"لقد قمنا ببناء برنامج سريع فعال كعملية تطوير خدمة ، مما يسمح لنا بإنشاء وتقديم النظام الأساسي الخاص بك في الوقت المحدد وفي حدود الميزانية.",
+    develop_your_desc:"يمكن أن يكون التعاقد مع برنامج كشركة لتطوير الخدمات قرارًا مهمًا لمستقبل عملك. فيما يلي بعض الأسباب التي تجعل الأمر يستحق التقدم إلى سحب الابداع وكيف يمكننا مساعدتك.",
+    develop_your:"لماذا يجب عليك تطوير برنامجك كتطبيق خدمة مع سحب الابداع",
+    SaaSplatform:"برنامج كمنصة خدمة لسبايك فاست",
+    SaaSplatform_desc:"سبايك فاست هو برنامج أسترالي كمنصة خدمة لأعمال المخابز التي قمنا بتطويرها من البداية. الغرض منه هو تحسين إدارة الأعمال وتبسيط عملية البحث عن الحلويات وحجزها للعملاء.",
+    Real_estate_desc:"هذا المشروع عبارة عن برنامج عقاري كمنصة خدمة تعرض قوائم أصحاب المنازل. الحل مستجيب وسريع التحميل وبديهي ، مما يسمح للمستخدمين بإضافة صور وجولات ثلاثية الأبعاد.",
+    Real_estate:"منصة عقارية على الإنترنت",
+    Digital_Village:"Digital Village هي سوق خدمات أسترالية عبر الإنترنت تجمع بين أصحاب الأعمال والمطورين من أجل تعاون مثمر ولصنع منتجات برمجية ممتازة.",
+    collaboration:"منصة تعاون ذكية",
+    Service_marketplace22:"سوق الخدمة",
+    Rental_solution:"حل التأجير",
+    Bakery_platform:"منصة العمل",
+    Discover_our_works:"اكتشف أعمالنا",
+    without_UI:"UI / UX بدون فريق ",
+    with_UI:" UI / UX مع فريق ",
+    qual_desc_one1:"من خلال تطبيق مهاراتنا التنموية الواسعة وخبراتنا الواسعة في المجال ، ينشئ خبراء سحب الابداع برنامجًا كحلول خدمة آمنة وسريعة التحميل وقابلة للتطوير عند الطلب ومتكاملة بسهولة مع خدمات الجهات الخارجية.",
+    qual_desc_two2:"نحن نعلم كيفية تصميم وتطوير وصيانة البرامج القوية للمستأجر الفردي والمتعدد المستأجرين كمنصات خدمة بدون أي توقف. نطبق خبرتنا الفنية العميقة وأفضل معايير الصناعة ومنهجيات DevOps.",
+    Successful_SaaS:"تطوير تطبيق ناجح باستخدام سحب الابداع",
+    Successful_SaaS_desc:"بعد أن تعاوننا مع العديد من البرامج كشركات خدمات ، فإننا نعرف التحديات التي تتطلع إلى حلها وكيفية مواجهتها بالتكنولوجيا.",
+    Requirements_title2:"المتطلبات الحديثة للحلول المتقدمة",
+    Requirements_desc2:"استنادًا إلى خبرتنا الواسعة في البرمجيات كتطوير تطبيقات الويب الخدمية ، فإننا نبني برامج قوية وعالية الجودة كمنصات خدمة تلبي جميع معايير الويب الحديثة:",
+    reliableSaaS:"هل تبحث عن برنامج موثوق به كوكالة تطوير خدمات؟",
+    stack2:"مكدس تقني مثالي لتطوير برنامج كتطبيق خدمة",
+    stack_desc2:"على مر السنين ، اخترنا قائمة بالأدوات التي تساعدنا في بناء برامج عالية الجودة كمنصات خدمة. جنبًا إلى جنب مع عملية التطوير الفعالة لدينا ، تمكننا هذه الأدوات من الحفاظ على تكلفة البرامج كخدمات تطوير برامج الخدمة في حدود توقعات عملائنا.",
+    monitring22:"نحن نراقب برنامجك كنظام أساسي للخدمة بمجرد نشره ونحل أي مشكلات قد تنشأ. يمكننا الاهتمام بتطبيقك ودعمه بشكل منتظم.",
+    Thorough2:"المرحلة التالية من البرمجيات كخدمات تطوير خدمة هي ضمان الجودة. نبذل دائمًا جهدًا خاصًا في اختبار كل برنامج كموقع خدمة نقوم بإنشائه وتحسين الكود.",
+    Product_MVP_development_desc2:"يقوم مطورو البرامج الناضجون لدينا ببناء برنامجك كبرنامج خدمة مخصص مع أفضل معايير الصناعة. ستكون منصتك آمنة وقابلة للتطوير ويمكن صيانتها.",
+    Our_designers2:"نقوم بإنشاء نماذج أولية وواجهة مستخدم لمنتجك المستقبلي. يساعدنا هذا في تنفيذ رحلة المستخدم وبناء تطبيق مخصص سهل الاستخدام سيحبه المستخدمون.",
+    discovery_desc2:'تساعد هذه المرحلة من البرامج كخدمات تطوير خدمة فريقنا على فهم أهداف عملك والمجموعة المستهدفة واقتراح أفضل الطرق لمعالجتها.',
+    The_SaaS:"عملية تطوير منتج خدمي",
+    The_SaaS_desc:"نحن معجبون بمنهجية رشيقة عند العمل على برامج مختلفة كتطبيقات خدمة. تساعدنا أحدث الممارسات والأدوات التقنية في تلبية جميع احتياجات عملائنا. هنا ، نريد أن نشارك مراحلنا من أجل برنامج فعال كدورة تطوير مشروع خدمي. هذا هو جوهر تطوير برنامج عالي الجودة كتطبيق خدمة.",
+    Healthcare_desc2:"نحن نطبق التقنيات الحديثة للبرامج كتطوير تطبيق خدمة الرعاية الصحية لتقديم تجربة مستخدم سلسة. لذلك ، ستشرك المزيد من الأشخاص من خلال حل موثوق به.",
+    Media_desc2:"مع تزايد عدد منصات الوسائط ، يحتاج المستخدمون إلى مساعدين للتطبيقات لإدارة حسابات الوسائط الاجتماعية المختلفة. سنوفر برنامجًا قويًا كتطبيق وسائط خدمة لزيادة نشاطك التجاري.",
+    Rental_desc2:"تساعدك تطبيقات التأجير التي نطورها على متابعة أعمالك في مجال التأجير. ستعمل على تحسين الحجوزات وزيادة الإيرادات من خلال السماح للمستخدمين بتصفح الإيجارات والحجز عبر الإنترنت.",
+    Recruiting_desc2:"مع سحب الابداع ، تتلقى برنامج توظيف مربحًا كحل خدمة يجعل عملية التوظيف بأكملها لأصحاب التوظيف أكثر سهولة وسلاسة.",
+    insurance_desc2:"نقوم بإنشاء برامج رائعة كمشاريع خدمية لشركات التأمين التي تقدم عددًا من المزايا الفريدة التي يمكن أن تحقق لك نتائج الإيرادات.",
+    Automotive_desc2:"نحن نقدم برامج موثوقة وقابلة للتطوير كحلول تطوير تطبيقات الخدمة التي تسمح لمصنعي السيارات بالبقاء في الطليعة ويسهل على العملاء شراء السيارات.",
+    Travel_desc2:"تساعد البرامج كتطبيقات خدمة قمنا بتطويرها في جعل الرحلات بسيطة وسريعة وبديهية وممتعة. لذلك ، ستحصل على حل يحبه المستخدمون.",
+    E_commerce_desc2:"يشتمل برنامج التجارة الإلكترونية كخدمة على البرامج والنسخ الاحتياطية والاستضافة والدعم الفني أيضًا. باستخدام البرنامج كخدمة ، يمكنك زيادة مبيعات التجارة الإلكترونية بشكل كبير.",
+    online_marketplaces_desc2:"تقدم الأسواق منتجات وخدمات من العديد من البائعين في وقت واحد. تمكّن البرامج كخدمة الأنظمة البيئية للأسواق من إثراءها من خلال منتجات الجهات الخارجية التي تعمل على تحسين تجربة المستخدم النهائي.",
+    industries_title2:"تجربتنا في العديد من الصناعات تؤدي إلى نتائج للعملاء",
+    industries_desc2:"لقد سمحت لنا تجربتنا في البرامج المخصصة كتطوير حلول خدمة لمجالات معينة بتنمية الخبرات الداخلية التي نشاركها بكل سرور مع عملائنا. نحن نقدم الاستشارات في كل مرحلة من مراحل تطوير المشروع ونعرف كيفية بناء برنامج ناجح كتطبيق خدمة يتبع أفضل معايير الصناعة.",
+    Enterprises_desc2:"مطورونا الخبراء مستعدون لمساعدتك في التحول الرقمي. بصفتنا برنامجًا ذا خبرة كشركة تطوير خدمات ، فإننا نتفهم التحديات التي تواجهك وسنساعدك على أتمتة العمليات التجارية وتوفير التكاليف باستخدام برنامج مخصص كمنتج خدمة تم تصميمه بشكل صريح لتلبية احتياجات شركتك.",
+    Small_businesses_desc2:"سيساعدك فريق البرمجة في سحب الابداع على الانتقال إلى السحابة باستخدام برنامج فعال وآمن وقابل للتطوير كمنتج خدمة والبدء في توفير تكاليف الأجهزة. سنكون سعداء أيضًا لصيانة برامجك الحالية وتوسيع نطاقها ودمجها كحل خدمة.",
+    Startups_desc2:"تصميم نموذج أولي ، بناء برنامج جديد كخدمة MVP ، أو توسيع نطاق برنامج موجود ، تحتاج إلى التصرف بسرعة. وقد قمنا بتغطيتك! أطلق منتجك واختبر أفكارك بسرعة وفي حدود الميزانية مع برنامجنا الفعال كخدمات تطوير برامج الخدمة",
+    Trusted_by:"موثوق بها من قبل الشركات من أي حجم",
+    Trusted_by_desc:"لدينا خبرة واسعة في مجال البرمجيات كتطوير خدمة للشركات الناشئة والمؤسسات الراسخة ، فنحن نعرف التحديات التي تواجهها وكيفية حلها بالتكنولوجيا. نحن هنا لإنشاء برنامج مربح كمنتج خدمة لك ، سواء كان نوع الأعمال B2B أو B2C أو C2C.",
+    Productivity_apps:"تطبيقات الإنتاجية",
+    Productivity_apps_desc:"تقدم تطبيقات إدارة المشاريع التي طورتها CCIT أدوات قوية للتنفيذ الفعال للمشروع مع تعزيز العمل التعاوني.",
+    Accounting_apps:"تطبيقات المحاسبة",
+    Accounting_apps_desc:"نحن نقدم برنامج محاسبة خدمة آمن ويسمح بالتعاون السهل عبر الأجهزة والمواقع.",
+    HRM_systems:"أنظمة إدارة الموارد البشرية",
+    HRM_systems_desc:"أنظمة إدارة الموارد البشرية التي نبنيها قابلة للتخصيص إلى حد كبير ، مما يوفر للعملاء خيارات مرنة لتنفيذ التغييرات الوظيفية أو التصميمية.",
+    Payroll_processing:"تجهيز كشوف المرتبات",
+    Payroll_processing_desc:"تتميز حلول معالجة كشوف المرتبات لدينا بالبساطة والانسيابية ، حيث تتعامل مع الإجراءات الضريبية تلقائيًا لتحسين إنتاجية الأعمال بشكل عام.",
+    E_commerce_descri:"البرامجيات كخدمة تشمل منصات التجارة الإلكترونية مزايا الحلول المحلية والمفتوحة المصدر دون أي سلبيات.",
+    Inventory_management:"ادارة المخزون",
+    Inventory_management_desc:"يتيح برنامج إدارة المخزون لدينا إدارة المخزون وتوسيع مبيعاتك والبقاء على اطلاع دائم بمخزونك.",
+    CRM_systems:"أنظمة إدارة علاقات العملاء",
+    CRM_systems_desc:"ستعمل أنظمة إدارة علاقات العملاء القوية لدينا على تبسيط خطوط المبيعات وتحسين تجربة العملاء.",
+    ERP_systems:"أنظمة تخطيط موارد المؤسسات",
+    ERP_systems_desc:"يؤدي نقل أنظمة تخطيط موارد المؤسسة إلى السحابة إلى تمكين الشركات من العمل بشكل أكثر فاعلية. لذلك ، سترى عائدًا أسرع على استثمارك.",
+    CMS_system:"أنظمة إدارة المحتوى",
+    CMS_system_desc:"تعد أنظمة إدارة المحتوى طريقة رائعة لتعديل وتخصيص الحل الخاص بك ببساطة.",
+    We_create:"نصنع برامج رائعة كحلول خدمية",
+    We_create_desc:"من خلال البرامج كخدمات تطوير خدمة ، نقوم ببناء برنامج عالي الجودة للمستأجر الفردي ومتعدد المستأجرين كنظام أساسي للخدمات ، مع تطبيق أفضل الممارسات الصناعية.",
+    foraSaaS:"هل لديك فكرة رائعة عن برنامج كمنتج خدمي؟",
+    Maintenance_and_support_desc:"نحن نقدم مجموعة واسعة من خدمات الدعم والصيانة لضمان عمل منتجك بشكل فعال بعد الإطلاق.",
+    SaaStesting:"اختبار البرمجيات",
+    SaaStesting_desc:"يضمن مختبرو البرمجيات لدينا تنفيذ حل يعمل ويولد أفضل النتائج لعملك.",
+    SaaScloudapplication:"تطوير التطبيقات السحابية للبرمجيات وترحيلها",
+    SaaScloudapplication_desc:"سيساعدك خبراء تطوير البرمجيات لدينا على ترحيل حل البرمجيات الخاص بك إلى السحابة ، مما يجعله قابلاً للتطوير ومتاحًا عالميًا.",
+    Integration_with_services:"التكامل مع خدمات الطرف الثالث",
+    Integration_with_services_desc:"من خلال الحفاظ على عمليات تكامل الجهات الخارجية ، يمكنك تلبية احتياجات أكثر تحديدًا للمستخدمين وجعلهم يبقون معك.",
+    TweakinganexistingSaaSapp:"التغيير والتبديل في تطبيق البرمجيات موجود",
+    TweakinganexistingSaaSapp_desc:"سنقوم بترقية حل البرمجيات كخدمة الحالي لديك للحصول على تجربة إعداد رائعة وتوفير قيمة لمزيد من المستخدمين.",
+    SaaS_application_development:"تطوير تطبيقات البرمجيات",
+    SaaS_application_development_desc:"من ذوي الخبرة في مجموعة واسعة من التقنيات ، ينتج مهندسونا كودًا عالي الجودة لتنفيذ حتى أفكارك الأكثر جرأة.",
+    SaaS_architecture_design:"تصميم معماري للبرمجيات",
+    SaaS_architecture_design_desc:"في بناء تصميم معماري للبرمجيات ، نطبق دائمًا أفضل مهارات وتقنيات التطوير لدينا لتقديم منتجات قابلة للاستخدام ومربحة.",
+    SaaS_UI_design:"تصميم البرمجيات UI",
+    SaaS_UI_design_desc:"يهدف تصميم واجهة المستخدم إلى تقديم عروض مرئية دقيقة لوظائف مشاريع البرمجيات.",
+    SaaS_UX_design:"تصميم البرمجيات UX",
+    SaaS_UX_design_desc:"تأخذ خدمات تصميم تجربة المستخدم للبرمجيات كخدمة لدينا في الاعتبار متطلبات المستخدم والعمل ، مما يوفر أكبر قيمة للمنتج للمستخدمين النهائيين.",
+    New_SaaS_product_development:"تطوير منتجات البرمجيات الجديدة",
+    New_SaaS_product_development_desc:"نحن نقدم خدمات لبناء حلول البرمجيات من البداية ، من تحليل احتياجات العمل إلى نشر البرمجيات.",
+    SaaS_consulting:"استشارات البرمجيات كخدمة",
+    SaaS_consulting_desc:"يساعد مستشارونا في التغلب على نقص الخبرة في تطوير البرمجيات كخدمة وتحويل رؤيتك إلى خطة جاهزة.",
+    Our_SaaS_development_services:"خدمات تطوير البرمجيات كخدمة الخاصة بنا",
+    Our_SaaS_development_services_desc:"من خلال خدمات تطوير البرمجيات كخدمة ، ستساعد سحب الابداع عملك على التميز عن المنافسين من خلال حل فريد وآمن وقابل للتطوير. سواء أكنت بحاجة إلى إنشاء تطبيق جديد قائم على السحابة لعملك أو إدارة منتج موجود ، يسعدنا مشاركة خبرتنا وشغفنا بالحلول السحابية ومساعدتك في حل أي تحد متعلق بخدمات البرمجيات.",
+    Solutions:"الحلول",
+    saas_Services_desc:"الانتقال إلى السحابة؟ كن رائدًا في الصناعة من خلال حل  فعال من حيث التكلفة وقابل للتطوير بدرجة كبيرة.",
+    SaaS_Development:"خدمات تطوير",
+    SaaS_Development_ser:" البرمجيات كخدمة",
+    SaaS_Development_Services:"خدمات تطوير البرمجيات كخدمة",
     innovative :"دعونا نبني برامج مبتكرة معًا!",
     bug_free:"نحن نعلم كيفية بناء حلول موثوقة وخالية من الأخطاء.", 
     Whybuild:"لماذا يجب عليك بناء التطبيق الخاص بك مع سحب الابداع ؟",
@@ -1244,7 +1512,7 @@ const translations = {
     cases_desc:"يحب عملاؤنا الشراكة معنا في مشاريعهم الرقمية الرائدة.",
     Cases:"حالات",
     Regular_updates:"تحديثات منتظمة إذا لزم الأمر",
-    Maintenance_and_support:"الصيانة والدعم",
+
     Content_management:"يتم تمكين نظام إدارة المحتوى (CMS) افتراضيًا",
     Manageable:"قابل للتحكم",
     Tracking:"تم تمكين التتبع",
@@ -1315,11 +1583,11 @@ const translations = {
     Personalization_desc:"تم تصميم البرامج القائمة على القوالب لخدمة مجموعة واسعة من الشركات في وقت واحد. في المقابل ، يتم إنشاء حلول تطوير البرامج المخصصة وفقًا لمواصفات المنتج الخاص بك. تعالج المنتجات المخصصة مهام عملك الشخصية وتستفيد من مزاياك.",
     Benefits_title:"فوائد خدمة تطوير البرامج المخصصة",
     Benefits_desc:"في العالم التنافسي الحديث ، ستجعل الأصالة والتفرد عملك متميزًا عن المنافسة. في Codica ، نحن على يقين من أن تطوير المنتجات المخصصة سيلعب دورًا حيويًا في نقل مؤسستك إلى المستوى التالي من النمو.",
-    Enterprises:"الشركات",
+    Enterprises:"المؤسسات",
     Enterprises_desc:"المتخصصون الناضجون في البرامج المخصصة لدينا موجودون هنا لمساعدتك في التحول الرقمي. نقوم بإجراء تحليل عميق لقضاياك. وبالتالي ، سنساعدك على أتمتة العمليات التجارية وتقليل النفقات من خلال حل مخصص تم تصميمه خصيصًا لتلبية احتياجاتك.",
     Mid_scale_businesses:"الشركات متوسطة الحجم",
     Mid_scale_businesses_desc:"سيقوم فريق سحب الابداع الماهر بإنشاء مشروع برمجي مخصص جذاب وعالي الاستجابة لعملك ، مع تطبيق أدوات وممارسات الصناعة من الدرجة الأولى. سنكون مستعدين لدعم برامجك الحالية وتحسينها.",
-    Small_businesses:"أعمال بسيطة",
+    Small_businesses:"الشركات الصغيرة والمتوسطة",
     Small_businesses_desc:"في سحب الابداع ، سنساعدك في تلبية مخاوفك وجميع الاحتياجات الأساسية لعملك. سنأخذ في الاعتبار المخاطر الخفية ونقاط الغرامة لعملك. لذلك ، نحن نقدم أفضل الحلول التقنية التي تساعد عملك على التطور.",
     Startups:"الشركات الناشئة",
     Startups_desc:"عندما يتعلق الأمر ببناء برامج مبتكرة ، يجب أن تتصرف بسرعة لتظل في صدارة المنافسين. ونحن حريصون على تقديم يد المساعدة! سنساعدك على التحقق من جدوى فكرتك وإطلاق مشروعك بسرعة من خلال خدمات التطوير المخصصة التي أثبتت كفاءتها.",
