@@ -43,6 +43,9 @@
     $(".nav-tabs4 li:first-child").addClass("active");
     $(".tab-content #Front1").addClass("active show");
   
+    $(".nav-tabs5 li:first-child").addClass("active");
+    $(".tab-content #Android").addClass("active show");
+  
     
    });
 
@@ -97,6 +100,12 @@
       // Add active class to the clicked <li> element
       $(this).addClass("active");
     });
+  });
+  $(".nav-tabs5 li").click(function() {
+    $(".nav-tabs5 li").removeClass("active"); // Remove "active" class from all <li> elements
+    $(this).addClass("active"); // Add "active" class to the clicked <li> element
+    
+
   });
 
 
