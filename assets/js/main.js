@@ -46,6 +46,9 @@
     $(".nav-tabs5 li:first-child").addClass("active");
     $(".tab-content #Android").addClass("active show");
   
+    $(".nav-tabs6 li:first-child").addClass("active");
+    $(".tab-content #Front").addClass("active show");
+  
     
    });
 
@@ -101,12 +104,16 @@
       $(this).addClass("active");
     });
   });
+
   $(".nav-tabs5 li").click(function() {
     $(".nav-tabs5 li").removeClass("active"); // Remove "active" class from all <li> elements
     $(this).addClass("active"); // Add "active" class to the clicked <li> element
-    
-
   });
+  $(".nav-tabs6 li").click(function() {
+    $(".nav-tabs6 li").removeClass("active"); // Remove "active" class from all <li> elements
+    $(this).addClass("active"); // Add "active" class to the clicked <li> element
+  });
+
 
 
  
