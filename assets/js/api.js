@@ -671,7 +671,7 @@ fetch("https://testam.info/creativecloudsit/api/sliders", {
         let  slidersdata = res.data;
        
         // Iterate over the data and generate the HTML
-        var parentElement = document.getElementById("heroCarousel");
+        var parentElement = document.getElementById("heroCarousel1");
 
         // Loop through the data and create the HTML structure
   slidersdata.forEach((item, index) => {

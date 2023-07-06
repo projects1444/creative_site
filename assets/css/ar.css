@@ -1220,7 +1220,7 @@ right: 35px;
 
   @media (max-width: 768px) {
     #hero h2 {
-      font-size: 23px;
+      font-size: 28px;
     }
     #hero::after {
       width: 180%;
@@ -7693,4 +7693,77 @@ text-align: start;
 .nav-tabs6 li a {
   padding: 0 15px;
   color: black;
+}
+.parm{
+  font-size: 30px;
+  color: #DD71E3;
+  margin: 0 6px;
+  font-size: 35px;
+}
+.slach{
+  position: relative;
+}
+.slach::after{
+  content: "/";
+  position: absolute;
+  font-size: 35px;
+  color: #DD71E3;
+  top: -3px;
+  right: 24px;
+  font-weight: bold;
+
+}
+.software{
+  color: #0BE9FE !important;
+  font-size: 35px;
+  max-height: 100%;
+  height: 27px;
+}
+
+.toward{
+  margin: 4px 0 !important;
+  font-size: 35px;
+}
+
+@keyframes wordAnimation {
+  0% {
+    color: rgba(255, 255, 255, 1);
+}
+20% {
+  color: rgba(255, 255, 255, 0.2);
+}
+40% {
+  color: rgba(255, 255, 255, 1);
+}
+60% {
+  color: rgba(255, 255, 255, 0.2);
+}
+80% {
+  color: rgba(255, 255, 255, 0.2);
+}
+100% {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+
+}
+
+.lasts {
+  font-size: 35px;
+  animation: wordAnimation  2s linear 3s infinite;;
+  -webkit-animation: wordAnimation  2s linear 3s infinite;;
+}
+@media (max-width:768px) {
+  .software ,.toward ,.parm ,.slach::after,.lasts{
+    font-size: 23px;
+  }
+  .software{
+    margin: 0 5px 9px 0px !important;
+  }
+  .slach::after{
+    content: "/";
+    right: 19px;
+   
+  
+  }
 }
