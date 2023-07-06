@@ -49,10 +49,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   border-radius: 3px;
   right: 15px;
   bottom: 15px;
-  background: #68A4C4;
+  background: #2C3B96;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
+  border: 1px solid #90939d;
 }
 
 .back-to-top i {
@@ -554,7 +555,7 @@ Copyright     : 2019
 
 .mobile-menu li>a {
   font-size: 15px;
-  color: white;
+  color: #0BE9FE;
   text-transform: capitalize;
   line-height: 18px;
   position: relative;
@@ -617,7 +618,7 @@ Copyright     : 2019
   font-size: 14px;
   text-transform: capitalize;
   padding: 8px 0;
-  color: white;
+  color: #0BE9FE;
   font-weight: bold;
 }
 
@@ -1075,13 +1076,18 @@ button {
   -o-transition: 0.4s;
   transition: 0.4s;
 }
+.form-label{
+  width: 100%;
+  text-align: start;
+  color: rgb(35, 35, 98);
 
+}
 .mobile-trans select {
   width: 100%;
   border: 0;
   background: transparent;
   font-weight: bold;
-  color: white;
+  color: #0BE9FE;
 }
 
 .inlin-start1 {
@@ -1227,6 +1233,8 @@ button {
   z-index: 0;
   border-radius: 0 0 50% 50%;
   transform: translateX(-50%) rotate(0deg);
+  background-size: cover;
+  
 }
 
 #hero::before {
@@ -1283,7 +1291,7 @@ button {
 }
 
 #hero .btn-get-started {
-  font-family: "Roboto", sans-serif;
+
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
@@ -1513,7 +1521,7 @@ section {
 }
 
 .services .icon-box-pink .icon i {
-  color: #ff689b;
+  color: #2C3B96
 }
 
 .services .icon-box-pink:hover {
@@ -1525,7 +1533,7 @@ section {
 }
 
 .services .icon-box-cyan .icon i {
-  color: #3fcdc7;
+  color: #2C3B96
 }
 
 .services .icon-box-cyan:hover {
@@ -1537,7 +1545,7 @@ section {
 }
 
 .services .icon-box-green .icon i {
-  color: #41cf2e;
+  color: #2C3B96
 }
 
 .services .icon-box-green:hover {
@@ -3163,7 +3171,7 @@ a.custom:hover h3 {
   background: #7258AF;
   margin-left: 25px;
   width: auto;
-  height: 30px !important;
+  height: 40px !important;
   padding: 18px 10px !important;
   line-height: 0 !important;
 }
@@ -3757,10 +3765,10 @@ ol li {
 
 .contact .info-box i {
   font-size: 32px;
-  color: #68A4C4;
+  color: #2C3B96;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #a2cce3;
+  border: 2px dotted #2C3B96;
 }
 
 .contact .info-box h3 {
@@ -3841,10 +3849,26 @@ ol li {
 
 .contact .php-email-form input {
   padding: 20px 15px;
+  border: 1px solid #eb6060;
+  border-radius: 5px;
 }
+.contselct{
+  border: 1px solid #eb6060;
+  border-radius: 5px;
+  height: 42px;
+}
+.contselct:focus{
+  color: #495057;
+  background-color: #fff;
+  border-color: #eb6060;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(231 25 25 / 20%);
 
+}
 .contact .php-email-form textarea {
   padding: 12px 15px;
+  border: 1px solid #eb6060;
+  border-radius: 5px;
 }
 
 .contact .php-email-form button[type="submit"] {

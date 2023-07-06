@@ -1250,11 +1250,23 @@ const translations = {
     accord124:"Why does the product need an MVP?",
     accord134:"Why should a startup use an MVP development?",
     accord144:"How much does it cost to develop an MVP?",
+    callnum:"+966 59 808 0208",
+
+
+
+
+
+
+
+
+
+
 
 
 
   },
   ar: {
+    callnum:"966 59 808 0208+",
     accord114:"ما هو الحد الأدنى من المنتجات القابلة للتطبيق؟",
     accord124:"لماذا يحتاج المنتج إلى القابل للتطبيق؟",
     accord134:"لماذا يجب على الشركة الناشئة استخدام تطوير الحد الأدنى من  المنتجات القابلة للتطبيق؟",
