@@ -10,6 +10,8 @@ var namear = document.getElementsByClassName('name-ar')[0];
  var budget =  document.getElementsByClassName('budget')[0];
  var subName =  document.getElementById("sub-name");
  var subEmail =  document.getElementById("sub-email");
+ var subName2 =  document.getElementById("sub2-name");
+ var subEmail2 =  document.getElementById("sub2-email");
 // console.log(lang);
 if(lang === 'ar' ){
 
@@ -51,6 +53,11 @@ if(subName  && subEmail)
   subName.setAttribute('placeholder', ' الإسم');
   subEmail.setAttribute('placeholder', ' البريد الالكتروني');
 }
+if(subName2 && subEmail2)
+{
+  subName2.setAttribute('placeholder', ' الإسم');
+  subEmail2.setAttribute('placeholder', ' البريد الالكتروني');
+}
 }else{
  
   if(namear && Emailar ){
@@ -86,5 +93,10 @@ if(subName  && subEmail)
     subName.setAttribute('placeholder', 'Name');
     subEmail.setAttribute('placeholder', 'E-mail');
   }
+  if(subName2 && subEmail2){
+    subName2.setAttribute('placeholder', 'Name');
+    subEmail2.setAttribute('placeholder', 'E-mail');
+  }
+  
   
 }
