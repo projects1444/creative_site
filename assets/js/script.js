@@ -20,12 +20,12 @@ selectElement.addEventListener("change", (event) => {
   if (language === "ar") {
     headerElement.dir = "rtl";
     stylesheet.setAttribute("href", "assets/css/ar.css");
- 
+    // style2.setAttribute("href", "../assets/css/ar.css");
    
   } else {
     headerElement.dir = "ltr";
     stylesheet.setAttribute("href", "assets/css/style.css");
- 
+    // style2.setAttribute("href", "../assets/css/style.css");
    
   }
 
@@ -39,7 +39,7 @@ languageSelector.addEventListener("change", (event) => {
   setLanguage(event.target.value);
   localStorage.setItem("lang", event.target.value);
   const stylesheet = document.getElementById("language-stylesheet");
-  // const stylesheet2 = document.getElementById("language-stylesheet2");
+  const style2 = document.getElementById("style2");
   const headerElement = document.getElementById("header");
   const navElement = document.querySelector("nav");
   const inpNmae =  document.getElementById("name");
@@ -51,6 +51,7 @@ languageSelector.addEventListener("change", (event) => {
   if (language === "ar") {
     headerElement.dir = "rtl";
     stylesheet.setAttribute("href", "assets/css/ar.css");
+
 
   } else {
     headerElement.dir = "ltr";
@@ -74,10 +75,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (language === "ar") {
     stylesheet.setAttribute("href", "assets/css/ar.css");
-  
+
   } else {
     stylesheet.setAttribute("href", "assets/css/style.css");
-
   }
 
 
@@ -348,7 +348,7 @@ const translations = {
     Development:"Development",
     Enterpreneuship:"Enterpreneuship",
     Desgin:"Desgin",
-    Codica_Way:"Creative Clouds IT",
+    Codica_Way:"CCIT Way",
     Management:"Management",
     Saudi_Arabia:"Saudi Arabia",
     Email_Us:"Email Us",
@@ -1404,9 +1404,87 @@ const translations = {
     prd_discov:"Make your product exceptional and avoid risks from the start.",
     ds_desc:"Best design practices with examples that will spark your creativity.",
     mg_desc:"Inspirational articles about proper management processes.",
+    dev1:"DevOps Tools You Should Know in 2023",
+    dev2:"App Store Optimization: A Complete Guide to ASO",
+    dev3:"How to Create Ecommerce Mobile App: Tips, Trends, and Cost",
+    dev4:"Flutter vs. React Native: What to Choose for Your App Development?",
+    dev5:"Mental Health App Development: Types, Cost, and Process",
+    dev6:"Exploring the Top PWA Frameworks",
+    dev7:"What is a P2P marketplace? Key steps for building P2P marketplace software",
+    dev8:"DevOps Security: Challenges and Best Practices",
+    dev9:"B2B Marketplace: Definition, Features, and Development Guide",
+    dev10:"Who is DevOps Engineer: Skills, Roles, and Responsibilities",
+    dev11:"How Much Does It Cost to Build a Mobile App Like Snapchat",
+    dev21:"44 Best Ruby Gems That We Use",
+    dev22:"How to Build a Recruitment App in 2023: Cost, Timeline, and Best Practices",
+    dev23:"Top JavaScript (JS) Trends You Should Follow in 2023",
+    dev24:"Vue.js vs React: Comparison of the Two Most Popular JavaScript Technologies",
+    dev25:"Web Application Security: The Ultimate Guide",
+    dev26:"How to Choose Web Hosting for Your New Product",
+    dev27:"How to Make a React Progressive Web Application (PWA)",
+    dev28:"React App Development: UI, Styling, State Management, Testing",
+    dev29:"Deploying a Static Website on AWS Web Hosting with GitLab CI",
+    dev210:"How to Start ReactJS Development Fast: Solid Tools and Best Practices",
+    dev211:"The Power of CSS Processors in Web Applications Development",
+    dev31:"How to Implement Elasticsearch When Developing a Rails Web App",
+    dev32:"4 Useful Git Commands That Will Make Your Life Easier",
+    BlogonSoftwareDevelopment:"Blog on Software Development",
+    BlogonTechnologyandSolutions:"Blog on Technology and Solutions",
+    teck1:"ChatGPT API: Tutorial Guide",
+    teck2:"Breaking Down the Cost of PWA Development: Insights and Best Practices",
+    teck3:"PWA Benefits: Advantages for Your Business and Customers",
+    teck4:"Quality Assurance vs Quality Control: Definitions and Key Differences",
+    teck5:"Native vs Cross-Platform App Development: The Right Way for Your Business",
+    teck6:"Top Programming Languages in 2023: Tech Trends for Business",
+    teck7:"Best Technology Stack for Mobile App Development in 2023",
+    teck8:"Test Driven Development: Key Benefits and Disadvantages for Your Project",
+    teck9:"The Future of SaaS: Top SaaS App Development Trends for 2023",
+    teck10:"How Automation Testing Increases Execution Speed, Test Coverage, and Effectiveness",
+    teck11:"Work From Home Trends: Future of Remote Working",
+
+    teck21:"15 Burning Web Development Trends to Follow in 2023",
+    teck22:"Key Trends in Digital Marketplace Industry in 2023",
+    teck23:"SaaS Security Guide: How to Protect Your Product and User Data",
+    teck24:"15 Hot Mobile Application Development Trends for Your Business in 2023",
+    teck25:"IaaS vs PaaS vs SaaS: Choosing the Best Cloud Computing Model",
+    teck26:"Top 10 Programming Languages of 2022 for Software Development",
+    teck27:"PWA vs Native Apps: Advantages and Disadvantages, Features Comparison",
+    teck28:"SaaS Product Development: Why Choose Ruby on Rails Framework?",
+    teck29:"Choosing the Best SaaS Hosting Provider for Your SaaS App",
+    teck210:"Pros & Cons of Using Ruby on Rails for Web Development",
+    teck211:"Avoid These Costly Mistakes During Web Application Development",
+    teck31:"What Does Progressive Web Apps (PWA) Development Mean? (Definition)",
+    teck32:"Ruby and PHP: which is the best fit for your startup? ",
+    teck33:"Google Chrome Dev Summit 2018: Event Highlights",
+    Blogonccit:"Blog on Our Insights, News and Approach",
+    ccit1:"2022 for CCIT: a Year in Review",
+    ccit2:"How to Create a Successful Custom Web Product Step by Step: CCIT's Experience",
+    ccit3:"CCIT Succeeds as Premium Software Company According to SpikFast",
+    ccit4:"CCIT Named a Top Software Development Company by SpikFast",
+    ccit5:"How We Delivered Boat Selling Website for Tradeaboat (Case Study)",
+    ccit6:"Update from CCIT Team: Ukraine Stands Strong",
+    ccit7:"2021 for CCIT: a Year in Review",
+    ccit8:"The Path to Become a Quality Assurance Engineer: CCIT’s Success Story",
+    ccit9:" Job Matching System Case Study",
+    ccit10:"CCIT Named a Top E-commerce Web Development Company by Manifest",
+    ccit11:" Kids Activities Marketplace (Case Study)",
+
+    ccit21:"2020 for CCIT: a Year in Review",
+    ccit22:"CCIT Named a Top Progressive Web App Development Company",
+    ccit23:"Clutch named Codica a Top KSA Software Development Firm",
+    ccit24:"CCIT 2019: Year in Review",
+    ccit25:"SpikFast lists CCIT as a Top Software Development Company",
+    ccit26:"CCIT Named Top Web Development Company in KSA by Clutch",
+    ccit27:"5 Powerful Tips to Become a Successful Project Manager",
+    ccit28:"CCIT Listed Amongst Top KSA Web Developers in 2019",
+    ccit29:"Building a Time Tracking Slack Bot with Vue.js and Ruby on Rails",
+    ccit210:"Agile at CCIT : How We Deliver Great Web Products",
+    blog_development:"Answers to relevant questions about the web and mobile app creation.",
+    blog_techno:"News and tips in the field of latest inovations and technologies.",
+    blog_CCIT:"All updates about the CCIT software development agency.",
 
 
-
+ 
 
 
 
@@ -1415,6 +1493,91 @@ const translations = {
 
   },
   ar: {
+    blog_CCIT:"جميع التحديثات حول وكالة تطوير البرمجيات سحب الابداع.",
+    blog_techno:"أخبار ونصائح في مجال أحدث الابتكارات والتقنيات.",
+    blog_development:"إجابات على الأسئلة ذات الصلة حول إنشاء تطبيقات الويب والجوّال.",
+    ccit21:"2020 لـ سحب الابداع: عام في المراجعة",
+    ccit22:"تم اختيار سحب الابداع كأفضل شركة تطوير تطبيقات ويب متقدمة",
+    ccit23:"كلاتش سميت سحب الابداع كأفضل شركة تطوير برمجيات في المملكة العربية السعودية",
+    ccit24:"سحب الابداع 2019: مراجعة هذا العام",
+    ccit25:"تدرج سبايك فاست سحب الابداع كأفضل شركة لتطوير البرمجيات",
+    ccit26:"تم اختيار سحب الابداع كأفضل شركة لتطوير مواقع الويب في المملكة العربية السعودية من قبل كلاتش",
+    ccit27:"5 نصائح قوية لتصبح مدير مشروع ناجحًا",
+    ccit28:"تم إدراج سحب الابداع ضمن أفضل مطوري الويب في المملكة العربية السعودية لعام 2019",
+    ccit29:"بناء روبوت سلاك لتتبع الوقت باستخدام Vue.js و Ruby on Rails",
+    ccit210:"منهجيتنا في سحب الابداع: كيف نقدم منتجات ويب رائعة",
+
+
+    ccit1:"2022 لـ سحب الابداع: عام في المراجعة",
+    ccit2:"كيفية إنشاء منتج ويب مخصص ناجح خطوة بخطوة: تجربة سحب الابداع",
+    ccit3:"تنجح سحب الابداع كشركة برمجيات متميزة وفقًا لشركة سبايك فاست",
+    ccit4:"تم اختيار سحب الابداع كأفضل شركة لتطوير البرمجيات من قبل سبايك فاست",
+    ccit5:"كيف قدمنا موقع بيع القوارب للقارب التجاري (دراسة حالة)",
+    ccit6:"تحديث من فريق سحب الابداع: أوكرانيا تقف بقوة",
+    ccit7:"2021 لـ سحب الابداع: عام في المراجعة",
+    ccit8:"الطريق لتصبح مهندس ضمان الجودة: قصة نجاح سحب الابداع",
+    ccit9:"دراسة حالة نظام المطابقة الوظيفية",
+    ccit10:"تم اختيار سحب الابداع كأفضل شركة لتطوير مواقع التجارة الإلكترونية من مانيفست",
+    ccit11:"سوق أنشطة الأطفال (دراسة حالة)",
+
+    Blogonccit:"مدونة على رؤيتنا وأخبارنا ومنهجنا",
+
+    teck31:"ماذا يعني تطوير تطبيقات الويب المتقدمة (PWA)؟ (تعريف)",
+    teck32:"Ruby و PHP: أيهما أفضل ما يناسب شركتك الناشئة؟",
+    teck33:"قمة مطوري جوجل كروم 2018: أبرز الأحداث ",
+    teck21:"15 اتجاهات تطوير الويب المحترقة التي يجب اتباعها في عام 2023",
+    teck22:"الاتجاهات الرئيسية في صناعة السوق الرقمية في عام 2023",
+    teck23:"دليل أمان برمجيات كخدمة: كيفية حماية منتجك وبيانات المستخدم",
+    teck24:"15 اتجاهًا رائعًا لتطوير تطبيقات الهاتف المحمول لعملك في عام 2023",
+    teck25:"IaaS vs PaaS vs SaaS: اختيار أفضل نموذج للحوسبة السحابية",
+    teck26:"أفضل 10 لغات برمجة لعام 2022 لتطوير البرمجيات",
+    teck27:"تطبيقات الويب المتقدمة مقابل التطبيقات الأصلية: المزايا والعيوب ، مقارنة الميزات",
+    teck28:"تطوير منتجات البرمجيات كخدمة: لماذا تختار إطار عمل Ruby on Rails؟",
+    teck29:"اختيار أفضل برنامج كمزود خدمة استضافة لبرنامجك كتطبيق خدمة",
+    teck210:"إيجابيات وسلبيات استخدام Ruby on Rails لتطوير الويب",
+    teck211:"تجنب هذه الأخطاء المكلفة أثناء تطوير تطبيقات الويب",
+
+
+    teck1:"واجهة برمجة تطبيقات ChatGPT: دليل تعليمي",
+    teck2:"توزيع تكلفة تطوير تطبيقات الويب التدريجي المتقدمة: الرؤى وأفضل الممارسات",
+    teck3:"فوائد تطبيق الويب المتقدم: مزايا لعملك وعملائك",
+    teck4:"ضمان الجودة مقابل مراقبة الجودة: التعريفات والاختلافات الرئيسية",
+    teck5:"تطوير تطبيقات Native vs Cross-Platform: الطريقة الصحيحة لعملك",
+    teck6:"أفضل لغات البرمجة في عام 2023: اتجاهات التكنولوجيا للأعمال",
+    teck7:"أفضل حزمة تقنية لتطوير تطبيقات الأجهزة المحمولة في عام 2023",
+    teck8:"التطوير المدفوع بالاختبار: الفوائد والعيوب الرئيسية لمشروعك",
+    teck9:"مستقبل البرمجيات كخدمة: أهم اتجاهات تطوير تطبيقات برمجيات كخدمة لعام 2023",
+    teck10:"كيف يزيد اختبار الأتمتة من سرعة التنفيذ وتغطية الاختبار والفعالية",
+    teck11:"اتجاهات العمل من المنزل: مستقبل العمل عن بُعد",
+    BlogonTechnologyandSolutions:"مدونة عن التكنولوجيا والحلول",
+    dev31:"كيفية تنفيذ Elasticsearch عند تطوير تطبيق ويب Rails",
+    dev32:"4 أوامر Git مفيدة ستجعل حياتك أسهل",
+    dev21:"أفضل 44 جوهرة روبي التي نستخدمها",
+    dev22:"كيفية إنشاء تطبيق التوظيف في عام 2023: التكلفة والجدول الزمني وأفضل الممارسات",
+    dev23:"أهم اتجاهات جافاسكريبت التي يجب عليك اتباعها في عام 2023",
+    dev24:"فيو مقابل ريأكت: مقارنة بين أكثر تقنيات جافاسكريبت شيوعًا",
+    dev25:"أمان تطبيقات الويب: الدليل النهائي",
+    dev26:"كيفية اختيار استضافة الويب لمنتجك الجديد",
+    dev27:"كيفية إنشاء تطبيق ويب متقدم تفاعلي",
+    dev28:"تطوير تطبيق ريأكت: واجهة المستخدم، التنسيق، إدارة الحالة، الاختبار",
+    dev29:"نشر موقع ويب ثابت على AWS Web Hosting باستخدام GitLab CI",
+    dev210:"كيف تبدأ تطوير ReactJS بسرعة: أدوات صلبة وأفضل الممارسات",
+    dev211:"قوة معالجات CSS في تطوير تطبيقات الويب",
+
+    BlogonSoftwareDevelopment:"مدونة عن تطوير البرمجيات",
+    dev1:"أدوات DevOps التي يجب أن تعرفها في عام 2023",
+    dev2:"تحسين متجر التطبيقات: دليل كامل للخدمات الإدارية فقط",
+    dev3:"كيفية إنشاء تطبيق جوّال للتجارة الإلكترونية: النصائح والاتجاهات والتكلفة",
+    dev4:"Flutter مقابل React Native: ماذا تختار لتطوير تطبيقك؟",
+    dev5:"تطوير تطبيقات الصحة العقلية: الأنواع والتكلفة والعملية",
+    dev6:"استكشاف أفضل أطر عمل تطبيقات الويب المتقدمة",
+    dev7:"ما هو سوق P2P؟ الخطوات الأساسية لبناء برنامج سوق P2P",
+    dev8:"أمان DevOps: التحديات وأفضل الممارسات",
+    dev9:"سوق الأعمال إلى الأعمال (B2B): التعريف، المميزات، ودليل التطوير",
+    dev10:"من هو مهندس DevOps: المهارات والأدوار والمسؤوليات",
+    dev11:"كم يكلف إنشاء تطبيق جوال مثل سناب شوت",
+
+
     mg_desc:"مقالات ملهمة حول عمليات الإدارة السليمة.",
     ds_desc:"أفضل ممارسات التصميم مع الأمثلة التي ستثير إبداعك.",
     prd_discov:"اجعل منتجك استثنائيًا وتجنب المخاطر من البداية.",
@@ -2502,13 +2665,13 @@ const translations = {
     Saudi_Arabia:"المملكة السعودية العربية",
     home: "الصفحة الرئيسية",
     about: "من نحن",
-    Codica_Way:"سحب الابداع",
+    Codica_Way:"طريقة سحب الابداع",
     service: "خدماتنا",
-    Management:"الادارة",
-    Desgin:"التصميم",
+    Management:"ادارة",
+    Desgin:"تصميم",
     services: "خدماتنا",
     Enterpreneuship:"ريادة الأعمال",
-    Development:"التطوير",
+    Development:"تطوير",
     projects: "مشاريعنا",
     team: "فريق العمل",
     blog: "المدونة",
