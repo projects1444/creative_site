@@ -5,6 +5,7 @@ var selectElement = document.getElementById("language-select");
 // var selectElement2 = document.getElementById("selectionsm");
 
 var stylesheet2 = document.getElementById("stylesheet2")
+var stylesheet3 = document.getElementById("stylesheet3")
 /* mobile */
 selectElement.addEventListener("change", (event) => {
   window.location.reload();
@@ -28,12 +29,18 @@ selectElement.addEventListener("change", (event) => {
     if(stylesheet2){
       stylesheet2.setAttribute("href", "/assets/css/ar.css");
     }
+    if(stylesheet3){
+      stylesheet3.setAttribute("href", "../../assets/css/ar.css");
+    }
   } else {
     if(stylesheet){
       stylesheet.setAttribute("href", "assets/css/style.css");
     }
     if(stylesheet2){
       stylesheet2.setAttribute("href", "/assets/css/style.css");
+    }
+    if(stylesheet3){
+      stylesheet3.setAttribute("href", "../../assets/css/style.css");
     }
  
   }
@@ -63,6 +70,9 @@ languageSelector.addEventListener("change", (event) => {
     if(stylesheet2){
       stylesheet2.setAttribute("href", "/assets/css/ar.css");
     }
+    if(stylesheet3){
+      stylesheet3.setAttribute("href", "../../assets/css/ar.css");
+    }
  
   } else {
     headerElement.dir = "ltr";
@@ -72,6 +82,10 @@ languageSelector.addEventListener("change", (event) => {
     if(stylesheet2){
       stylesheet2.setAttribute("href", "/assets/css/style.css");
     }
+    if(stylesheet3){
+      stylesheet3.setAttribute("href", "../../assets/css/style.css");
+    }
+ 
  
   }
 });
@@ -94,6 +108,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if(stylesheet2){
       stylesheet2.setAttribute("href", "/assets/css/ar.css");
     }
+    if(stylesheet3){
+      stylesheet3.setAttribute("href", "../../assets/css/ar.css");
+    }
  
   } else {
     if(stylesheet){
@@ -101,6 +118,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     if(stylesheet2){
       stylesheet2.setAttribute("href", "/assets/css/style.css");
+    }
+    if(stylesheet3){
+      stylesheet3.setAttribute("href", "../../assets/css/style.css");
     }
  
   }
@@ -420,7 +440,7 @@ const translations = {
     Portfolio: "Portfolio",
     devops_Services: "DevOps Services",
     Development: "Development",
-    Enterpreneuship: "Enterpreneuship",
+    Enterpreneuship: "Entrepreneurship",
     Desgin: "Desgin",
     Codica_Way: "CCIT Way",
     Management: "Management",
@@ -2043,12 +2063,25 @@ const translations = {
     profitablemar :"Want to build a profitable online marketplace?",
     freebook:"Download free E-book",
     entership_desc:"Expert articles about improvement and growing online business.",
-
-
-
-
-
-
+    BlogonOnlineMarketplaceDevelopment:"Blog on Online Marketplace Development",
+    entersh44:"10 Smart Ways to Solve Chicken and Egg Problem for Online Marketplaces",
+    entersh45:"How Much Does It Cost to Build a Website Like Amazon?",
+    entersh46:"How much Does It Cost to Create a Bidding Website Like eBay",
+    entersh47:"AliExpress Clone Website: How to Build Similar E-commerce Platform",
+    entersh48:"Question and Answer Website Development: Functionality and Best Practices",
+    entersh49:"B2C Ecommerce Marketplaces: All You Should Know Before Building One",
+    entersh50:"How We Delivered MVP for PlanMyKids - Kids Activities Marketplace (Case Study)",
+    entersh51:"Spree Commerce: How to Quickly Build an Ecommerce Website",
+    entersh52:"What Makes Ruby on Rails Perfect for Marketplace Development?",
+    entersh53:"6 Top Multivendor Marketplace Features for Sellers",
+    entersh54:"5 Main Online Marketplace Features to Make Buyers Happy",
+    BlogonSaaSProductDevelopment:"Blog on SaaS Product Development",
+    entersh55:"How to Build a SaaS Product in 6 Steps",
+    entersh56:"Top 10 SaaS Pricing Models: Pros and Cons of Each Example",
+    entersh57:"How to Build an MVP for a SaaS Startup: Practical Tips",
+    entersh58:"Why SaaS Startups Fail: Most Common Reasons and How to Prevent Them",
+    entersh59:"How to Build a SaaS Startup in 10 Smart Steps",
+    BlogonPWADevelopment:"Blog on PWA Development",
 
 
 
@@ -2064,6 +2097,26 @@ const translations = {
 
   },
   ar: {
+    BlogonPWADevelopment:"مدونة حول تطوير تطبيقات الويب المتقدمة",
+    entersh59:"كيفية بناء شركة ناشئة لتقديم خدمات البرمجيات كخدمة في 10 خطوات ذكية",
+    entersh58:"لماذا تفشل شركات البرمجيات الناشئة: أسباب الفشل الشائعة وكيفية منعها",
+    entersh57:"كيفية بناء منتج قابل للاختبار الأدنى (Minimum Viable Product) لشركة ناشئة تقدم خدمات البرمجيات كخدمة : نصائح عملية",
+    entersh56:"أفضل 10 نماذج تسعير للبرمجيات كخدمة : مزايا وعيوب كل مثال",
+    entersh55:"كيفية بناء برنامج كمنتج خدمة في 6 خطوات",
+    BlogonSaaSProductDevelopment:"مدونة حول تطوير منتجات البرمجيات كخدمة",
+    entersh54:"5 ميزات سوق الإنترنت الرئيسية لإسعاد المشترين",
+    entersh53:"6 أفضل ميزات السوق متعدد البائعين للبائعين",
+    entersh52:"ما الذي يجعل روبي أون ريلز مثاليًا لتطوير السوق الإلكتروني؟",
+    entersh51:"كيفية بناء موقع تجارة إلكترونية بسرعة",
+    entersh50:"كيف قدمنا النسخة الأولى القابلة للاختبار لـ PlanMyKids - سوق الأنشطة للأطفال (دراسة حالة)",
+    entersh49:"أسواق التجارة الإلكترونية B2C: كل ما يجب أن تعرفه قبل إنشاء واحد",
+    entersh48:" تطوير موقع الأسئلة والأجوبة: الوظائف وأفضل الممارسات",
+    entersh47:"موقع نسخة AliExpress: كيفية بناء منصة تجارة إلكترونية مشابهة",
+    entersh46:"كم يكلف إنشاء موقع مزايدة مثل eBay",
+    entersh45:"كم يكلف بناء موقع مثل أمازون؟",
+    entersh44:"10 طرق ذكية لحل مشكلة الدجاجة والبيض للسوق الإلكتروني",
+
+    BlogonOnlineMarketplaceDevelopment:"مدونة حول تطوير السوق الإلكتروني",
     entership_desc:"مقالات الخبراء حول تحسين وتنمية الأعمال التجارية عبر الإنترنت.",
     freebook:"تنزيل كتاب إلكتروني مجاني",
     profitablemar:"هل تريد بناء سوق مربح عبر الإنترنت؟",

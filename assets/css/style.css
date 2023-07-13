@@ -9488,3 +9488,8 @@ ol li {
   width: 100%;
   object-fit: cover;
 }
+.blog-navigation-tag__link.active {
+  background: #e4282f;
+  border: 1px solid #e4282f;
+  color: #fff;
+}

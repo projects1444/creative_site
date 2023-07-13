@@ -8888,3 +8888,8 @@ text-align: start;
 .post2 .article-info-wrapper__text-name {
   display: none;
 }
+.blog-navigation-tag__link.active {
+  background: #e4282f;
+  border: 1px solid #e4282f;
+  color: #fff;
+}
