@@ -8200,6 +8200,9 @@ text-align: start;
   .post {
     height: 100%;
 }
+.post2 {
+  height: 100%;
+}
 }
 .post, .post:hover {
   transition: transform .4s;
@@ -8762,12 +8765,12 @@ text-align: start;
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  padding: 0 30px;
+  max-height: 50px;
 }
 @media (max-width: 1449px)
 {
   .blog-card-download__text-section {
-    padding: 0 30px;
+    /* padding: 0 30px; */
 }
 }
 .blog-card-download__text {
@@ -8797,6 +8800,7 @@ text-align: start;
   padding: 13px;
   text-align: center;
   width: 100%;
+  height: 50px;
 }
 .blog-card-download-hover__all-link {
   bottom: 0;
@@ -8846,4 +8850,41 @@ text-align: start;
   top: 0;
   width: 100%;
   object-fit: cover;
+}
+.post2 {
+  border: 1px solid #d7d8e4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  background: #3d4067;
+  
+}
+.post2:hover{
+  outline: 10px solid #e5e5f3;
+  border-bottom-left-radius:10px ;
+  border-bottom-right-radius:10px ;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+
+}
+
+.post2:hover .blog-card-download__btn {
+  background: #e4282f;
+  color: #fff;
+  transform: translateY(-5px);
+  transition: all .3s ease-in-out;
+}
+.post2.square .text-wrapper {
+  background: #3d4067;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+}
+.post2 .text-wrapper {
+  position: relative;
+}
+.post2 .article-info-wrapper__text-name {
+  display: none;
 }
