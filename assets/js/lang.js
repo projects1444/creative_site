@@ -12,6 +12,7 @@ var namear = document.getElementsByClassName('name-ar')[0];
  var subEmail =  document.getElementById("sub-email");
  var subName2 =  document.getElementById("sub2-name");
  var subEmail2 =  document.getElementById("sub2-email");
+ var headersearch = document.getElementById("header-search");
 // console.log(lang);
 if(lang === 'ar' ){
 
@@ -58,6 +59,9 @@ if(subName2 && subEmail2)
   subName2.setAttribute('placeholder', ' الإسم');
   subEmail2.setAttribute('placeholder', ' البريد الالكتروني');
 }
+if(headersearch){
+  headersearch.setAttribute('placeholder', ' البحث عن مقالات المدونة');
+}
 }else{
  
   if(namear && Emailar ){
@@ -97,6 +101,8 @@ if(subName2 && subEmail2)
     subName2.setAttribute('placeholder', 'Name');
     subEmail2.setAttribute('placeholder', 'E-mail');
   }
-  
+  if(headersearch){
+    headersearch.setAttribute('placeholder', 'Search blog posts');
+  }
   
 }
